@@ -1,4 +1,10 @@
 cosign.key
 _build_*
 output
-_build-*/**
+_build-*/
+.mise/
+mise.local.toml
+mise.*.local.toml
+.miserc.toml
+*.md
+!README.md

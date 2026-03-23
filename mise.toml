@@ -1,0 +1,11 @@
+[tools]
+"aqua:nushell/nushell" = "latest"
+"cargo:https://github.com/nushell/nufmt" = "latest"
+
+## Uncomment to access the build tasks used by the Containerfile.
+#[task_config]
+#includes = ["build_files", "mise-tasks"]
+
+[tasks.bootstrap]
+description = "Regenerate mise bootstrap script"
+run = "mise generate bootstrap -l -w"
