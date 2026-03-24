@@ -103,7 +103,7 @@ jobs:
         run: |
           buildah tag ${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}
           buildah push localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} docker-archive:/tmp/image.tar
-          podman load -i /tmp/image.tar
+          sudo podman load -i /tmp/image.tar
 
       # Rechunk is a script that we use on Universal Blue to make sure there isnt a single huge layer when your image gets published.
       # This does not make your image faster to download, just provides better resumability and fixes a few errors.
@@ -121,10 +121,10 @@ jobs:
       # This is necessary so that the podman socket can find the rechunked image on its storage
       - name: Load in podman and tag
         run: |
-          IMAGE=$(podman pull ${{ steps.rechunk.outputs.ref }})
+          IMAGE=$(sudo podman pull ${{ steps.rechunk.outputs.ref }})
           sudo rm -rf ${{ steps.rechunk.outputs.output }}
           for tag in ${{ steps.metadata.outputs.tags }}; do
-            podman tag $IMAGE ${{ env.IMAGE_NAME }}:$tag
+            sudo podman tag $IMAGE ${{ env.IMAGE_NAME }}:$tag
           done
 
       # These `if` statements are so that pull requests for your custom images do not make it publish any packages under your name without you knowing
