@@ -4,7 +4,6 @@ Custom Universal Blue image built on top of `ghcr.io/ublue-os/bazzite-gnome:test
 
 This image keeps Bazzite's GNOME desktop and low-level hardware stack, trims the most obvious gaming-oriented desktop packages, and adds workstation/developer host tooling without changing your shell or IDE choice:
 - `nushell`
-- `micro`
 - `Incus`
 - `Docker`
 - `libvirt` / `virt-manager`
@@ -25,7 +24,6 @@ Base image:
 
 Added host packages:
 - `nushell`
-- `micro`
 - `incus`
 - `incus-agent`
 - `incus-client`
@@ -282,7 +280,6 @@ After rebasing, verify:
 
 ```bash
 nu --version
-micro --version
 rpm -q steam lutris gamescope mangohud vkBasalt
 ```
 
