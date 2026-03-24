@@ -102,7 +102,8 @@ jobs:
       - name: Load image into podman
         run: |
           buildah tag ${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}
-          podman load < <(buildah push localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} docker-archive:-)
+          buildah push localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} docker-archive:/tmp/image.tar
+          podman load -i /tmp/image.tar
 
       # Rechunk is a script that we use on Universal Blue to make sure there isnt a single huge layer when your image gets published.
       # This does not make your image faster to download, just provides better resumability and fixes a few errors.
