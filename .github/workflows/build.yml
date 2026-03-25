@@ -89,6 +89,9 @@ jobs:
           sep-tags: " "
           sep-annotations: " "
 
+      - name: Write GitHub token for build
+        run: echo "${{ secrets.GITHUB_TOKEN }}" > /tmp/github_token
+
       - name: Build Image
         id: build_image
         uses: redhat-actions/buildah-build@7a95fa7ee0f02d552a32753e7414641a04307056 # v2
@@ -98,7 +101,7 @@ jobs:
           build-args: |
             DEFAULT_TAG=${{ env.DEFAULT_TAG }}
           secrets: |
-            id=github_token,env=GITHUB_TOKEN
+            id=github_token,src=/tmp/github_token
           image: ${{ env.IMAGE_NAME }}
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
