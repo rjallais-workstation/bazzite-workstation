@@ -155,6 +155,8 @@ The main workflow publishes:
 - `ghcr.io/<owner>/bazzite-workstation:testing`
 - dated `testing` tags
 
+It also generates an SPDX JSON SBOM with Anchore Syft, uploads it as a workflow artifact, and runs an Anchore Grype vulnerability scan whose SARIF results are published to GitHub code scanning.
+
 Before enabling public consumption, set up cosign signing:
 
 ```bash
