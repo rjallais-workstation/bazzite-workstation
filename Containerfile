@@ -16,6 +16,7 @@ FROM ${BASE_IMAGE_NAME}:${DEFAULT_TAG}
 
 ### Bootstrap mise and install tools
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
+    --mount=type=secret,id=github_token,env=GITHUB_TOKEN \
     mkdir -p /.mise/tasks/ && \
     cp -r /ctx/finalize /ctx/install /ctx/prepare /.mise/tasks/ && \
     cp /ctx/mise.toml /mise.toml && \

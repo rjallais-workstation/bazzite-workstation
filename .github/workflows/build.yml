@@ -97,6 +97,8 @@ jobs:
             ./Containerfile
           build-args: |
             DEFAULT_TAG=${{ env.DEFAULT_TAG }}
+          secrets: |
+            id=github_token,env=GITHUB_TOKEN
           image: ${{ env.IMAGE_NAME }}
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
