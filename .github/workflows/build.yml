@@ -140,6 +140,9 @@ jobs:
 
       - name: Generate SBOM with Syft
         uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0
+        timeout-minutes: 10
+        env:
+          SYFT_SOURCE_SQUASHED: true
         with:
           image: docker-archive:/tmp/image-sbom.tar
           format: spdx-json
