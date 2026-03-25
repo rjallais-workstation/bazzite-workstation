@@ -148,7 +148,6 @@ jobs:
         uses: anchore/scan-action@e1165082ffb1fe366ebaf02d8526e7c4989ea9d2 # v7
         id: grype-scan
         with:
-          image: docker-archive:/tmp/image-sbom.tar
           sbom: ${{ github.workspace }}/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}-sbom.spdx.json
           fail-build: ${{ github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
           severity-cutoff: high
@@ -161,7 +160,7 @@ jobs:
         if: always() &&
             hashFiles(format('{0}/grype-results.sarif', github.workspace)) != '' &&
             (github.event_name != 'pull_request' || github.event.pull_request.head.repo.fork == false)
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@480db559a14342288b67e54bd959dd52dc3ee68f # v3
         with:
           sarif_file: ${{ github.workspace }}/grype-results.sarif
 
