@@ -1,5 +1,8 @@
 # hadolint global ignore=DL3059
 # Allow build scripts to be referenced without being copied into the final image
+ARG BASE_IMAGE_NAME=ghcr.io/ublue-os/bazzite-gnome
+ARG DEFAULT_TAG=stable
+
 FROM scratch AS ctx
 COPY build_files /
 COPY bin /bin
@@ -9,7 +12,7 @@ COPY mise.ci.toml /mise.toml
 COPY --from=ghcr.io/projectbluefin/common:latest /system_files /oci/common
 
 # Base Image
-FROM ghcr.io/ublue-os/bazzite-gnome:testing
+FROM ${BASE_IMAGE_NAME}:${DEFAULT_TAG}
 
 ### Bootstrap mise and install tools
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \

@@ -126,7 +126,7 @@ gh secret set SIGNING_SECRET < cosign.key
 
 ### Step 2b: Choosing Your Base Image
 
-This image uses `ghcr.io/ublue-os/bazzite-gnome:testing` as its base. If you want to use a different base image, modify the `FROM` line in the [Containerfile](./Containerfile).
+This image uses `ghcr.io/ublue-os/bazzite-gnome:${DEFAULT_TAG}` as its base. To switch between `stable` and `testing`, update the `DEFAULT_TAG` value used for your build. The [Containerfile](./Containerfile) now templates the base image tag from that value instead of hardcoding it in `FROM`.
 
 ### Step 2c: Initial Commit
 
