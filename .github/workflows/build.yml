@@ -130,23 +130,23 @@ jobs:
             sudo podman tag $IMAGE ${{ env.IMAGE_NAME }}:$tag
             sudo podman tag $IMAGE localhost/${{ env.IMAGE_NAME }}:$tag
           done
+          # Export image to tar for Syft/Grype (they can't access podman socket)
+          sudo podman save localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} -o /tmp/image-sbom.tar
 
       - name: Generate SBOM with Syft
         uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0
         with:
-          image: localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}
+          image: docker-archive:/tmp/image-sbom.tar
           format: spdx-json
           output-file: ${{ github.workspace }}/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}-sbom.spdx.json
           upload-artifact: true
           artifact-name: image-sbom
-          dependency-snapshot: false
-          upload-release-assets: false
 
       - name: Scan image with Grype
         uses: anchore/scan-action@e1165082ffb1fe366ebaf02d8526e7c4989ea9d2 # v7
         id: grype-scan
         with:
-          image: localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}
+          image: docker-archive:/tmp/image-sbom.tar
           sbom: ${{ github.workspace }}/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}-sbom.spdx.json
           fail-build: false
           output-format: sarif
