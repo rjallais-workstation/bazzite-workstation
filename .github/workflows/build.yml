@@ -148,7 +148,8 @@ jobs:
         with:
           image: docker-archive:/tmp/image-sbom.tar
           sbom: ${{ github.workspace }}/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}-sbom.spdx.json
-          fail-build: false
+          fail-build: ${{ github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
+          severity-cutoff: high
           output-format: sarif
           output-file: ${{ github.workspace }}/grype-results.sarif
           add-cpes-if-none: true
