@@ -39,7 +39,10 @@ RUN --mount=type=cache,dst=/var/cache ./bin/mise run install:packages
 RUN --mount=type=cache,dst=/var/cache ./bin/mise run install:docker
 
 #### LAYER 5: Install NetBird
-RUN --mount=type=cache,dst=/var/cache ./bin/mise run install:netbird
+RUN --mount=type=cache,dst=/var/cache \
+    --mount=type=secret,id=github_token \
+    export GITHUB_TOKEN=$(cat /run/secrets/github_token 2>/dev/null || true) && \
+    ./bin/mise run install:netbird
 
 #### LAYER 6: Enable services
 RUN ./bin/mise run prepare:services
