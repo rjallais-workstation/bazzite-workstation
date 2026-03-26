@@ -90,7 +90,9 @@ jobs:
           sep-annotations: " "
 
       - name: Write GitHub token for build
-        run: echo "${{ secrets.GITHUB_TOKEN }}" > /tmp/github_token
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" > /tmp/github_token
+          chmod 600 /tmp/github_token
 
       - name: Build Image
         id: build_image
@@ -151,7 +153,7 @@ jobs:
         timeout-minutes: 120
         with:
           image: docker-archive:/tmp/image-sbom.tar
-          fail-build: false
+          fail-build: true
           severity-cutoff: high
           output-format: sarif
           output-file: ${{ github.workspace }}/grype-results.sarif
