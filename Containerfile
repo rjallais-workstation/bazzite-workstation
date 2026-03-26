@@ -16,6 +16,8 @@ FROM ${BASE_IMAGE_NAME}:${DEFAULT_TAG}
 
 ### Bootstrap mise and install tools
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
+    --mount=type=secret,id=github_token \
+    export GITHUB_TOKEN=$(cat /run/secrets/github_token 2>/dev/null || true) && \
     mkdir -p /.mise/tasks/ && \
     cp -r /ctx/finalize /ctx/install /ctx/prepare /.mise/tasks/ && \
     cp /ctx/mise.toml /mise.toml && \
@@ -25,25 +27,28 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     ./bin/mise install
 
 ### LAYER 1: Remove unwanted packages
-RUN --mount=type=cache,dst=/var/cache ./bin/mise run install:remove-packages
+#RUN --mount=type=cache,dst=/var/cache ./bin/mise run install:remove-packages
 
 #### LAYER 2: Enable COPR repositories
-#RUN ./bin/mise run prepare:repos
-#
+RUN ./bin/mise run prepare:repos
+
 #### LAYER 3: Install system packages
-#RUN --mount=type=cache,dst=/var/cache ./bin/mise run install:packages
-#
+RUN --mount=type=cache,dst=/var/cache ./bin/mise run install:packages
+
 #### LAYER 4: Install Docker CE
-#RUN --mount=type=cache,dst=/var/cache ./bin/mise run install:docker
-#
+RUN --mount=type=cache,dst=/var/cache ./bin/mise run install:docker
+
 #### LAYER 5: Install NetBird
-#RUN --mount=type=cache,dst=/var/cache ./bin/mise run install:netbird
-#
+RUN --mount=type=cache,dst=/var/cache \
+    --mount=type=secret,id=github_token \
+    export GITHUB_TOKEN=$(cat /run/secrets/github_token 2>/dev/null || true) && \
+    ./bin/mise run install:netbird
+
 #### LAYER 6: Enable services
-#RUN ./bin/mise run prepare:services
-#
+RUN ./bin/mise run prepare:services
+
 #### LAYER 7: Install Bluefin modular components
-#RUN --mount=type=bind,from=ctx,source=/,target=/ctx ./bin/mise run install:bluefin
+RUN --mount=type=bind,from=ctx,source=/,target=/ctx ./bin/mise run install:bluefin
 
 ### LINTING
 ## Clean runtime artifacts and verify final image

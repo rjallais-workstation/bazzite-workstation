@@ -34,6 +34,7 @@ jobs:
       contents: read
       packages: write
       id-token: write
+      security-events: write
 
     steps:
       - name: Prepare environment
@@ -88,6 +89,11 @@ jobs:
           sep-tags: " "
           sep-annotations: " "
 
+      - name: Write GitHub token for build
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" > /tmp/github_token
+          chmod 600 /tmp/github_token
+
       - name: Build Image
         id: build_image
         uses: redhat-actions/buildah-build@7a95fa7ee0f02d552a32753e7414641a04307056 # v2
@@ -96,10 +102,16 @@ jobs:
             ./Containerfile
           build-args: |
             DEFAULT_TAG=${{ env.DEFAULT_TAG }}
+          extra-args: |
+            --secret id=github_token,src=/tmp/github_token
           image: ${{ env.IMAGE_NAME }}
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
           oci: false
+
+      - name: Cleanup token file
+        if: always()
+        run: rm -f /tmp/github_token
 
       - name: Load image into podman
         run: |
@@ -127,7 +139,34 @@ jobs:
           sudo rm -rf ${{ steps.rechunk.outputs.output }}
           for tag in ${{ steps.metadata.outputs.tags }}; do
             sudo podman tag $IMAGE ${{ env.IMAGE_NAME }}:$tag
+            sudo podman tag $IMAGE localhost/${{ env.IMAGE_NAME }}:$tag
           done
+          # Export image to tar for Grype (only on default branch)
+          if [ "${{ github.event_name }}" != "pull_request" ] && [ "${{ github.ref }}" = "refs/heads/${{ github.event.repository.default_branch }}" ]; then
+            sudo podman save localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} -o /tmp/image-sbom.tar
+          fi
+
+      - name: Scan image with Grype
+        if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        uses: anchore/scan-action@e1165082ffb1fe366ebaf02d8526e7c4989ea9d2 # v7
+        id: grype-scan
+        continue-on-error: true
+        timeout-minutes: 120
+        with:
+          image: docker-archive:/tmp/image-sbom.tar
+          fail-build: false
+          severity-cutoff: high
+          output-format: sarif
+          output-file: ${{ github.workspace }}/grype-results.sarif
+          add-cpes-if-none: true
+          by-cve: true
+
+      - name: Upload Grype SARIF results
+        if: always() &&
+            hashFiles('grype-results.sarif') != ''
+        uses: github/codeql-action/upload-sarif@480db559a14342288b67e54bd959dd52dc3ee68f # v3
+        with:
+          sarif_file: ${{ github.workspace }}/grype-results.sarif
 
       # These `if` statements are so that pull requests for your custom images do not make it publish any packages under your name without you knowing
       # They also check if the runner is on the default branch so that things like the merge queue (if you enable it), are going to work
