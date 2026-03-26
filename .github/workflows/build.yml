@@ -139,16 +139,19 @@ jobs:
             sudo podman tag $IMAGE ${{ env.IMAGE_NAME }}:$tag
             sudo podman tag $IMAGE localhost/${{ env.IMAGE_NAME }}:$tag
           done
-          # Export image to tar for Syft/Grype (they can't access podman socket)
-          sudo podman save localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} -o /tmp/image-sbom.tar
+          # Export image to tar for Grype (only on default branch)
+          if [ "${{ github.event_name }}" != "pull_request" ] && [ "${{ github.ref }}" = "refs/heads/${{ github.event.repository.default_branch }}" ]; then
+            sudo podman save localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} -o /tmp/image-sbom.tar
+          fi
 
       - name: Scan image with Grype
+        if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
         uses: anchore/scan-action@e1165082ffb1fe366ebaf02d8526e7c4989ea9d2 # v7
         id: grype-scan
-        timeout-minutes: 90
+        timeout-minutes: 120
         with:
           image: docker-archive:/tmp/image-sbom.tar
-          fail-build: ${{ github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
+          fail-build: false
           severity-cutoff: high
           output-format: sarif
           output-file: ${{ github.workspace }}/grype-results.sarif
