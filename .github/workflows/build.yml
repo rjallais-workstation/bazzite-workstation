@@ -117,10 +117,10 @@ jobs:
         run: |
           buildah tag ${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}
 
-      - name: Export image as OCI archive for Rechunk
+      - name: Export image as Docker archive for Rechunk
         run: |
           buildah push localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} \
-            oci-archive:/tmp/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}.oci
+            docker-archive:/tmp/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}.tar
 
       # Rechunk is a script that we use on Universal Blue to make sure there isnt a single huge layer when your image gets published.
       # This does not make your image faster to download, just provides better resumability and fixes a few errors.
@@ -133,7 +133,7 @@ jobs:
         uses: ublue-os/legacy-rechunk@a925083d9af7cb04b3e2a6e8c01bfa495f38b710 # v1.0.0
         with:
           rechunk: 'ghcr.io/ublue-os/legacy-rechunk:v1.0.0-x86_64'
-          ref: "oci-archive:/tmp/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}.oci"
+          ref: "docker-archive:/tmp/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}.tar"
           prev-ref: "${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}"
           skip_compression: true
           labels: ${{ steps.metadata.outputs.labels }} # Rechunk strips out all the labels during build, this needs to be reapplied here with newline separator
@@ -215,6 +215,7 @@ jobs:
       - name: Free disk space after Syft and Grype
         if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
         run: |
+          rm -f /tmp/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}.tar
           rm -f /tmp/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}.oci
           buildah rmi --all || true
           sudo podman image prune -af || true
