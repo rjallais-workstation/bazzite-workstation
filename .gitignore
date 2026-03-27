@@ -6,5 +6,6 @@ _build-*/
 mise.local.toml
 mise.*.local.toml
 .miserc.toml
+.superset/
 *.md
 !README.md

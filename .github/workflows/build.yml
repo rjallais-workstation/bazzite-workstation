@@ -113,12 +113,9 @@ jobs:
         if: always()
         run: rm -f /tmp/github_token
 
-      - name: Load image into Docker
+      - name: Tag image for Rechunk
         run: |
           buildah tag ${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}
-          buildah push localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} docker-archive:/tmp/image.tar
-          sudo docker load -i /tmp/image.tar
-          rm -f /tmp/image.tar
 
       # Rechunk is a script that we use on Universal Blue to make sure there isnt a single huge layer when your image gets published.
       # This does not make your image faster to download, just provides better resumability and fixes a few errors.
@@ -131,7 +128,7 @@ jobs:
         uses: ublue-os/legacy-rechunk@a925083d9af7cb04b3e2a6e8c01bfa495f38b710 # v1.0.0
         with:
           rechunk: 'ghcr.io/ublue-os/legacy-rechunk:v1.0.0-x86_64'
-          ref: "localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}"
+          ref: "containers-storage:localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}"
           prev-ref: "${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}"
           skip_compression: true
           labels: ${{ steps.metadata.outputs.labels }} # Rechunk strips out all the labels during build, this needs to be reapplied here with newline separator
