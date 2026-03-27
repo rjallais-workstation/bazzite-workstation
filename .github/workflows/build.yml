@@ -138,11 +138,11 @@ jobs:
           skip_compression: true
           labels: ${{ steps.metadata.outputs.labels }} # Rechunk strips out all the labels during build, this needs to be reapplied here with newline separator
 
-      # This is necessary so that the podman socket can find the rechunked image on its storage
+      # Load the rechunked OCI layout into podman storage and tag all published names.
       - name: Load in podman and tag
         run: |
-          IMAGE=$(sudo podman pull ${{ steps.rechunk.outputs.ref }})
-          sudo rm -rf ${{ steps.rechunk.outputs.output }}
+          IMAGE=$(sudo podman load -i "${{ steps.rechunk.outputs.location }}" -q)
+          sudo rm -rf "${{ steps.rechunk.outputs.location }}"
           for tag in ${{ steps.metadata.outputs.tags }}; do
             sudo podman tag $IMAGE ${{ env.IMAGE_NAME }}:$tag
             sudo podman tag $IMAGE localhost/${{ env.IMAGE_NAME }}:$tag
