@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-24.04
 
     permissions:
-      contents: read
+      contents: write
       packages: write
       id-token: write
       security-events: write
@@ -118,10 +118,14 @@ jobs:
           buildah tag ${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}
           buildah push localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} docker-archive:/tmp/image.tar
           sudo podman load -i /tmp/image.tar
+          rm -f /tmp/image.tar
 
       # Rechunk is a script that we use on Universal Blue to make sure there isnt a single huge layer when your image gets published.
       # This does not make your image faster to download, just provides better resumability and fixes a few errors.
       # Documentation for Rechunk is provided on their github repository at https://github.com/hhd-dev/rechunk
+      - name: Remove stale previous manifest
+        run: rm -f previous.manifest.json
+
       - name: Run Rechunker
         id: rechunk
         uses: ublue-os/legacy-rechunk@a925083d9af7cb04b3e2a6e8c01bfa495f38b710 # v1.0.0
@@ -141,32 +145,6 @@ jobs:
             sudo podman tag $IMAGE ${{ env.IMAGE_NAME }}:$tag
             sudo podman tag $IMAGE localhost/${{ env.IMAGE_NAME }}:$tag
           done
-          # Export image to tar for Grype (only on default branch)
-          if [ "${{ github.event_name }}" != "pull_request" ] && [ "${{ github.ref }}" = "refs/heads/${{ github.event.repository.default_branch }}" ]; then
-            sudo podman save localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} -o /tmp/image-sbom.tar
-          fi
-
-      - name: Scan image with Grype
-        if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
-        uses: anchore/scan-action@e1165082ffb1fe366ebaf02d8526e7c4989ea9d2 # v7
-        id: grype-scan
-        continue-on-error: true
-        timeout-minutes: 120
-        with:
-          image: docker-archive:/tmp/image-sbom.tar
-          fail-build: false
-          severity-cutoff: high
-          output-format: sarif
-          output-file: ${{ github.workspace }}/grype-results.sarif
-          add-cpes-if-none: true
-          by-cve: true
-
-      - name: Upload Grype SARIF results
-        if: always() &&
-            hashFiles('grype-results.sarif') != ''
-        uses: github/codeql-action/upload-sarif@480db559a14342288b67e54bd959dd52dc3ee68f # v3
-        with:
-          sarif_file: ${{ github.workspace }}/grype-results.sarif
 
       # These `if` statements are so that pull requests for your custom images do not make it publish any packages under your name without you knowing
       # They also check if the runner is on the default branch so that things like the merge queue (if you enable it), are going to work
@@ -191,6 +169,52 @@ jobs:
           tags: ${{ steps.metadata.outputs.tags }}
           username: ${{ env.REGISTRY_USER }}
           password: ${{ env.REGISTRY_PASSWORD }}
+
+      - name: Free disk space before Syft and Grype
+        if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        run: |
+          buildah rmi --all || true
+          sudo podman image prune -af || true
+          sudo podman system prune -af --volumes || true
+          rm -f /tmp/github_token /tmp/image.tar /tmp/image-sbom.tar || true
+          df -h
+
+      - name: Generate SBOM with Syft
+        if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0
+        timeout-minutes: 10
+        env:
+          SYFT_SOURCE_SQUASHED: true
+        with:
+          image: ${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}
+          registry-username: ${{ github.actor }}
+          registry-password: ${{ secrets.GITHUB_TOKEN }}
+          format: spdx-json
+          output-file: ${{ github.workspace }}/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}-sbom.spdx.json
+          artifact-name: image-sbom
+          upload-artifact: true
+          upload-release-assets: false
+
+      - name: Scan image with Grype
+        if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        uses: anchore/scan-action@e1165082ffb1fe366ebaf02d8526e7c4989ea9d2 # v7
+        id: grype-scan
+        continue-on-error: true
+        timeout-minutes: 120
+        with:
+          sbom: ${{ github.workspace }}/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}-sbom.spdx.json
+          fail-build: false
+          severity-cutoff: high
+          output-format: sarif
+          output-file: ${{ github.workspace }}/grype-results.sarif
+          add-cpes-if-none: true
+          by-cve: true
+
+      - name: Upload Grype SARIF results
+        if: always() && steps.grype-scan.outputs.sarif != ''
+        uses: github/codeql-action/upload-sarif@480db559a14342288b67e54bd959dd52dc3ee68f # v3
+        with:
+          sarif_file: ${{ steps.grype-scan.outputs.sarif }}
 
       # This section is optional and only needs to be enabled if you plan on distributing
       # your project for others to consume. You will need to create a public and private key
