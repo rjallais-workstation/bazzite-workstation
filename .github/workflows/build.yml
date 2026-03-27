@@ -117,11 +117,6 @@ jobs:
         run: |
           buildah tag ${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}
 
-      - name: Export image as OCI archive for Rechunk
-        run: |
-          buildah push localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} \
-            oci-archive:/tmp/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}.oci
-
       # Rechunk is a script that we use on Universal Blue to make sure there isnt a single huge layer when your image gets published.
       # This does not make your image faster to download, just provides better resumability and fixes a few errors.
       # Documentation for Rechunk is provided on their github repository at https://github.com/hhd-dev/rechunk
@@ -133,15 +128,15 @@ jobs:
         uses: ublue-os/legacy-rechunk@a925083d9af7cb04b3e2a6e8c01bfa495f38b710 # v1.0.0
         with:
           rechunk: 'ghcr.io/ublue-os/legacy-rechunk:v1.0.0-x86_64'
-          ref: "oci-archive:/tmp/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}.oci"
+          ref: "localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}"
           prev-ref: "${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}"
           skip_compression: true
           labels: ${{ steps.metadata.outputs.labels }} # Rechunk strips out all the labels during build, this needs to be reapplied here with newline separator
 
-      # Load the rechunked OCI layout into podman storage and tag all published names.
+      # Load the rechunked image into podman storage and tag all published names.
       - name: Load in podman and tag
         run: |
-          IMAGE=$(sudo podman load -i "${{ steps.rechunk.outputs.location }}" -q)
+          IMAGE=$(sudo podman pull ${{ steps.rechunk.outputs.ref }})
           sudo rm -rf "${{ steps.rechunk.outputs.location }}"
           for tag in ${{ steps.metadata.outputs.tags }}; do
             sudo podman tag $IMAGE ${{ env.IMAGE_NAME }}:$tag
