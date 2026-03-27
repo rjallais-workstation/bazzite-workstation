@@ -59,7 +59,6 @@ def main [] {
         "git-subtree"
         "git-svn"
         "iotop"
-        "linuxtoys"
         "nicstat"
         "nu"
         "numactl"
