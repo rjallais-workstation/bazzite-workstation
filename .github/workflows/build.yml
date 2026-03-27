@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-24.04
 
     permissions:
-      contents: write
+      contents: read
       packages: write
       id-token: write
       security-events: write
@@ -190,8 +190,7 @@ jobs:
           registry-password: ${{ secrets.GITHUB_TOKEN }}
           format: spdx-json
           output-file: ${{ github.workspace }}/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}-sbom.spdx.json
-          artifact-name: image-sbom
-          upload-artifact: true
+          upload-artifact: false
           upload-release-assets: false
 
       - name: Scan image with Grype
