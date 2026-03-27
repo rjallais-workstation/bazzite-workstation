@@ -113,11 +113,11 @@ jobs:
         if: always()
         run: rm -f /tmp/github_token
 
-      - name: Load image into podman
+      - name: Load image into Docker
         run: |
           buildah tag ${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}
           buildah push localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} docker-archive:/tmp/image.tar
-          sudo podman load -i /tmp/image.tar
+          sudo docker load -i /tmp/image.tar
           rm -f /tmp/image.tar
 
       # Rechunk is a script that we use on Universal Blue to make sure there isnt a single huge layer when your image gets published.
