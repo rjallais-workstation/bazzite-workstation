@@ -176,7 +176,6 @@ jobs:
           buildah rmi --all || true
           sudo podman image prune -af || true
           sudo podman system prune -af --volumes || true
-          rm -f /tmp/github_token /tmp/image.tar /tmp/image-sbom.tar || true
           df -h
 
       - name: Generate SBOM with Syft
@@ -184,7 +183,7 @@ jobs:
         uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0
         timeout-minutes: 10
         env:
-          SYFT_SOURCE_SQUASHED: true
+          SYFT_SCOPE: squashed
         with:
           image: ${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_NAME }}@${{ steps.push.outputs.digest }}
           registry-username: ${{ github.actor }}
