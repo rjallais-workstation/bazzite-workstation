@@ -1,0 +1,13 @@
+﻿2026-03-28T05:32:23.5464431Z ##[group]Run # Lowercase the image uri
+2026-03-28T05:32:23.5464904Z [36;1m# Lowercase the image uri[0m
+2026-03-28T05:32:23.5465292Z [36;1mecho "IMAGE_REGISTRY=${IMAGE_REGISTRY,,}" >> ${GITHUB_ENV}[0m
+2026-03-28T05:32:23.5465738Z [36;1mecho "IMAGE_NAME=${IMAGE_NAME,,}" >> ${GITHUB_ENV}[0m
+2026-03-28T05:32:23.5494643Z shell: /usr/bin/bash -e {0}
+2026-03-28T05:32:23.5495209Z env:
+2026-03-28T05:32:23.5495631Z   IMAGE_DESC: Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+2026-03-28T05:32:23.5496155Z   IMAGE_KEYWORDS: bootc,ublue,universal-blue
+2026-03-28T05:32:23.5496852Z   IMAGE_LOGO_URL: https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+2026-03-28T05:32:23.5497280Z   IMAGE_NAME: bazzite-workstation
+2026-03-28T05:32:23.5497810Z   IMAGE_REGISTRY: ghcr.io/rjallais-workstation
+2026-03-28T05:32:23.5498120Z   DEFAULT_TAG: testing
+2026-03-28T05:32:23.5498342Z ##[endgroup]

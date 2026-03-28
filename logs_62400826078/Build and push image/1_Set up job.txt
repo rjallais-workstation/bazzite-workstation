@@ -1,0 +1,41 @@
+﻿2026-03-28T05:32:17.7128753Z Current runner version: '2.333.0'
+2026-03-28T05:32:17.7156244Z ##[group]Runner Image Provisioner
+2026-03-28T05:32:17.7157320Z Hosted Compute Agent
+2026-03-28T05:32:17.7158213Z Version: 20260213.493
+2026-03-28T05:32:17.7158891Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-03-28T05:32:17.7159767Z Build Date: 2026-02-13T00:28:41Z
+2026-03-28T05:32:17.7160488Z Worker ID: {94cb0340-9925-4f88-b427-8ad59af7b25c}
+2026-03-28T05:32:17.7161313Z Azure Region: eastus2
+2026-03-28T05:32:17.7161957Z ##[endgroup]
+2026-03-28T05:32:17.7163560Z ##[group]Operating System
+2026-03-28T05:32:17.7164305Z Ubuntu
+2026-03-28T05:32:17.7164847Z 24.04.4
+2026-03-28T05:32:17.7165481Z LTS
+2026-03-28T05:32:17.7166065Z ##[endgroup]
+2026-03-28T05:32:17.7166697Z ##[group]Runner Image
+2026-03-28T05:32:17.7167403Z Image: ubuntu-24.04
+2026-03-28T05:32:17.7168699Z Version: 20260323.65.1
+2026-03-28T05:32:17.7169870Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260323.65/images/ubuntu/Ubuntu2404-Readme.md
+2026-03-28T05:32:17.7171738Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260323.65
+2026-03-28T05:32:17.7172755Z ##[endgroup]
+2026-03-28T05:32:17.7174219Z ##[group]GITHUB_TOKEN Permissions
+2026-03-28T05:32:17.7176424Z Contents: read
+2026-03-28T05:32:17.7177197Z Metadata: read
+2026-03-28T05:32:17.7178252Z Packages: write
+2026-03-28T05:32:17.7179009Z SecurityEvents: write
+2026-03-28T05:32:17.7179692Z ##[endgroup]
+2026-03-28T05:32:17.7182086Z Secret source: Actions
+2026-03-28T05:32:17.7183401Z Prepare workflow directory
+2026-03-28T05:32:17.7776495Z Prepare all required actions
+2026-03-28T05:32:17.7815512Z Getting action download info
+2026-03-28T05:32:18.4704426Z Download action repository 'actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd' (SHA:de0fac2e4500dabe0009e67214ff5f5447ce83dd)
+2026-03-28T05:32:18.6055563Z Download action repository 'docker/metadata-action@030e881283bb7a6894de51c315a6bfe6a94e05cf' (SHA:030e881283bb7a6894de51c315a6bfe6a94e05cf)
+2026-03-28T05:32:19.0537400Z Download action repository 'redhat-actions/buildah-build@7a95fa7ee0f02d552a32753e7414641a04307056' (SHA:7a95fa7ee0f02d552a32753e7414641a04307056)
+2026-03-28T05:32:19.3112164Z Download action repository 'ublue-os/legacy-rechunk@a925083d9af7cb04b3e2a6e8c01bfa495f38b710' (SHA:a925083d9af7cb04b3e2a6e8c01bfa495f38b710)
+2026-03-28T05:32:19.5675615Z Download action repository 'docker/login-action@b45d80f862d83dbcd57f89517bcf500b2ab88fb2' (SHA:b45d80f862d83dbcd57f89517bcf500b2ab88fb2)
+2026-03-28T05:32:19.8816970Z Download action repository 'redhat-actions/push-to-registry@5ed88d269cf581ea9ef6dd6806d01562096bee9c' (SHA:5ed88d269cf581ea9ef6dd6806d01562096bee9c)
+2026-03-28T05:32:20.1766309Z Download action repository 'anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610' (SHA:e22c389904149dbc22b58101806040fa8d37a610)
+2026-03-28T05:32:20.4264830Z Download action repository 'anchore/scan-action@e1165082ffb1fe366ebaf02d8526e7c4989ea9d2' (SHA:e1165082ffb1fe366ebaf02d8526e7c4989ea9d2)
+2026-03-28T05:32:20.7072467Z Download action repository 'github/codeql-action@480db559a14342288b67e54bd959dd52dc3ee68f' (SHA:480db559a14342288b67e54bd959dd52dc3ee68f)
+2026-03-28T05:32:23.1494399Z Download action repository 'sigstore/cosign-installer@ba7bc0a3fef59531c69a25acd34668d6d3fe6f22' (SHA:ba7bc0a3fef59531c69a25acd34668d6d3fe6f22)
+2026-03-28T05:32:23.4931137Z Complete job name: Build and push image

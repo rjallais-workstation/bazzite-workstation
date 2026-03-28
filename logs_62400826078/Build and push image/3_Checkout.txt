@@ -1,0 +1,90 @@
+﻿2026-03-28T05:32:23.5773570Z ##[group]Run actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+2026-03-28T05:32:23.5774134Z with:
+2026-03-28T05:32:23.5774625Z   repository: rjallais-workstation/bazzite-workstation
+2026-03-28T05:32:23.5775228Z   token: ***
+2026-03-28T05:32:23.5775615Z   ssh-strict: true
+2026-03-28T05:32:23.5775931Z   ssh-user: git
+2026-03-28T05:32:23.5776249Z   persist-credentials: true
+2026-03-28T05:32:23.5776711Z   clean: true
+2026-03-28T05:32:23.5777025Z   sparse-checkout-cone-mode: true
+2026-03-28T05:32:23.5777427Z   fetch-depth: 1
+2026-03-28T05:32:23.5778095Z   fetch-tags: false
+2026-03-28T05:32:23.5778453Z   show-progress: true
+2026-03-28T05:32:23.5778807Z   lfs: false
+2026-03-28T05:32:23.5779129Z   submodules: false
+2026-03-28T05:32:23.5779489Z   set-safe-directory: true
+2026-03-28T05:32:23.5779842Z env:
+2026-03-28T05:32:23.5780386Z   IMAGE_DESC: Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+2026-03-28T05:32:23.5780998Z   IMAGE_KEYWORDS: bootc,ublue,universal-blue
+2026-03-28T05:32:23.5781698Z   IMAGE_LOGO_URL: https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+2026-03-28T05:32:23.5782206Z   IMAGE_NAME: bazzite-workstation
+2026-03-28T05:32:23.5782834Z   IMAGE_REGISTRY: ghcr.io/rjallais-workstation
+2026-03-28T05:32:23.5783231Z   DEFAULT_TAG: testing
+2026-03-28T05:32:23.5783523Z ##[endgroup]
+2026-03-28T05:32:23.6668087Z Syncing repository: rjallais-workstation/bazzite-workstation
+2026-03-28T05:32:23.6669590Z ##[group]Getting Git version info
+2026-03-28T05:32:23.6670092Z Working directory is '/home/runner/work/bazzite-workstation/bazzite-workstation'
+2026-03-28T05:32:23.6670747Z [command]/usr/bin/git version
+2026-03-28T05:32:23.6706267Z git version 2.53.0
+2026-03-28T05:32:23.6761660Z ##[endgroup]
+2026-03-28T05:32:23.6776604Z Temporarily overriding HOME='/home/runner/work/_temp/cac1b445-a056-4896-96f7-9bcb50cfe859' before making global git config changes
+2026-03-28T05:32:23.6778290Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-28T05:32:23.6782775Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/bazzite-workstation/bazzite-workstation
+2026-03-28T05:32:23.6818547Z Deleting the contents of '/home/runner/work/bazzite-workstation/bazzite-workstation'
+2026-03-28T05:32:23.6822927Z ##[group]Initializing the repository
+2026-03-28T05:32:23.6829229Z [command]/usr/bin/git init /home/runner/work/bazzite-workstation/bazzite-workstation
+2026-03-28T05:32:23.6956890Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-03-28T05:32:23.6958363Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-03-28T05:32:23.6959311Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-03-28T05:32:23.6960116Z hint: call:
+2026-03-28T05:32:23.6960524Z hint:
+2026-03-28T05:32:23.6961077Z hint: 	git config --global init.defaultBranch <name>
+2026-03-28T05:32:23.6961729Z hint:
+2026-03-28T05:32:23.6962335Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-03-28T05:32:23.6963374Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-03-28T05:32:23.6964097Z hint:
+2026-03-28T05:32:23.6964515Z hint: 	git branch -m <name>
+2026-03-28T05:32:23.6964985Z hint:
+2026-03-28T05:32:23.6965602Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-03-28T05:32:23.6966789Z Initialized empty Git repository in /home/runner/work/bazzite-workstation/bazzite-workstation/.git/
+2026-03-28T05:32:23.6972925Z [command]/usr/bin/git remote add origin https://github.com/rjallais-workstation/bazzite-workstation
+2026-03-28T05:32:23.7007735Z ##[endgroup]
+2026-03-28T05:32:23.7008932Z ##[group]Disabling automatic garbage collection
+2026-03-28T05:32:23.7013859Z [command]/usr/bin/git config --local gc.auto 0
+2026-03-28T05:32:23.7048617Z ##[endgroup]
+2026-03-28T05:32:23.7049041Z ##[group]Setting up auth
+2026-03-28T05:32:23.7052160Z Removing SSH command configuration
+2026-03-28T05:32:23.7061230Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-03-28T05:32:23.7099468Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-03-28T05:32:23.7425407Z Removing HTTP extra header
+2026-03-28T05:32:23.7432279Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-28T05:32:23.7469334Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-03-28T05:32:23.7721480Z Removing includeIf entries pointing to credentials config files
+2026-03-28T05:32:23.7728174Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-28T05:32:23.7762339Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-03-28T05:32:23.7994633Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-eb8e6b0c-b4a6-4ad3-842f-4b3db2a49385.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-03-28T05:32:23.8033150Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/bazzite-workstation/bazzite-workstation/.git.path /home/runner/work/_temp/git-credentials-eb8e6b0c-b4a6-4ad3-842f-4b3db2a49385.config
+2026-03-28T05:32:23.8065831Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/bazzite-workstation/bazzite-workstation/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-eb8e6b0c-b4a6-4ad3-842f-4b3db2a49385.config
+2026-03-28T05:32:23.8101162Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-eb8e6b0c-b4a6-4ad3-842f-4b3db2a49385.config
+2026-03-28T05:32:23.8136934Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-eb8e6b0c-b4a6-4ad3-842f-4b3db2a49385.config
+2026-03-28T05:32:23.8176832Z ##[endgroup]
+2026-03-28T05:32:23.8177962Z ##[group]Fetching the repository
+2026-03-28T05:32:23.8188905Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +6ab36c6f4d0209065cc95dce5d87a7b9146c2759:refs/remotes/origin/main
+2026-03-28T05:32:23.9929608Z From https://github.com/rjallais-workstation/bazzite-workstation
+2026-03-28T05:32:23.9930258Z  * [new ref]         6ab36c6f4d0209065cc95dce5d87a7b9146c2759 -> origin/main
+2026-03-28T05:32:23.9964449Z [command]/usr/bin/git branch --list --remote origin/main
+2026-03-28T05:32:23.9990826Z   origin/main
+2026-03-28T05:32:24.0000418Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-03-28T05:32:24.0025084Z 6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+2026-03-28T05:32:24.0030268Z ##[endgroup]
+2026-03-28T05:32:24.0031024Z ##[group]Determining the checkout info
+2026-03-28T05:32:24.0031975Z ##[endgroup]
+2026-03-28T05:32:24.0036339Z [command]/usr/bin/git sparse-checkout disable
+2026-03-28T05:32:24.0073474Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-03-28T05:32:24.0099022Z ##[group]Checking out the ref
+2026-03-28T05:32:24.0104225Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-03-28T05:32:24.0177241Z Switched to a new branch 'main'
+2026-03-28T05:32:24.0180352Z branch 'main' set up to track 'origin/main'.
+2026-03-28T05:32:24.0184866Z ##[endgroup]
+2026-03-28T05:32:24.0219811Z [command]/usr/bin/git log -1 --format=%H
+2026-03-28T05:32:24.0242498Z 6ab36c6f4d0209065cc95dce5d87a7b9146c2759

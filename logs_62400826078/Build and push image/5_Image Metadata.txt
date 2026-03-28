@@ -1,0 +1,205 @@
+﻿2026-03-28T05:32:24.0542459Z ##[group]Run docker/metadata-action@030e881283bb7a6894de51c315a6bfe6a94e05cf
+2026-03-28T05:32:24.0542967Z with:
+2026-03-28T05:32:24.0543540Z   tags: type=raw,value=testing
+type=raw,value=testing.{{date 'YYYYMMDD'}}
+type=raw,value={{date 'YYYYMMDD'}}
+type=sha,enable=false
+type=ref,event=pr
+
+2026-03-28T05:32:24.0548979Z   labels: io.artifacthub.package.readme-url=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+org.opencontainers.image.created=2026-03-28T05:32:24Z
+org.opencontainers.image.description=Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+org.opencontainers.image.documentation=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile
+org.opencontainers.image.title=bazzite-workstation
+org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+org.opencontainers.image.vendor=rjallais-workstation
+org.opencontainers.image.version=testing.{{date 'YYYYMMDD'}}
+io.artifacthub.package.deprecated=false
+io.artifacthub.package.keywords=bootc,ublue,universal-blue
+io.artifacthub.package.license=Apache-2.0
+io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+io.artifacthub.package.prerelease=false
+containers.bootc=1
+
+2026-03-28T05:32:24.0554160Z   sep-tags:  
+2026-03-28T05:32:24.0554370Z   sep-annotations:  
+2026-03-28T05:32:24.0554593Z   context: workflow
+2026-03-28T05:32:24.0554958Z   github-token: ***
+2026-03-28T05:32:24.0555175Z env:
+2026-03-28T05:32:24.0555557Z   IMAGE_DESC: Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+2026-03-28T05:32:24.0556062Z   IMAGE_KEYWORDS: bootc,ublue,universal-blue
+2026-03-28T05:32:24.0556490Z   IMAGE_LOGO_URL: https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+2026-03-28T05:32:24.0556930Z   IMAGE_NAME: bazzite-workstation
+2026-03-28T05:32:24.0557247Z   IMAGE_REGISTRY: ghcr.io/rjallais-workstation
+2026-03-28T05:32:24.0557973Z   DEFAULT_TAG: testing
+2026-03-28T05:32:24.0558228Z ##[endgroup]
+2026-03-28T05:32:24.5309668Z ##[group]Context info
+2026-03-28T05:32:24.5310200Z eventName: push
+2026-03-28T05:32:24.5310628Z sha: 6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+2026-03-28T05:32:24.5311156Z ref: refs/heads/main
+2026-03-28T05:32:24.5311590Z workflow: Build container image
+2026-03-28T05:32:24.5312092Z action: metadata
+2026-03-28T05:32:24.5312528Z actor: rjallais
+2026-03-28T05:32:24.5312924Z runNumber: 59
+2026-03-28T05:32:24.5313626Z runId: 23678487302
+2026-03-28T05:32:24.5316642Z commitDate: Sat Mar 28 2026 05:32:09 GMT+0000 (Coordinated Universal Time)
+2026-03-28T05:32:24.5319957Z ##[endgroup]
+2026-03-28T05:32:24.5324333Z ##[group]Processing images input
+2026-03-28T05:32:24.5325141Z ##[endgroup]
+2026-03-28T05:32:24.5349471Z ##[group]Processing tags input
+2026-03-28T05:32:24.5350098Z type=ref,event=pr,prefix=pr-,enable=true,priority=600
+2026-03-28T05:32:24.5350804Z type=raw,value=testing,enable=true,priority=200
+2026-03-28T05:32:24.5352609Z type=raw,value=testing.{{date 'YYYYMMDD'}},enable=true,priority=200
+2026-03-28T05:32:24.5353427Z type=raw,value={{date 'YYYYMMDD'}},enable=true,priority=200
+2026-03-28T05:32:24.5354144Z type=sha,enable=false,prefix=sha-,format=short,priority=100
+2026-03-28T05:32:24.5355150Z ##[endgroup]
+2026-03-28T05:32:24.5355954Z ##[group]Processing flavor input
+2026-03-28T05:32:24.5356455Z latest=auto
+2026-03-28T05:32:24.5356835Z prefix=
+2026-03-28T05:32:24.5357266Z prefixLatest=false
+2026-03-28T05:32:24.5358008Z suffix=
+2026-03-28T05:32:24.5358413Z suffixLatest=false
+2026-03-28T05:32:24.5359135Z ##[endgroup]
+2026-03-28T05:32:24.5451634Z ##[group]Docker image version
+2026-03-28T05:32:24.5452212Z testing
+2026-03-28T05:32:24.5452984Z ##[endgroup]
+2026-03-28T05:32:24.5457711Z ##[group]Docker tags
+2026-03-28T05:32:24.5461960Z testing
+2026-03-28T05:32:24.5462451Z testing.20260328
+2026-03-28T05:32:24.5462869Z 20260328
+2026-03-28T05:32:24.5463574Z ##[endgroup]
+2026-03-28T05:32:24.5560991Z ##[group]Docker labels
+2026-03-28T05:32:24.5565073Z containers.bootc=1
+2026-03-28T05:32:24.5566656Z io.artifacthub.package.deprecated=false
+2026-03-28T05:32:24.5569525Z io.artifacthub.package.keywords=bootc,ublue,universal-blue
+2026-03-28T05:32:24.5572124Z io.artifacthub.package.license=Apache-2.0
+2026-03-28T05:32:24.5573789Z io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+2026-03-28T05:32:24.5580497Z io.artifacthub.package.prerelease=false
+2026-03-28T05:32:24.5582682Z io.artifacthub.package.readme-url=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+2026-03-28T05:32:24.5586000Z org.opencontainers.image.created=2026-03-28T05:32:24Z
+2026-03-28T05:32:24.5589634Z org.opencontainers.image.description=Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+2026-03-28T05:32:24.5592460Z org.opencontainers.image.documentation=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+2026-03-28T05:32:24.5596005Z org.opencontainers.image.licenses=Apache-2.0
+2026-03-28T05:32:24.5600133Z org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+2026-03-28T05:32:24.5601822Z org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile
+2026-03-28T05:32:24.5603304Z org.opencontainers.image.title=bazzite-workstation
+2026-03-28T05:32:24.5604656Z org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+2026-03-28T05:32:24.5606089Z org.opencontainers.image.vendor=rjallais-workstation
+2026-03-28T05:32:24.5606868Z org.opencontainers.image.version=testing.20260328
+2026-03-28T05:32:24.5608327Z ##[endgroup]
+2026-03-28T05:32:24.5609080Z ##[group]Annotations
+2026-03-28T05:32:24.5609734Z manifest:org.opencontainers.image.created=2026-03-28T05:32:24.534Z
+2026-03-28T05:32:24.5610747Z manifest:org.opencontainers.image.description=Bazzite GNOME for non-gamer devs
+2026-03-28T05:32:24.5611717Z manifest:org.opencontainers.image.licenses=Apache-2.0
+2026-03-28T05:32:24.5612677Z manifest:org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+2026-03-28T05:32:24.5613969Z manifest:org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation
+2026-03-28T05:32:24.5615153Z manifest:org.opencontainers.image.title=bazzite-workstation
+2026-03-28T05:32:24.5616617Z manifest:org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation
+2026-03-28T05:32:24.5618008Z manifest:org.opencontainers.image.version=testing
+2026-03-28T05:32:24.5618962Z ##[endgroup]
+2026-03-28T05:32:24.5619657Z ##[group]JSON output
+2026-03-28T05:32:24.5620155Z {
+2026-03-28T05:32:24.5620543Z   "tags": [
+2026-03-28T05:32:24.5620913Z     "testing",
+2026-03-28T05:32:24.5621323Z     "testing.20260328",
+2026-03-28T05:32:24.5621743Z     "20260328"
+2026-03-28T05:32:24.5622096Z   ],
+2026-03-28T05:32:24.5622455Z   "tag-names": [
+2026-03-28T05:32:24.5622838Z     "testing",
+2026-03-28T05:32:24.5623240Z     "testing.20260328",
+2026-03-28T05:32:24.5623678Z     "20260328"
+2026-03-28T05:32:24.5624029Z   ],
+2026-03-28T05:32:24.5624371Z   "labels": {
+2026-03-28T05:32:24.5624785Z     "containers.bootc": "1",
+2026-03-28T05:32:24.5625406Z     "io.artifacthub.package.deprecated": "false",
+2026-03-28T05:32:24.5626290Z     "io.artifacthub.package.keywords": "bootc,ublue,universal-blue",
+2026-03-28T05:32:24.5627184Z     "io.artifacthub.package.license": "Apache-2.0",
+2026-03-28T05:32:24.5631122Z     "io.artifacthub.package.logo-url": "https://avatars.githubusercontent.com/u/120078124?s=200&v=4",
+2026-03-28T05:32:24.5632235Z     "io.artifacthub.package.prerelease": "false",
+2026-03-28T05:32:24.5634182Z     "io.artifacthub.package.readme-url": "https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md",
+2026-03-28T05:32:24.5635889Z     "org.opencontainers.image.created": "2026-03-28T05:32:24Z",
+2026-03-28T05:32:24.5637253Z     "org.opencontainers.image.description": "Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling",
+2026-03-28T05:32:24.5645511Z     "org.opencontainers.image.documentation": "https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md",
+2026-03-28T05:32:24.5647226Z     "org.opencontainers.image.licenses": "Apache-2.0",
+2026-03-28T05:32:24.5648515Z     "org.opencontainers.image.revision": "6ab36c6f4d0209065cc95dce5d87a7b9146c2759",
+2026-03-28T05:32:24.5650324Z     "org.opencontainers.image.source": "https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile",
+2026-03-28T05:32:24.5651892Z     "org.opencontainers.image.title": "bazzite-workstation",
+2026-03-28T05:32:24.5653379Z     "org.opencontainers.image.url": "https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759",
+2026-03-28T05:32:24.5654850Z     "org.opencontainers.image.vendor": "rjallais-workstation",
+2026-03-28T05:32:24.5655728Z     "org.opencontainers.image.version": "testing.20260328"
+2026-03-28T05:32:24.5656378Z   },
+2026-03-28T05:32:24.5656755Z   "annotations": [
+2026-03-28T05:32:24.5657435Z     "manifest:org.opencontainers.image.created=2026-03-28T05:32:24.534Z",
+2026-03-28T05:32:24.5658932Z     "manifest:org.opencontainers.image.description=Bazzite GNOME for non-gamer devs",
+2026-03-28T05:32:24.5660005Z     "manifest:org.opencontainers.image.licenses=Apache-2.0",
+2026-03-28T05:32:24.5661079Z     "manifest:org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759",
+2026-03-28T05:32:24.5662512Z     "manifest:org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation",
+2026-03-28T05:32:24.5663773Z     "manifest:org.opencontainers.image.title=bazzite-workstation",
+2026-03-28T05:32:24.5665002Z     "manifest:org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation",
+2026-03-28T05:32:24.5666134Z     "manifest:org.opencontainers.image.version=testing"
+2026-03-28T05:32:24.5666742Z   ]
+2026-03-28T05:32:24.5667084Z }
+2026-03-28T05:32:24.5668045Z ##[endgroup]
+2026-03-28T05:32:24.5668927Z ##[group]Bake file definition (tags)
+2026-03-28T05:32:24.5669421Z {
+2026-03-28T05:32:24.5669781Z   "target": {
+2026-03-28T05:32:24.5670209Z     "docker-metadata-action": {
+2026-03-28T05:32:24.5671009Z       "tags": [
+2026-03-28T05:32:24.5671408Z         "testing",
+2026-03-28T05:32:24.5671808Z         "testing.20260328",
+2026-03-28T05:32:24.5672237Z         "20260328"
+2026-03-28T05:32:24.5672593Z       ],
+2026-03-28T05:32:24.5672921Z       "args": {
+2026-03-28T05:32:24.5673319Z         "DOCKER_META_IMAGES": "",
+2026-03-28T05:32:24.5673836Z         "DOCKER_META_VERSION": "testing"
+2026-03-28T05:32:24.5674306Z       }
+2026-03-28T05:32:24.5674624Z     }
+2026-03-28T05:32:24.5674940Z   }
+2026-03-28T05:32:24.5675261Z }
+2026-03-28T05:32:24.5675897Z ##[endgroup]
+2026-03-28T05:32:24.5676575Z ##[group]Bake file definition (labels)
+2026-03-28T05:32:24.5677055Z {
+2026-03-28T05:32:24.5677377Z   "target": {
+2026-03-28T05:32:24.5678070Z     "docker-metadata-action": {
+2026-03-28T05:32:24.5678554Z       "labels": {
+2026-03-28T05:32:24.5678986Z         "containers.bootc": "1",
+2026-03-28T05:32:24.5679605Z         "io.artifacthub.package.deprecated": "false",
+2026-03-28T05:32:24.5680469Z         "io.artifacthub.package.keywords": "bootc,ublue,universal-blue",
+2026-03-28T05:32:24.5681370Z         "io.artifacthub.package.license": "Apache-2.0",
+2026-03-28T05:32:24.5682487Z         "io.artifacthub.package.logo-url": "https://avatars.githubusercontent.com/u/120078124?s=200&v=4",
+2026-03-28T05:32:24.5683857Z         "io.artifacthub.package.prerelease": "false",
+2026-03-28T05:32:24.5685515Z         "io.artifacthub.package.readme-url": "https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md",
+2026-03-28T05:32:24.5687202Z         "org.opencontainers.image.created": "2026-03-28T05:32:24Z",
+2026-03-28T05:32:24.5688836Z         "org.opencontainers.image.description": "Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling",
+2026-03-28T05:32:24.5690883Z         "org.opencontainers.image.documentation": "https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md",
+2026-03-28T05:32:24.5692367Z         "org.opencontainers.image.licenses": "Apache-2.0",
+2026-03-28T05:32:24.5693312Z         "org.opencontainers.image.revision": "6ab36c6f4d0209065cc95dce5d87a7b9146c2759",
+2026-03-28T05:32:24.5694960Z         "org.opencontainers.image.source": "https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile",
+2026-03-28T05:32:24.5696453Z         "org.opencontainers.image.title": "bazzite-workstation",
+2026-03-28T05:32:24.5698172Z         "org.opencontainers.image.url": "https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759",
+2026-03-28T05:32:24.5699564Z         "org.opencontainers.image.vendor": "rjallais-workstation",
+2026-03-28T05:32:24.5700486Z         "org.opencontainers.image.version": "testing.20260328"
+2026-03-28T05:32:24.5701175Z       }
+2026-03-28T05:32:24.5701530Z     }
+2026-03-28T05:32:24.5701861Z   }
+2026-03-28T05:32:24.5702200Z }
+2026-03-28T05:32:24.5702846Z ##[endgroup]
+2026-03-28T05:32:24.5703562Z ##[group]Bake file definition (annotations)
+2026-03-28T05:32:24.5704067Z {
+2026-03-28T05:32:24.5704407Z   "target": {
+2026-03-28T05:32:24.5704853Z     "docker-metadata-action": {
+2026-03-28T05:32:24.5705363Z       "annotations": [
+2026-03-28T05:32:24.5706096Z         "manifest:org.opencontainers.image.created=2026-03-28T05:32:24.534Z",
+2026-03-28T05:32:24.5707229Z         "manifest:org.opencontainers.image.description=Bazzite GNOME for non-gamer devs",
+2026-03-28T05:32:24.5708721Z         "manifest:org.opencontainers.image.licenses=Apache-2.0",
+2026-03-28T05:32:24.5709967Z         "manifest:org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759",
+2026-03-28T05:32:24.5711446Z         "manifest:org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation",
+2026-03-28T05:32:24.5712719Z         "manifest:org.opencontainers.image.title=bazzite-workstation",
+2026-03-28T05:32:24.5713960Z         "manifest:org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation",
+2026-03-28T05:32:24.5715568Z         "manifest:org.opencontainers.image.version=testing"
+2026-03-28T05:32:24.5716293Z       ]
+2026-03-28T05:32:24.5716641Z     }
+2026-03-28T05:32:24.5716979Z   }
+2026-03-28T05:32:24.5717340Z }
+2026-03-28T05:32:24.5718277Z ##[endgroup]

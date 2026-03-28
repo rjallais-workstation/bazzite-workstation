@@ -1,0 +1,102 @@
+﻿2026-03-28T05:51:47.5171173Z ##[group]Run redhat-actions/push-to-registry@5ed88d269cf581ea9ef6dd6806d01562096bee9c
+2026-03-28T05:51:47.5171679Z with:
+2026-03-28T05:51:47.5171908Z   registry: ghcr.io/rjallais-workstation
+2026-03-28T05:51:47.5172203Z   image: bazzite-workstation
+2026-03-28T05:51:47.5172460Z   tags: testing testing.20260328 20260328
+2026-03-28T05:51:47.5172733Z   username: rjallais
+2026-03-28T05:51:47.5173113Z   password: ***
+2026-03-28T05:51:47.5173330Z   tls-verify: true
+2026-03-28T05:51:47.5173535Z env:
+2026-03-28T05:51:47.5173915Z   IMAGE_DESC: Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+2026-03-28T05:51:47.5174437Z   IMAGE_KEYWORDS: bootc,ublue,universal-blue
+2026-03-28T05:51:47.5174863Z   IMAGE_LOGO_URL: https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+2026-03-28T05:51:47.5175280Z   IMAGE_NAME: bazzite-workstation
+2026-03-28T05:51:47.5175590Z   IMAGE_REGISTRY: ghcr.io/rjallais-workstation
+2026-03-28T05:51:47.5175878Z   DEFAULT_TAG: testing
+2026-03-28T05:51:47.5176149Z   DOCKER_METADATA_OUTPUT_VERSION: testing
+2026-03-28T05:51:47.5176502Z   DOCKER_METADATA_OUTPUT_TAGS: testing testing.20260328 20260328
+2026-03-28T05:51:47.5176940Z   DOCKER_METADATA_OUTPUT_TAG_NAMES: testing testing.20260328 20260328
+2026-03-28T05:51:47.5182564Z   DOCKER_METADATA_OUTPUT_LABELS: containers.bootc=1
+io.artifacthub.package.deprecated=false
+io.artifacthub.package.keywords=bootc,ublue,universal-blue
+io.artifacthub.package.license=Apache-2.0
+io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+io.artifacthub.package.prerelease=false
+io.artifacthub.package.readme-url=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+org.opencontainers.image.created=2026-03-28T05:32:24Z
+org.opencontainers.image.description=Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+org.opencontainers.image.documentation=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+org.opencontainers.image.licenses=Apache-2.0
+org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile
+org.opencontainers.image.title=bazzite-workstation
+org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+org.opencontainers.image.vendor=rjallais-workstation
+org.opencontainers.image.version=testing.20260328
+2026-03-28T05:51:47.5190611Z   DOCKER_METADATA_OUTPUT_ANNOTATIONS: manifest:org.opencontainers.image.created=2026-03-28T05:32:24.534Z manifest:org.opencontainers.image.description=Bazzite GNOME for non-gamer devs manifest:org.opencontainers.image.licenses=Apache-2.0 manifest:org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759 manifest:org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation manifest:org.opencontainers.image.title=bazzite-workstation manifest:org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation manifest:org.opencontainers.image.version=testing
+2026-03-28T05:51:47.5201154Z   DOCKER_METADATA_OUTPUT_JSON: {"tags":["testing","testing.20260328","20260328"],"tag-names":["testing","testing.20260328","20260328"],"labels":{"containers.bootc":"1","io.artifacthub.package.deprecated":"false","io.artifacthub.package.keywords":"bootc,ublue,universal-blue","io.artifacthub.package.license":"Apache-2.0","io.artifacthub.package.logo-url":"https://avatars.githubusercontent.com/u/120078124?s=200&v=4","io.artifacthub.package.prerelease":"false","io.artifacthub.package.readme-url":"https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md","org.opencontainers.image.created":"2026-03-28T05:32:24Z","org.opencontainers.image.description":"Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling","org.opencontainers.image.documentation":"https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md","org.opencontainers.image.licenses":"Apache-2.0","org.opencontainers.image.revision":"6ab36c6f4d0209065cc95dce5d87a7b9146c2759","org.opencontainers.image.source":"https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile","org.opencontainers.image.title":"bazzite-workstation","org.opencontainers.image.url":"https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759","org.opencontainers.image.vendor":"rjallais-workstation","org.opencontainers.image.version":"testing.20260328"},"annotations":["manifest:org.opencontainers.image.created=2026-03-28T05:32:24.534Z","manifest:org.opencontainers.image.description=Bazzite GNOME for non-gamer devs","manifest:org.opencontainers.image.licenses=Apache-2.0","manifest:org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759","manifest:org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation","manifest:org.opencontainers.image.title=bazzite-workstation","manifest:org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation","manifest:org.opencontainers.image.version=testing"]}
+2026-03-28T05:51:47.5210131Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_TAGS: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake-tags.json
+2026-03-28T05:51:47.5211082Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_LABELS: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake-labels.json
+2026-03-28T05:51:47.5212061Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_ANNOTATIONS: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake-annotations.json
+2026-03-28T05:51:47.5213134Z   DOCKER_METADATA_OUTPUT_BAKE_FILE: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake.json
+2026-03-28T05:51:47.5213703Z   REGISTRY_USER: rjallais
+2026-03-28T05:51:47.5214078Z   REGISTRY_PASSWORD: ***
+2026-03-28T05:51:47.5214307Z ##[endgroup]
+2026-03-28T05:51:47.6007221Z Creating temporary Podman image storage for pulling from Docker daemon
+2026-03-28T05:51:47.6025980Z Storage driver is not 'overlay', so not overriding storage configuration
+2026-03-28T05:51:47.6031773Z Combining image name "bazzite-workstation" and registry "ghcr.io/rjallais-workstation" to form registry path "ghcr.io/rjallais-workstation/bazzite-workstation"
+2026-03-28T05:51:47.6033132Z 🔍 Checking if the given image is manifest or not.
+2026-03-28T05:51:47.6057491Z ##[group]/usr/bin/podman version
+2026-03-28T05:51:47.6065531Z [command]/usr/bin/podman version
+2026-03-28T05:51:47.6625613Z Client:       Podman Engine
+2026-03-28T05:51:47.6626212Z Version:      4.9.3
+2026-03-28T05:51:47.6626697Z API Version:  4.9.3
+2026-03-28T05:51:47.6627161Z Go Version:   go1.22.2
+2026-03-28T05:51:47.6627912Z Built:        Thu Jan  1 00:00:00 1970
+2026-03-28T05:51:47.6628485Z OS/Arch:      linux/amd64
+2026-03-28T05:51:47.7125599Z ##[endgroup]
+2026-03-28T05:51:47.7126760Z ##[group]/usr/bin/podman manifest exists bazzite-workstation:testing
+2026-03-28T05:51:47.7128076Z [command]/usr/bin/podman manifest exists bazzite-workstation:testing
+2026-03-28T05:51:47.7495074Z Error: localhost/bazzite-workstation:testing: image is not a manifest list
+2026-03-28T05:51:47.7528206Z ##[endgroup]
+2026-03-28T05:51:47.7529163Z ##[group]/usr/bin/podman manifest exists bazzite-workstation:testing.20260328
+2026-03-28T05:51:47.7531821Z [command]/usr/bin/podman manifest exists bazzite-workstation:testing.20260328
+2026-03-28T05:51:47.7830381Z Error: localhost/bazzite-workstation:testing.20260328: image is not a manifest list
+2026-03-28T05:51:47.7862549Z ##[endgroup]
+2026-03-28T05:51:47.7863510Z ##[group]/usr/bin/podman manifest exists bazzite-workstation:20260328
+2026-03-28T05:51:47.7865956Z [command]/usr/bin/podman manifest exists bazzite-workstation:20260328
+2026-03-28T05:51:47.8213219Z Error: localhost/bazzite-workstation:20260328: image is not a manifest list
+2026-03-28T05:51:47.8244514Z ##[endgroup]
+2026-03-28T05:51:47.8248209Z 🔍 Checking if "bazzite-workstation:testing, bazzite-workstation:testing.20260328, bazzite-workstation:20260328" present in the local Podman image storage
+2026-03-28T05:51:47.8249766Z [command]/usr/bin/podman image exists bazzite-workstation:testing
+2026-03-28T05:51:47.8826266Z [command]/usr/bin/podman image exists bazzite-workstation:testing.20260328
+2026-03-28T05:51:47.9355293Z [command]/usr/bin/podman image exists bazzite-workstation:20260328
+2026-03-28T05:51:47.9835925Z Tags "bazzite-workstation:testing, bazzite-workstation:testing.20260328, bazzite-workstation:20260328" found in Podman image storage
+2026-03-28T05:51:47.9838146Z 🔍 Checking if "bazzite-workstation:testing, bazzite-workstation:testing.20260328, bazzite-workstation:20260328" present in the local Docker image storage
+2026-03-28T05:51:47.9840257Z ##[group]/usr/bin/podman --root /tmp/podman-from-docker-gf67zT pull docker-daemon:bazzite-workstation:testing
+2026-03-28T05:51:47.9841575Z [command]/usr/bin/podman --root /tmp/podman-from-docker-gf67zT pull docker-daemon:bazzite-workstation:testing
+2026-03-28T05:51:48.0283834Z Error: initializing source docker-daemon:bazzite-workstation:testing: loading image from docker engine: Error response from daemon: reference does not exist
+2026-03-28T05:51:48.0319037Z ##[endgroup]
+2026-03-28T05:51:48.0320200Z ##[group]/usr/bin/podman --root /tmp/podman-from-docker-gf67zT pull docker-daemon:bazzite-workstation:testing.20260328
+2026-03-28T05:51:48.0321869Z [command]/usr/bin/podman --root /tmp/podman-from-docker-gf67zT pull docker-daemon:bazzite-workstation:testing.20260328
+2026-03-28T05:51:48.0678212Z Error: initializing source docker-daemon:bazzite-workstation:testing.20260328: loading image from docker engine: Error response from daemon: reference does not exist
+2026-03-28T05:51:48.0700873Z ##[endgroup]
+2026-03-28T05:51:48.0701853Z ##[group]/usr/bin/podman --root /tmp/podman-from-docker-gf67zT pull docker-daemon:bazzite-workstation:20260328
+2026-03-28T05:51:48.0704246Z [command]/usr/bin/podman --root /tmp/podman-from-docker-gf67zT pull docker-daemon:bazzite-workstation:20260328
+2026-03-28T05:51:48.1033334Z Error: initializing source docker-daemon:bazzite-workstation:20260328: loading image from docker engine: Error response from daemon: reference does not exist
+2026-03-28T05:51:48.1054699Z ##[endgroup]
+2026-03-28T05:51:48.1055379Z Tag "bazzite-workstation:testing" was found in the Podman image storage, but not in the Docker image storage. The image(s) will be pushed from Podman image storage.
+2026-03-28T05:51:48.1058201Z ⏳ Pushing "bazzite-workstation:testing, bazzite-workstation:testing.20260328, bazzite-workstation:20260328" to "ghcr.io/rjallais-workstation/bazzite-workstation:testing, ghcr.io/rjallais-workstation/bazzite-workstation:testing.20260328, ghcr.io/rjallais-workstation/bazzite-workstation:20260328" respectively as "rjallais"
+2026-03-28T05:51:48.1060560Z [command]/usr/bin/podman push --quiet --digestfile bazzite-workstation-testing_digest.txt bazzite-workstation:testing ghcr.io/rjallais-workstation/bazzite-workstation:testing --tls-verify=true --creds=rjallais:***
+2026-03-28T05:53:13.0460937Z ✅ Successfully pushed "bazzite-workstation:testing" to "ghcr.io/rjallais-workstation/bazzite-workstation:testing"
+2026-03-28T05:53:13.0469200Z sha256:0ae656663ca0cf0fa389ad595cc2ce2a9af82fbc9088fa98d5c84e387e59f949
+2026-03-28T05:53:13.0481392Z [command]/usr/bin/podman push --quiet --digestfile bazzite-workstation-testing_digest.txt bazzite-workstation:testing.20260328 ghcr.io/rjallais-workstation/bazzite-workstation:testing.20260328 --tls-verify=true --creds=rjallais:***
+2026-03-28T05:53:14.3483463Z ✅ Successfully pushed "bazzite-workstation:testing.20260328" to "ghcr.io/rjallais-workstation/bazzite-workstation:testing.20260328"
+2026-03-28T05:53:14.3484886Z sha256:0ae656663ca0cf0fa389ad595cc2ce2a9af82fbc9088fa98d5c84e387e59f949
+2026-03-28T05:53:14.3490134Z [command]/usr/bin/podman push --quiet --digestfile bazzite-workstation-testing_digest.txt bazzite-workstation:20260328 ghcr.io/rjallais-workstation/bazzite-workstation:20260328 --tls-verify=true --creds=rjallais:***
+2026-03-28T05:53:15.6291155Z ✅ Successfully pushed "bazzite-workstation:20260328" to "ghcr.io/rjallais-workstation/bazzite-workstation:20260328"
+2026-03-28T05:53:15.6292683Z sha256:0ae656663ca0cf0fa389ad595cc2ce2a9af82fbc9088fa98d5c84e387e59f949
+2026-03-28T05:53:15.6296470Z Removing temporary Podman image storage for pulling from Docker daemon
+2026-03-28T05:53:15.6317388Z [command]/usr/bin/podman --root /tmp/podman-from-docker-gf67zT rmi -a -f
+2026-03-28T05:53:15.6625285Z (node:7477) [DEP0147] DeprecationWarning: In future versions of Node.js, fs.rmdir(path, { recursive: true }) will be removed. Use fs.rm(path, { recursive: true }) instead
+2026-03-28T05:53:15.6626224Z (Use `node --trace-deprecation ...` to show where the warning was created)

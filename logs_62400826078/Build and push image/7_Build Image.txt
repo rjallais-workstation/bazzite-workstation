@@ -1,0 +1,1014 @@
+﻿2026-03-28T05:32:24.6099409Z ##[group]Run redhat-actions/buildah-build@7a95fa7ee0f02d552a32753e7414641a04307056
+2026-03-28T05:32:24.6099896Z with:
+2026-03-28T05:32:24.6100145Z   containerfiles: ./Containerfile
+
+2026-03-28T05:32:24.6100446Z   build-args: DEFAULT_TAG=testing
+
+2026-03-28T05:32:24.6100875Z   extra-args: --secret id=github_token,src=/tmp/github_token
+
+2026-03-28T05:32:24.6101254Z   image: bazzite-workstation
+2026-03-28T05:32:24.6101529Z   tags: testing testing.20260328 20260328
+2026-03-28T05:32:24.6106745Z   labels: containers.bootc=1
+io.artifacthub.package.deprecated=false
+io.artifacthub.package.keywords=bootc,ublue,universal-blue
+io.artifacthub.package.license=Apache-2.0
+io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+io.artifacthub.package.prerelease=false
+io.artifacthub.package.readme-url=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+org.opencontainers.image.created=2026-03-28T05:32:24Z
+org.opencontainers.image.description=Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+org.opencontainers.image.documentation=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+org.opencontainers.image.licenses=Apache-2.0
+org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile
+org.opencontainers.image.title=bazzite-workstation
+org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+org.opencontainers.image.vendor=rjallais-workstation
+org.opencontainers.image.version=testing.20260328
+2026-03-28T05:32:24.6113131Z   oci: false
+2026-03-28T05:32:24.6113338Z   context: .
+2026-03-28T05:32:24.6113538Z   tls-verify: true
+2026-03-28T05:32:24.6113746Z env:
+2026-03-28T05:32:24.6114139Z   IMAGE_DESC: Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+2026-03-28T05:32:24.6114646Z   IMAGE_KEYWORDS: bootc,ublue,universal-blue
+2026-03-28T05:32:24.6115082Z   IMAGE_LOGO_URL: https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+2026-03-28T05:32:24.6115500Z   IMAGE_NAME: bazzite-workstation
+2026-03-28T05:32:24.6115806Z   IMAGE_REGISTRY: ghcr.io/rjallais-workstation
+2026-03-28T05:32:24.6116110Z   DEFAULT_TAG: testing
+2026-03-28T05:32:24.6116352Z   DOCKER_METADATA_OUTPUT_VERSION: testing
+2026-03-28T05:32:24.6116713Z   DOCKER_METADATA_OUTPUT_TAGS: testing testing.20260328 20260328
+2026-03-28T05:32:24.6117152Z   DOCKER_METADATA_OUTPUT_TAG_NAMES: testing testing.20260328 20260328
+2026-03-28T05:32:24.6122955Z   DOCKER_METADATA_OUTPUT_LABELS: containers.bootc=1
+io.artifacthub.package.deprecated=false
+io.artifacthub.package.keywords=bootc,ublue,universal-blue
+io.artifacthub.package.license=Apache-2.0
+io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+io.artifacthub.package.prerelease=false
+io.artifacthub.package.readme-url=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+org.opencontainers.image.created=2026-03-28T05:32:24Z
+org.opencontainers.image.description=Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+org.opencontainers.image.documentation=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+org.opencontainers.image.licenses=Apache-2.0
+org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile
+org.opencontainers.image.title=bazzite-workstation
+org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+org.opencontainers.image.vendor=rjallais-workstation
+org.opencontainers.image.version=testing.20260328
+2026-03-28T05:32:24.6131473Z   DOCKER_METADATA_OUTPUT_ANNOTATIONS: manifest:org.opencontainers.image.created=2026-03-28T05:32:24.534Z manifest:org.opencontainers.image.description=Bazzite GNOME for non-gamer devs manifest:org.opencontainers.image.licenses=Apache-2.0 manifest:org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759 manifest:org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation manifest:org.opencontainers.image.title=bazzite-workstation manifest:org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation manifest:org.opencontainers.image.version=testing
+2026-03-28T05:32:24.6141923Z   DOCKER_METADATA_OUTPUT_JSON: {"tags":["testing","testing.20260328","20260328"],"tag-names":["testing","testing.20260328","20260328"],"labels":{"containers.bootc":"1","io.artifacthub.package.deprecated":"false","io.artifacthub.package.keywords":"bootc,ublue,universal-blue","io.artifacthub.package.license":"Apache-2.0","io.artifacthub.package.logo-url":"https://avatars.githubusercontent.com/u/120078124?s=200&v=4","io.artifacthub.package.prerelease":"false","io.artifacthub.package.readme-url":"https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md","org.opencontainers.image.created":"2026-03-28T05:32:24Z","org.opencontainers.image.description":"Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling","org.opencontainers.image.documentation":"https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md","org.opencontainers.image.licenses":"Apache-2.0","org.opencontainers.image.revision":"6ab36c6f4d0209065cc95dce5d87a7b9146c2759","org.opencontainers.image.source":"https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile","org.opencontainers.image.title":"bazzite-workstation","org.opencontainers.image.url":"https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759","org.opencontainers.image.vendor":"rjallais-workstation","org.opencontainers.image.version":"testing.20260328"},"annotations":["manifest:org.opencontainers.image.created=2026-03-28T05:32:24.534Z","manifest:org.opencontainers.image.description=Bazzite GNOME for non-gamer devs","manifest:org.opencontainers.image.licenses=Apache-2.0","manifest:org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759","manifest:org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation","manifest:org.opencontainers.image.title=bazzite-workstation","manifest:org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation","manifest:org.opencontainers.image.version=testing"]}
+2026-03-28T05:32:24.6150848Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_TAGS: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake-tags.json
+2026-03-28T05:32:24.6151832Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_LABELS: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake-labels.json
+2026-03-28T05:32:24.6152858Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_ANNOTATIONS: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake-annotations.json
+2026-03-28T05:32:24.6153809Z   DOCKER_METADATA_OUTPUT_BAKE_FILE: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake.json
+2026-03-28T05:32:24.6154376Z ##[endgroup]
+2026-03-28T05:32:24.6574279Z ##[group]/usr/bin/buildah version
+2026-03-28T05:32:24.6586604Z [command]/usr/bin/buildah version
+2026-03-28T05:32:25.2411922Z Version:         1.33.7
+2026-03-28T05:32:25.2412431Z Go Version:      go1.22.2
+2026-03-28T05:32:25.2412849Z Image Spec:      1.1.0-rc.5
+2026-03-28T05:32:25.2413268Z Runtime Spec:    1.1.0
+2026-03-28T05:32:25.2413654Z CNI Spec:        1.0.0
+2026-03-28T05:32:25.2414497Z libcni Version:  
+2026-03-28T05:32:25.2414856Z image Version:   5.29.2
+2026-03-28T05:32:25.2415191Z Git Commit:      
+2026-03-28T05:32:25.2415423Z Built:           Thu Jan  1 00:00:00 1970
+2026-03-28T05:32:25.2415713Z OS/Arch:         linux/amd64
+2026-03-28T05:32:25.2415965Z BuildPlatform:   linux/amd64
+2026-03-28T05:32:25.2439476Z ##[endgroup]
+2026-03-28T05:32:25.2444829Z Storage driver is not 'overlay', so not overriding storage configuration
+2026-03-28T05:32:25.2453399Z Performing build from Containerfile
+2026-03-28T05:32:25.2470650Z [command]/usr/bin/buildah bud -f /home/runner/work/bazzite-workstation/bazzite-workstation/Containerfile --label containers.bootc=1 --label io.artifacthub.package.deprecated=false --label io.artifacthub.package.keywords=bootc,ublue,universal-blue --label io.artifacthub.package.license=Apache-2.0 --label io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/120078124?s=200&v=4 --label io.artifacthub.package.prerelease=false --label io.artifacthub.package.readme-url=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md --label org.opencontainers.image.created=2026-03-28T05:32:24Z --label org.opencontainers.image.description=Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling --label org.opencontainers.image.documentation=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md --label org.opencontainers.image.licenses=Apache-2.0 --label org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759 --label org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile --label org.opencontainers.image.title=bazzite-workstation --label org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759 --label org.opencontainers.image.vendor=rjallais-workstation --label org.opencontainers.image.version=testing.20260328 --build-arg DEFAULT_TAG=testing --format docker --tls-verify=true --secret id=github_token,src=/tmp/github_token -t bazzite-workstation:testing /home/runner/work/bazzite-workstation/bazzite-workstation
+2026-03-28T05:32:27.7954963Z [1/2] STEP 1/5: FROM scratch AS ctx
+2026-03-28T05:32:27.8038429Z [1/2] STEP 2/5: COPY build_files /
+2026-03-28T05:32:27.8692358Z [1/2] STEP 3/5: COPY bin /bin
+2026-03-28T05:32:27.9306881Z [1/2] STEP 4/5: COPY mise.ci.toml /mise.toml
+2026-03-28T05:32:27.9920587Z [1/2] STEP 5/5: COPY --from=ghcr.io/projectbluefin/common:latest /system_files /oci/common
+2026-03-28T05:32:28.0883584Z Trying to pull ghcr.io/projectbluefin/common:latest...
+2026-03-28T05:32:28.2554471Z Getting image source signatures
+2026-03-28T05:32:28.2555529Z Copying blob sha256:b95a9e460bcf183ccbc1cb819385d2e7952776b18b14a1620e8bfa888aba78ff
+2026-03-28T05:32:29.2696227Z Copying config sha256:444a4845d954ae080531a72292839683cf271011d03cb1d0c7a5b396f0fc7c11
+2026-03-28T05:32:29.2713774Z Writing manifest to image destination
+2026-03-28T05:32:29.5279223Z [2/2] STEP 1/5: FROM ghcr.io/ublue-os/bazzite-gnome:testing
+2026-03-28T05:32:29.5281459Z Trying to pull ghcr.io/ublue-os/bazzite-gnome:testing...
+2026-03-28T05:32:29.7185780Z Getting image source signatures
+2026-03-28T05:32:29.7217714Z Copying blob sha256:5aadcd1d3ee24747aea43c2407efe83f9dcf5d2d2621f756f962bcd3e9815851
+2026-03-28T05:32:29.7220877Z Copying blob sha256:7e404408c3d00b0d3e356dc3ebc4a3703bb61399ed62542f8467767948d0ee5c
+2026-03-28T05:32:29.7222063Z Copying blob sha256:7d5601f38ef63cbc6137da816a5681214d464762496a7e2f5791d75c90aff429
+2026-03-28T05:32:29.7222695Z Copying blob sha256:dcec576f9831f619f7b5d4ae38a5a529768b9e027d54e8c3a77c2053104f3ec8
+2026-03-28T05:32:29.7223522Z Copying blob sha256:9fe8cfece894c0e8ecd9e5c7b6b6fbffc6207bd256205670f82d18e272dd4dc4
+2026-03-28T05:32:29.7224272Z Copying blob sha256:c00e82a532a2b342b8fda30f59c2179e741b57ae935b6b6eccd3e4605b68e3bc
+2026-03-28T05:32:29.8051033Z Copying blob sha256:7540ee537418f680ce4f795db0f2ef8469dcd875cb1ad959881db009dd31c94e
+2026-03-28T05:32:29.8163483Z Copying blob sha256:e6d4b245c2f1ab0ac5d3aceda89f62a0eb63d5c871862bf119d08ad99a926696
+2026-03-28T05:32:29.8351141Z Copying blob sha256:3c39b202b4e524df843cbdad67171786d7f41c36a9ce812dfc418bfcedb79278
+2026-03-28T05:32:29.8738883Z Copying blob sha256:1820668bacab41b9a95c89c353d99a37e3d64fd2db5afee471e243041507b886
+2026-03-28T05:32:30.0510304Z Copying blob sha256:803d05aa26d263254343738805d058aa87882122efd2c41bf737521d20bf4e4c
+2026-03-28T05:32:30.2453868Z Copying blob sha256:c9f18e1c2db08c3f783af8ea2cd9f6caa2534c7ad84e83f2298d0dc8fccc8b3b
+2026-03-28T05:32:34.9365772Z Copying blob sha256:15bb631857282ba8c64a6f63c1f3aa7bc2e65bdec260836f9b914b587353290f
+2026-03-28T05:32:34.9461194Z Copying blob sha256:ff79093df342da9a6978e4f1dd7c5f841a15c0b98eb60b344fb4f048624ea79e
+2026-03-28T05:32:35.0192940Z Copying blob sha256:025e2bf7b22bc5fa741bf46a0a3c49f533120cdef0fa2fb1926003a68ed98466
+2026-03-28T05:32:36.5709917Z Copying blob sha256:e4a0ed0c5d9d9ceeb3553d0cc8e7996bab9e83882fb34339e29d8dcf62e42417
+2026-03-28T05:32:36.8691974Z Copying blob sha256:9c373dff4599f3db25fc91a7adcf76d35870d7de99eee4caf7fc537fdf027b82
+2026-03-28T05:32:36.8780104Z Copying blob sha256:c5f276555597b9ce93f082e0f20fbcca5d5648e7fd508c9512c45716c713a367
+2026-03-28T05:32:36.9195373Z Copying blob sha256:8900e51c772d6d7b3ecb97906d645a62ca3ef0f83beb13d99fcff21a5375c922
+2026-03-28T05:32:38.2642868Z Copying blob sha256:5db4a0149a780aba2c4edb5c8b6a46e276a67fca10dbf3e01d87bf895ebb89c2
+2026-03-28T05:32:38.9099089Z Copying blob sha256:2306901156a259dcbcf74d8aaafbfa4ea26a1da12a30e9e6b423d59d7a895945
+2026-03-28T05:32:38.9336006Z Copying blob sha256:0c9cfea6b9876ddc960153f376d851a8c6b90e77a37a3cb506dff5ea5293f5b3
+2026-03-28T05:32:38.9803977Z Copying blob sha256:da9c2e6a6ce6fe1986bcdab4b791cc2afeab0518307204677d69500fee4e32fe
+2026-03-28T05:32:39.0711536Z Copying blob sha256:a21586976e0b8ddcd3f09ae4a203925929ce01db486cc4788fbd1379a547d739
+2026-03-28T05:32:39.6602606Z Copying blob sha256:537d90ec78d18fa696bb3c23b28f1c5029cf159126d66a455d34acd63a5c169a
+2026-03-28T05:32:40.3351180Z Copying blob sha256:0becc379e392f3f745aff91a2fbd65d863ed6731e26b9095d31b8680246c373a
+2026-03-28T05:32:40.4221650Z Copying blob sha256:1323186704d75740b438db2e04799c765b6d48b6dc1e2b9705ed57f9737fa4ed
+2026-03-28T05:32:40.7999146Z Copying blob sha256:70fa201671c709334b509502baa54e82e74118852b3dcbd73b81fa42e30cacd2
+2026-03-28T05:32:41.3591954Z Copying blob sha256:6aec2818d028f59e95e10b8e3d153f988987d236ec5f045fffacb5be6ccea060
+2026-03-28T05:32:42.0012227Z Copying blob sha256:0f3b1365061f9936cd57a4dfa637fd6e2205ffefbec59d777984a806897738b3
+2026-03-28T05:32:42.1848206Z Copying blob sha256:faf092ca12cf2fd447168071977356908b68a20a5d961031f316f097eaefa4c4
+2026-03-28T05:32:42.2036772Z Copying blob sha256:f00df79ef441b1edd8768c191c485ccba84d7f6ea2988457733a6e2ce4883766
+2026-03-28T05:32:42.9012683Z Copying blob sha256:a0dba4dff5a65b3a8b01d2f6162af4498f349b39f140f3f7a77037ee8a831dac
+2026-03-28T05:32:43.5929515Z Copying blob sha256:51a51e2fea8721893c4acf024281108a33025f84924a62b1ee0d596bc2fb2db9
+2026-03-28T05:32:43.6992151Z Copying blob sha256:b2138645af0238815916e645bd59616d9500fc018ac09ee811ac70e78d60e9c8
+2026-03-28T05:32:43.7044893Z Copying blob sha256:86010fb5e978402ecfc87c48fae9965bb3f2638e485ff3e5dde1535cb6dd6f65
+2026-03-28T05:32:43.9548085Z Copying blob sha256:a628c472af013d6f07e1af64fba3ace1e65bccde15297e3fe05f5e4375663ed9
+2026-03-28T05:32:44.5736279Z Copying blob sha256:d38cdae7788459be8fb83318352b5899d14fd8317affb4bf5e75980878aa52b0
+2026-03-28T05:32:44.5782281Z Copying blob sha256:91e828ec8cd9cef8dfa89d428c27078f35534a715412fc771fc14a6f14d60c0c
+2026-03-28T05:32:44.5812875Z Copying blob sha256:bae53e13b4e832728ca4e82946008678ccbfbfec926be06bb934c7da2c1bc926
+2026-03-28T05:32:44.6950935Z Copying blob sha256:fc6b44082d6e1d49f80e2cc9dfe6d34ff853f3bb6086746555e1e4ba103d522a
+2026-03-28T05:32:44.7659156Z Copying blob sha256:5a17dfaf74bc445cebcef8b22b9d4a2cc4154011c569b6ffafa65829fc0f86e8
+2026-03-28T05:32:45.0261451Z Copying blob sha256:b8f41a03959f3e8ff22eff9a6b3a6ddf8239a3187d76e0e3f3f4546073d9d6bf
+2026-03-28T05:32:45.9332331Z Copying blob sha256:d49c8f4573eef9e9c8809c4e2d03cb18cf7de272737679534303ccfa2ca3c533
+2026-03-28T05:32:46.0895612Z Copying blob sha256:9f3a9c773c733189850bfdf669d1edb4589bdf7ff696276c4a4acc2450922a58
+2026-03-28T05:32:46.1877807Z Copying blob sha256:cecd0d8830bb4c4b92b0a170f9fb72a970e06e4a92c7a51c438ca0035e23073f
+2026-03-28T05:32:46.2126099Z Copying blob sha256:6064e7d4a390aa275921a8469db4048830a615b4ce3a4570fb5b13996c9e2ca5
+2026-03-28T05:32:46.2726049Z Copying blob sha256:0f9b23f5d98c6ec034ff58351cdb2f5f4ae3e135fac0aaa35bdcc9b85ba32528
+2026-03-28T05:32:46.5656524Z Copying blob sha256:831d92e3b7cdb582086ce9207b2394d3b95e1640745a3e94d3f19217288097d8
+2026-03-28T05:32:54.5026786Z Copying blob sha256:22e388851a0a5e54a23d48bc4de5f449a513e44f3986c110b657fbd14a22950f
+2026-03-28T05:32:54.5060418Z Copying blob sha256:cd2cd8c81a8b2ef3aa082013268eab8e10f263bf830006e06dcdbc77ad245b71
+2026-03-28T05:32:55.1828269Z Copying blob sha256:d015112acd823bd67c4e2012a6e9d84d542c0b9075fe29d93b281d15410f6555
+2026-03-28T05:32:55.1929759Z Copying blob sha256:0bfc2e764a82c764b0942547f4e69a83260ab8bea09ddb9dd4458e6c85e565d1
+2026-03-28T05:32:56.4301282Z Copying blob sha256:493a4f7419028c7789ed910bd9bb29d1cb89cc5afc09dda80344bca2faa3fe87
+2026-03-28T05:32:56.4685244Z Copying blob sha256:726078d24bee003249cda4e7f2bacd1d189f860ac67d12638ac29c9155e7a6f6
+2026-03-28T05:32:56.5272073Z Copying blob sha256:3c0f9b9245eb5964dc70156ecea8b86549a5aeac47ba1b55afccd56fe3e1c214
+2026-03-28T05:32:57.6183221Z Copying blob sha256:5e1141861c6a8d04cdbf31dc03f23a38f62b5be74565f112335f2e4501a12d8a
+2026-03-28T05:32:57.6223410Z Copying blob sha256:f4964eb191488bfbfaa2620862d8d6c58c3718cfd08f9bcb7fcbec965ea176d5
+2026-03-28T05:32:58.4945317Z Copying blob sha256:a5562ad3e126c2d54a5c0fd486dc95f0ebc26183255ed69896b8c8dd71fd8a1a
+2026-03-28T05:32:58.4958786Z Copying blob sha256:d2e8cd8fd5c7d2ec21802abc25ae614f59020c8c63068a59734e1762008ebfe7
+2026-03-28T05:32:59.3380171Z Copying blob sha256:69c156aca8bde82e49819c19bbe78b0a8d5930657fb6497d3fb5091d85296985
+2026-03-28T05:32:59.3393695Z Copying blob sha256:a0612eddc80eef8ac7a8dac580d2668ab7ebfb356bcb21eeff78d9e2250130c0
+2026-03-28T05:32:59.8446931Z Copying blob sha256:4a03b215f0ac708f72bc8833d554bddef20e1446fe0f8374ee43d0fd06fbab8f
+2026-03-28T05:32:59.8456407Z Copying blob sha256:5cfa467e8f3598febb8fab700680b49c7d89529d70ddbb8d9297f594bc8d99db
+2026-03-28T05:33:00.8151536Z Copying blob sha256:dda7a17475f6daf19bcbd6848c875d84d75e8fd8a4c5aa6a6f160e8e049eafe8
+2026-03-28T05:33:02.6881741Z Copying blob sha256:ff057ae6dbdcdf30d92c47dd919a3e27fcef9f63834aaedb757fd451116bc2d6
+2026-03-28T05:33:03.4649788Z Copying blob sha256:1178c8b7568aa9e863490aaab5bfa6e7b7d12ce81fd7b114e4e31a5324228896
+2026-03-28T05:33:03.4656172Z Copying blob sha256:017d2902452585c23aeab4b41ec3da562f617a4d337ab405e777c895dd864ed0
+2026-03-28T05:33:03.4730452Z Copying blob sha256:33f948f2d71f2bb7ca0e1205e60498026a91f97de9a55ce09682d38421405bb2
+2026-03-28T05:33:04.7899300Z Copying blob sha256:b72dedb46aa12af05fbc012992a3e9f3d7265365e74f63251dea899777749cc8
+2026-03-28T05:33:04.7934164Z Copying blob sha256:9eb976e920fa4b6f555ae51851f3fc36e69c4b1ae2e5f1d86658e7f5c24b6fed
+2026-03-28T05:33:06.1831724Z Copying blob sha256:294a049d3e59e3fbc191d291b54c545f211666301b011b4accebbe9f6838d56c
+2026-03-28T05:33:06.1898122Z Copying blob sha256:1ab91f13afb35448ade0a43505a24912540a6dab26c75ffde4d699162ca1a2eb
+2026-03-28T05:33:08.0800141Z Copying blob sha256:2e7d2e162ca096125e9fb9c0cbd32dbd0042940249ea89f34230bd6ea15dfd71
+2026-03-28T05:33:08.9358836Z Copying blob sha256:e5530539a4869fcd56476218cf0f73e2eca752f0e352474fd8643c1d43b9f55f
+2026-03-28T05:33:08.9371649Z Copying blob sha256:944a75becf77422aca1bbfcfdaf93b04f649db7d48f1f8b5c33d73178a5ebbae
+2026-03-28T05:33:10.9528818Z Copying blob sha256:ca8316b79de2543eefb693a819eb0a0b7886071e0737366aae9c3e9a38c9b754
+2026-03-28T05:33:11.8946621Z Copying blob sha256:6835a0f88c836523622d9a4f77cd06eb80615ae0c53eece6969d15f43c1cb992
+2026-03-28T05:33:11.8961815Z Copying blob sha256:cc4dbc5fe685b49c9f68024f55f96512e4351d6e4a3ab8daa66cdaf0c1fb1950
+2026-03-28T05:33:12.9939057Z Copying blob sha256:8a06e0f853e83ab1e7dd578bed15b9c41c7a1b56e596c3658a145540515de636
+2026-03-28T05:33:12.9958802Z Copying blob sha256:bf14b9b7dce85aaf4593feba8a8770249ef231860f1c53cf21357051863086ab
+2026-03-28T05:33:13.8378934Z Copying blob sha256:5b6a0d1489ebde1eabbecc122003996bd881d5bfa6d8b7838118c38f2ac94809
+2026-03-28T05:33:13.8405835Z Copying blob sha256:d89193c4fb2d116aecf35ba6d983ea43219e04e9f9c067e5905df673ef8251dc
+2026-03-28T05:33:14.5645340Z Copying blob sha256:ea3ee7ea5dc4dc10b5e7ba669f597d4f7ba377bb720009d27c0db1530491ab68
+2026-03-28T05:33:14.5676152Z Copying blob sha256:4f582a6ab82303b5314e8e7144628a66b97e03d30ef0f77745e08326f4d386e2
+2026-03-28T05:33:14.5788722Z Copying blob sha256:3049a013a5820fc3603965c90e348185f707b3f484ec77ad2ddb15d1d2af9c7c
+2026-03-28T05:33:16.0339861Z Copying blob sha256:0c3bc85d621ca06f24125cd03d79f52accd18334e869f83f00fd974ea4fed8c6
+2026-03-28T05:33:16.6115385Z Copying blob sha256:2de56f28789e10ebf903a49947de3809733e4d45fa21845ad925364a2bc935f5
+2026-03-28T05:33:16.6133247Z Copying blob sha256:adf946a6f5e0b43af3cf41efab1304a7d2e5f3d4caa341975412a7c6674cfb57
+2026-03-28T05:33:16.6168515Z Copying blob sha256:ea12bf2b6c5a01cbdd1cb8323f9d30aff13e81f6afa957db3380d5dfba4624ce
+2026-03-28T05:33:21.0492909Z Copying blob sha256:2bce4a50b2bcb33334ec026cf9658e8e73dca747911d15652fdd21b7946ee0f0
+2026-03-28T05:33:21.6604764Z Copying blob sha256:afe8b0ebcca1d921f043fa520ac174fb548956634913389d02fd612be9b30684
+2026-03-28T05:33:21.6656192Z Copying blob sha256:ff3b79db8ebf8e60e0f9ebe0058a25e742af673222734f842e9cc58c5a0e1e86
+2026-03-28T05:33:22.7169393Z Copying blob sha256:274922f850fc2a423f808c5a44c8db00906026a99c27be51f6d1ac05dcb4399a
+2026-03-28T05:33:22.7230517Z Copying blob sha256:9b7057d698bd3beb4dea817cbbf5fbcc94aebc5de323f9a3af597a6c51d7ba58
+2026-03-28T05:33:24.1933287Z Copying blob sha256:8ceffb62fcfd1b3e16c4b72aec1b67cf674ed6d54a82a98f1ac7a4f42b8252f3
+2026-03-28T05:33:24.1981647Z Copying blob sha256:ad312c5c40ccd18a3c639cc139211f3c4284e568b69b2e748027cee057986fe0
+2026-03-28T05:33:24.9929486Z Copying blob sha256:bd9ddc54bea929a22b334e73e026d4136e5b73f5cc29942896c72e4ece69b13d
+2026-03-28T05:34:21.4208281Z Copying config sha256:94b6e65cb9596f53678c1af5a468a1e5bd95214e712f2794cac0772347281069
+2026-03-28T05:34:21.4209322Z Writing manifest to image destination
+2026-03-28T05:34:21.8446074Z [2/2] STEP 2/5: RUN --mount=type=bind,from=ctx,source=/,target=/ctx     --mount=type=secret,id=github_token     export GITHUB_TOKEN=$(cat /run/secrets/github_token 2>/dev/null || true) &&     mkdir -p /.mise/tasks/ &&     cp -r /ctx/finalize /ctx/install /ctx/prepare /.mise/tasks/ &&     cp /ctx/mise.toml /mise.toml &&     cp /ctx/bin/mise /bin/mise &&     chmod +x /bin/mise &&     find /.mise/tasks -type f -name '*.nu' -exec chmod +x {} \; &&     ./bin/mise install
+2026-03-28T05:34:22.1256532Z mise: installing mise...
+2026-03-28T05:34:22.2320664Z 
+2026-03-28T05:34:22.3015218Z ####                                                                       6.2%
+2026-03-28T05:34:22.3016454Z ######################################################################## 100.0%
+2026-03-28T05:34:22.6214275Z mise: installed successfully to //.mise/mise-2026.3.13
+2026-03-28T05:34:23.1740423Z mise aqua:nushell/nushell@0.111.0 [1/3] install
+2026-03-28T05:34:23.3060039Z mise aqua:nushell/nushell@0.111.0 [1/3] download nu-0.111.0-x86_64-unknown-linux-musl.tar.gz
+2026-03-28T05:34:23.6907345Z mise aqua:nushell/nushell@0.111.0 [2/3] checksum nu-0.111.0-x86_64-unknown-linux-musl.tar.gz
+2026-03-28T05:34:23.7473483Z mise aqua:nushell/nushell@0.111.0 [3/3] extract nu-0.111.0-x86_64-unknown-linux-musl.tar.gz
+2026-03-28T05:34:24.4649696Z mise aqua:nushell/nushell@0.111.0 ✓ installed
+2026-03-28T05:34:24.5874471Z [2/2] STEP 3/5: RUN --mount=type=cache,dst=/var/cache ./bin/mise run install:packages
+2026-03-28T05:34:24.7112559Z [install:packages] $ /.mise/tasks/install/packages.nu
+2026-03-28T05:34:24.7829357Z Updating and loading repositories:
+2026-03-28T05:34:26.6129707Z  Fedora 43 - x86_64 - Updates           100% |  23.1 MiB/s |  38.1 MiB |  00m02s
+2026-03-28T05:34:26.9461235Z  Fedora 43 - x86_64                     100% |  16.4 MiB/s |  35.4 MiB |  00m02s
+2026-03-28T05:34:27.4809630Z  Fedora 43 - x86_64 - Updates Archive   100% |  13.4 MiB/s |  32.7 MiB |  00m02s
+2026-03-28T05:34:36.2124580Z Repositories loaded.
+2026-03-28T05:34:36.5486829Z Package "wireguard-tools-1.0.20250521-2.fc43.x86_64" is already installed.
+2026-03-28T05:34:36.5487687Z 
+2026-03-28T05:34:36.5504800Z Package                       Arch   Version              Repository      Size
+2026-03-28T05:34:36.5505474Z Installing:
+2026-03-28T05:34:36.5505957Z  adcli                        x86_64 0.9.2-10.fc43        fedora     339.0 KiB
+2026-03-28T05:34:36.5506704Z  android-tools                x86_64 1:35.0.2-13.fc43     updates      6.0 MiB
+2026-03-28T05:34:36.5507601Z  autoconf                     noarch 2.72-7.fc43          fedora       2.8 MiB
+2026-03-28T05:34:36.5508565Z  automake                     noarch 1.18.1-2.fc43        fedora       1.8 MiB
+2026-03-28T05:34:36.5509517Z  bcache-tools                 x86_64 1.1-14.fc43          fedora     143.5 KiB
+2026-03-28T05:34:36.5510424Z  bcc                          x86_64 0.35.0-2.fc43        fedora       2.4 MiB
+2026-03-28T05:34:36.5511106Z  bpftop                       x86_64 0.7.1-2.fc43         updates      1.9 MiB
+2026-03-28T05:34:36.5512009Z  bpftrace                     x86_64 0.24.2-1.fc43        updates     12.7 MiB
+2026-03-28T05:34:36.5513004Z  cascadia-code-fonts          noarch 2407.24-2.fc43       updates      3.6 MiB
+2026-03-28T05:34:36.5513967Z  ccache                       x86_64 4.11.3-2.fc43        fedora       1.6 MiB
+2026-03-28T05:34:36.5515184Z  clang                        x86_64 21.1.8-4.fc43        updates     65.5 MiB
+2026-03-28T05:34:36.5516087Z  clang-tools-extra            x86_64 21.1.8-4.fc43        updates     65.9 MiB
+2026-03-28T05:34:36.5516853Z  cmake                        x86_64 3.31.11-1.fc43       updates     34.5 MiB
+2026-03-28T05:34:36.5517894Z  cockpit-machines             noarch 349.1-1.fc43         updates    944.4 KiB
+2026-03-28T05:34:36.5518751Z  cockpit-ostree               noarch 1:222-1.fc43         updates    340.4 KiB
+2026-03-28T05:34:36.5519535Z  compiler-rt                  x86_64 21.1.8-4.fc43        updates     41.1 MiB
+2026-03-28T05:34:36.5520267Z  cryfs                        x86_64 0.11.3-13.fc43       fedora       4.0 MiB
+2026-03-28T05:34:36.5520961Z  davfs2                       x86_64 1.7.2-1.fc43         fedora     372.6 KiB
+2026-03-28T05:34:36.5521734Z  flatpak-builder              x86_64 1.4.7-1.fc43         updates    579.5 KiB
+2026-03-28T05:34:36.5522498Z  foo2zjs                      x86_64 0.20201003-28.fc43   fedora       2.1 MiB
+2026-03-28T05:34:36.5523213Z  fuse-encfs                   x86_64 1.9.5-26.fc43        fedora       1.5 MiB
+2026-03-28T05:34:36.5523926Z  gdb                          x86_64 17.1-4.fc43          updates    469.1 KiB
+2026-03-28T05:34:36.5524648Z  genisoimage                  x86_64 1.1.11-60.fc43       fedora       1.1 MiB
+2026-03-28T05:34:36.5525478Z  git-credential-libsecret     x86_64 2.53.0-1.fc43        updates     19.6 KiB
+2026-03-28T05:34:36.5526323Z  git-subtree                  noarch 2.53.0-1.fc43        updates     93.4 KiB
+2026-03-28T05:34:36.5527057Z  git-svn                      noarch 2.53.0-1.fc43        updates    212.1 KiB
+2026-03-28T05:34:36.5528002Z  gnome-tweaks                 noarch 49.0-1.fc43          updates      1.5 MiB
+2026-03-28T05:34:36.5528752Z  ifuse                        x86_64 1.1.4-19.fc43        fedora      60.2 KiB
+2026-03-28T05:34:36.5529490Z  igt-gpu-tools                x86_64 2.0-2.fc43           fedora      25.8 MiB
+2026-03-28T05:34:36.5530240Z  incus                        x86_64 6.19.1-1.fc43        updates     68.9 MiB
+2026-03-28T05:34:36.5530966Z  incus-agent                  x86_64 6.19.1-1.fc43        updates     18.1 MiB
+2026-03-28T05:34:36.5531982Z  incus-client                 x86_64 6.19.1-1.fc43        updates     22.9 MiB
+2026-03-28T05:34:36.5532745Z  incus-selinux                noarch 6.19.1-1.fc43        updates     10.1 KiB
+2026-03-28T05:34:36.5533485Z  iotop-c                      x86_64 1.30-2.fc43          fedora     139.9 KiB
+2026-03-28T05:34:36.5534287Z  jetbrains-mono-fonts-all     noarch 2.304-9.fc43         fedora       0.0   B
+2026-03-28T05:34:36.5535129Z  krb5-workstation             x86_64 1.22.2-2.fc43        updates      2.5 MiB
+2026-03-28T05:34:36.5535881Z  libgda                       x86_64 1:6.0.0-14.fc43      updates      7.5 MiB
+2026-03-28T05:34:36.5536602Z  libgda-sqlite                x86_64 1:6.0.0-14.fc43      updates     15.3 KiB
+2026-03-28T05:34:36.5537618Z  libsss_autofs                x86_64 2.12.0-1.fc43        updates     65.4 KiB
+2026-03-28T05:34:36.5538424Z  libvirt-daemon-kvm           x86_64 11.6.0-3.fc43        updates      0.0   B
+2026-03-28T05:34:36.5539196Z  libvirt-dbus                 x86_64 1.4.1-8.fc43         fedora     323.8 KiB
+2026-03-28T05:34:36.5539945Z  libvirt-nss                  x86_64 11.6.0-3.fc43        updates     47.0 KiB
+2026-03-28T05:34:36.5540715Z  libvirt-ssh-proxy            x86_64 11.6.0-3.fc43        updates     19.9 KiB
+2026-03-28T05:34:36.5541441Z  lld                          x86_64 21.1.8-4.fc43        updates     44.2 KiB
+2026-03-28T05:34:36.5542103Z  lldb                         x86_64 21.1.8-4.fc43        updates     26.8 MiB
+2026-03-28T05:34:36.5542787Z  llvm                         x86_64 21.1.8-4.fc43        updates     89.3 MiB
+2026-03-28T05:34:36.5543599Z  ltrace                       x86_64 0.7.91-53.fc43       fedora     292.7 KiB
+2026-03-28T05:34:36.5544320Z  meson                        noarch 1.8.5-3.fc43         updates     13.3 MiB
+2026-03-28T05:34:36.5545307Z  musl-devel                   x86_64 1.2.5-5.fc43         updates    590.5 KiB
+2026-03-28T05:34:36.5546078Z  musl-gcc                     x86_64 1.2.5-5.fc43         updates      7.2 KiB
+2026-03-28T05:34:36.5546881Z  musl-libc                    x86_64 1.2.5-5.fc43         updates    831.3 KiB
+2026-03-28T05:34:36.5547859Z  nicstat                      x86_64 1.95-26.fc43         fedora      53.9 KiB
+2026-03-28T05:34:36.5548618Z  ninja-build                  x86_64 1.13.1-4.fc43        fedora     480.7 KiB
+2026-03-28T05:34:36.5549350Z  nu                           x86_64 0.99.1-16.fc43       updates     33.7 MiB
+2026-03-28T05:34:36.5550049Z  numactl                      x86_64 2.0.19-3.fc43        fedora     157.4 KiB
+2026-03-28T05:34:36.5550837Z  oddjob-mkhomedir             x86_64 0.34.7-17.fc43       fedora      44.3 KiB
+2026-03-28T05:34:36.5551689Z  opendyslexic-fonts           noarch 0.940-11.fc43        fedora     888.7 KiB
+2026-03-28T05:34:36.5552541Z  osbuild-selinux              x86_64 176-1.fc43           updates     16.3 KiB
+2026-03-28T05:34:36.5553316Z  perf                         x86_64 6.19.9-200.fc43      updates     12.1 MiB
+2026-03-28T05:34:36.5554083Z  podman-compose               noarch 1.5.0-4.fc43         fedora     667.4 KiB
+2026-03-28T05:34:36.5554916Z  podman-machine               x86_64 5:5.8.1-1.fc43       updates     12.0   B
+2026-03-28T05:34:36.5555700Z  podman-tui                   x86_64 1.11.1-1.fc43        updates     31.5 MiB
+2026-03-28T05:34:36.5556457Z  powertop                     x86_64 2.15-11.fc43         fedora     584.7 KiB
+2026-03-28T05:34:36.5557222Z  python3-pygit2               x86_64 1.18.2-2.fc43        fedora       1.5 MiB
+2026-03-28T05:34:36.5558279Z  qemu-user-binfmt             x86_64 2:10.1.5-1.fc43      updates      6.4 KiB
+2026-03-28T05:34:36.5559114Z  qemu-user-static             x86_64 2:10.1.5-1.fc43      updates     44.4 KiB
+2026-03-28T05:34:36.5559873Z  samba                        x86_64 2:4.23.5-2.fc43      updates      2.5 MiB
+2026-03-28T05:34:36.5560643Z  setools-console              x86_64 4.6.0-4.fc43         updates    139.4 KiB
+2026-03-28T05:34:36.5561421Z  sssd-ad                      x86_64 2.12.0-1.fc43        updates    416.1 KiB
+2026-03-28T05:34:36.5562379Z  sssd-krb5                    x86_64 2.12.0-1.fc43        updates     84.9 KiB
+2026-03-28T05:34:36.5563126Z  strace                       x86_64 6.19-1.fc43          updates      2.7 MiB
+2026-03-28T05:34:36.5563865Z  sysprof                      x86_64 49.0-1.fc43          fedora       1.4 MiB
+2026-03-28T05:34:36.5564605Z  tiptop                       x86_64 2.3.2-5.fc43         fedora     118.7 KiB
+2026-03-28T05:34:36.5565347Z  trace-cmd                    x86_64 3.3.1-3.fc43         fedora       1.5 MiB
+2026-03-28T05:34:36.5566083Z  ugrep                        x86_64 7.2.2-2.fc43         fedora       2.8 MiB
+2026-03-28T05:34:36.5566860Z  util-linux-script            x86_64 2.41.3-7.fc43        updates    138.3 KiB
+2026-03-28T05:34:36.5567883Z  valgrind                     x86_64 1:3.26.0-2.fc43      updates     28.2 MiB
+2026-03-28T05:34:36.5568667Z  virt-manager                 noarch 5.1.0-3.fc43         updates      3.5 MiB
+2026-03-28T05:34:36.5569440Z  virt-v2v                     x86_64 1:2.10.0-1.fc43      updates     21.6 MiB
+2026-03-28T05:34:36.5570196Z  virt-viewer                  x86_64 11.0-16.fc43         fedora       1.2 MiB
+2026-03-28T05:34:36.5570951Z  waypipe                      x86_64 0.10.5-2.fc43        updates      1.9 MiB
+2026-03-28T05:34:36.5571600Z Installing dependencies:
+2026-03-28T05:34:36.5572282Z  appstream-compose            x86_64 1.1.0-1.fc43         fedora     375.3 KiB
+2026-03-28T05:34:36.5573104Z  argyllcms                    x86_64 3.4.1-2.fc43         updates     50.2 MiB
+2026-03-28T05:34:36.5573894Z  argyllcms-data               noarch 3.4.1-2.fc43         updates    647.6 KiB
+2026-03-28T05:34:36.5574677Z  boost-atomic                 x86_64 1.83.0-17.fc43       fedora      20.9 KiB
+2026-03-28T05:34:36.5575672Z  boost-chrono                 x86_64 1.83.0-17.fc43       fedora      37.5 KiB
+2026-03-28T05:34:36.5576475Z  boost-filesystem             x86_64 1.83.0-17.fc43       fedora     143.6 KiB
+2026-03-28T05:34:36.5577334Z  boost-program-options        x86_64 1.83.0-17.fc43       fedora     280.8 KiB
+2026-03-28T05:34:36.5578400Z  boost-regex                  x86_64 1.83.0-17.fc43       fedora     291.1 KiB
+2026-03-28T05:34:36.5579164Z  clang-libs                   x86_64 21.1.8-4.fc43        updates    114.9 MiB
+2026-03-28T05:34:36.5580019Z  clang-resource-filesystem    x86_64 21.1.8-4.fc43        updates     15.3 KiB
+2026-03-28T05:34:36.5580878Z  clang20-libs                 x86_64 20.1.8-2.fc43        fedora     118.6 MiB
+2026-03-28T05:34:36.5581711Z  clang20-resource-filesystem  x86_64 20.1.8-2.fc43        fedora      14.8 KiB
+2026-03-28T05:34:36.5582585Z  cmake-data                   noarch 3.31.11-1.fc43       updates      8.5 MiB
+2026-03-28T05:34:36.5583332Z  cowsql                       x86_64 1.15.9-2.fc43        fedora     195.8 KiB
+2026-03-28T05:34:36.5584078Z  ctags                        x86_64 6.2.1-1.fc43         updates      2.2 MiB
+2026-03-28T05:34:36.5584818Z  debugedit                    x86_64 5.2-3.fc43           fedora     214.0 KiB
+2026-03-28T05:34:36.5585581Z  elfutils                     x86_64 0.194-1.fc43         updates      2.9 MiB
+2026-03-28T05:34:36.5586422Z  foomatic-db-filesystem       noarch 4.0-82.20230810.fc43 fedora       0.0   B
+2026-03-28T05:34:36.5587266Z  gdb-headless                 x86_64 17.1-4.fc43          updates     16.2 MiB
+2026-03-28T05:34:36.5588323Z  gettext-common-devel         noarch 0.25.1-2.fc43        fedora     592.5 KiB
+2026-03-28T05:34:36.5589139Z  gettext-devel                x86_64 0.25.1-2.fc43        fedora       1.3 MiB
+2026-03-28T05:34:36.5589847Z  gsl                          x86_64 2.8-2.fc43           fedora       3.5 MiB
+2026-03-28T05:34:36.5590537Z  gtk-vnc2                     x86_64 1.5.0-3.fc43         fedora     228.0 KiB
+2026-03-28T05:34:36.5591294Z  gvisor-tap-vsock             x86_64 6:0.8.8-1.fc43       updates     12.2 MiB
+2026-03-28T05:34:36.5592160Z  gvisor-tap-vsock-gvforwarder x86_64 6:0.8.8-1.fc43       updates      5.8 MiB
+2026-03-28T05:34:36.5592956Z  gvnc                         x86_64 1.5.0-3.fc43         fedora     244.0 KiB
+2026-03-28T05:34:36.5593917Z  jetbrains-mono-fonts         noarch 2.304-9.fc43         fedora       2.3 MiB
+2026-03-28T05:34:36.5594790Z  jetbrains-mono-nl-fonts      noarch 2.304-9.fc43         fedora       3.2 MiB
+2026-03-28T05:34:36.5595612Z  kf5-filesystem               x86_64 5.116.0-5.fc43       fedora       1.4 KiB
+2026-03-28T05:34:36.5596378Z  krb5-pkinit                  x86_64 1.22.2-2.fc43        updates    125.2 KiB
+2026-03-28T05:34:36.5597085Z  lcms                         x86_64 1.19-42.fc43         fedora     244.2 KiB
+2026-03-28T05:34:36.5597951Z  lcms-libs                    x86_64 1.19-42.fc43         fedora     236.7 KiB
+2026-03-28T05:34:36.5598677Z  libburn                      x86_64 1.5.6-7.fc43         fedora     357.5 KiB
+2026-03-28T05:34:36.5599391Z  libgit2                      x86_64 1.9.2-1.fc43         updates      1.3 MiB
+2026-03-28T05:34:36.5600132Z  libguestfs-xfs               x86_64 1:1.58.1-1.fc43      updates      9.0   B
+2026-03-28T05:34:36.5600880Z  libipt                       x86_64 2.1.2-3.fc43         fedora     113.2 KiB
+2026-03-28T05:34:36.5601590Z  libisoburn                   x86_64 1.5.6-8.fc43         fedora       1.1 MiB
+2026-03-28T05:34:36.5602571Z  libisofs                     x86_64 1.5.6-7.fc43         fedora     504.3 KiB
+2026-03-28T05:34:36.5603585Z  libkadm5                     x86_64 1.22.2-2.fc43        updates    214.0 KiB
+2026-03-28T05:34:36.5604419Z  libnetapi                    x86_64 2:4.23.5-2.fc43      updates    477.6 KiB
+2026-03-28T05:34:36.5605359Z  liboping                     x86_64 1.10.0-35.fc43       fedora     175.9 KiB
+2026-03-28T05:34:36.5606251Z  libpanel                     x86_64 1.10.3-2.fc43        updates    572.2 KiB
+2026-03-28T05:34:36.5607399Z  libphodav                    x86_64 3.0-12.fc43          fedora     140.8 KiB
+2026-03-28T05:34:36.5608501Z  libserf                      x86_64 1.3.10-12.fc43       fedora     143.1 KiB
+2026-03-28T05:34:36.5609406Z  libsysprof                   x86_64 49.0-1.fc43          fedora     700.1 KiB
+2026-03-28T05:34:36.5610300Z  libtracefs                   x86_64 1.8.1-3.fc43         fedora       2.1 MiB
+2026-03-28T05:34:36.5611174Z  libusal                      x86_64 1.1.11-60.fc43       fedora     452.3 KiB
+2026-03-28T05:34:36.5612162Z  libvirt-glib                 x86_64 5.0.0-7.fc43         fedora     132.7 KiB
+2026-03-28T05:34:36.5613110Z  lld-libs                     x86_64 21.1.8-4.fc43        updates      6.5 MiB
+2026-03-28T05:34:36.5614051Z  llhttp                       x86_64 9.3.1-1.fc43         updates     92.8 KiB
+2026-03-28T05:34:36.5639801Z  llvm20-filesystem            x86_64 20.1.8-2.fc43        fedora       0.0   B
+2026-03-28T05:34:36.5640709Z  llvm20-libs                  x86_64 20.1.8-2.fc43        fedora     139.7 MiB
+2026-03-28T05:34:36.5641596Z  mingw-srvany-redistributable noarch 1.1-11.fc43          fedora     153.7 KiB
+2026-03-28T05:34:36.5642483Z  musl-filesystem              x86_64 1.2.5-5.fc43         updates      0.0   B
+2026-03-28T05:34:36.5643333Z  nbdkit-basic-filters         x86_64 1.46.2-1.fc43        updates    941.0 KiB
+2026-03-28T05:34:36.5644208Z  nbdkit-basic-plugins         x86_64 1.46.2-1.fc43        updates    465.4 KiB
+2026-03-28T05:34:36.5645073Z  nbdkit-curl-plugin           x86_64 1.46.2-1.fc43        updates     62.5 KiB
+2026-03-28T05:34:36.5645912Z  nbdkit-nbd-plugin            x86_64 1.46.2-1.fc43        updates     55.0 KiB
+2026-03-28T05:34:36.5646721Z  nbdkit-server                x86_64 1.46.2-1.fc43        updates    239.9 KiB
+2026-03-28T05:34:36.5647743Z  nbdkit-ssh-plugin            x86_64 1.46.2-1.fc43        updates     41.9 KiB
+2026-03-28T05:34:36.5648600Z  nbdkit-vddk-plugin           x86_64 1.46.2-1.fc43        updates     82.5 KiB
+2026-03-28T05:34:36.5649369Z  neon                         x86_64 0.36.0-3.fc43        updates    352.3 KiB
+2026-03-28T05:34:36.5650069Z  oddjob                       x86_64 0.34.7-17.fc43       fedora     138.8 KiB
+2026-03-28T05:34:36.5650767Z  osbuild                      x86_64 176-1.fc43           updates    845.7 KiB
+2026-03-28T05:34:36.5651713Z  osbuild-initrd               x86_64 176-1.fc43           updates      1.6 MiB
+2026-03-28T05:34:36.5652479Z  perl-Git-SVN                 noarch 2.53.0-1.fc43        updates    155.6 KiB
+2026-03-28T05:34:36.5653234Z  perl-YAML                    noarch 1.31-6.fc43          fedora     188.7 KiB
+2026-03-28T05:34:36.5654003Z  python3-dotenv               noarch 1.1.0-5.fc43         fedora     135.3 KiB
+2026-03-28T05:34:36.5654790Z  python3-librepo              x86_64 1.20.0-4.fc43        fedora     181.8 KiB
+2026-03-28T05:34:36.5655568Z  python3-lldb                 x86_64 21.1.8-4.fc43        updates      2.0 MiB
+2026-03-28T05:34:36.5656347Z  python3-osbuild              x86_64 176-1.fc43           updates      1.7 MiB
+2026-03-28T05:34:36.5657097Z  qemu-kvm                     x86_64 2:10.1.5-1.fc43      updates      0.0   B
+2026-03-28T05:34:36.5658131Z  qemu-user-static-alpha       x86_64 2:10.1.5-1.fc43      updates      4.1 MiB
+2026-03-28T05:34:36.5659002Z  qemu-user-static-arm         x86_64 2:10.1.5-1.fc43      updates     10.8 MiB
+2026-03-28T05:34:36.5659868Z  qemu-user-static-hexagon     x86_64 2:10.1.5-1.fc43      updates      5.9 MiB
+2026-03-28T05:34:36.5660729Z  qemu-user-static-hppa        x86_64 2:10.1.5-1.fc43      updates      4.2 MiB
+2026-03-28T05:34:36.5661612Z  qemu-user-static-loongarch64 x86_64 2:10.1.5-1.fc43      updates      4.7 MiB
+2026-03-28T05:34:36.5662490Z  qemu-user-static-m68k        x86_64 2:10.1.5-1.fc43      updates      4.3 MiB
+2026-03-28T05:34:36.5663356Z  qemu-user-static-microblaze  x86_64 2:10.1.5-1.fc43      updates      8.1 MiB
+2026-03-28T05:34:36.5664221Z  qemu-user-static-mips        x86_64 2:10.1.5-1.fc43      updates     30.8 MiB
+2026-03-28T05:34:36.5665255Z  qemu-user-static-or1k        x86_64 2:10.1.5-1.fc43      updates      4.0 MiB
+2026-03-28T05:34:36.5666098Z  qemu-user-static-ppc         x86_64 2:10.1.5-1.fc43      updates     15.0 MiB
+2026-03-28T05:34:36.5666948Z  qemu-user-static-riscv       x86_64 2:10.1.5-1.fc43      updates     10.8 MiB
+2026-03-28T05:34:36.5668066Z  qemu-user-static-s390x       x86_64 2:10.1.5-1.fc43      updates      4.5 MiB
+2026-03-28T05:34:36.5668959Z  qemu-user-static-sh4         x86_64 2:10.1.5-1.fc43      updates      8.2 MiB
+2026-03-28T05:34:36.5669901Z  qemu-user-static-sparc       x86_64 2:10.1.5-1.fc43      updates     12.8 MiB
+2026-03-28T05:34:36.5670739Z  qemu-user-static-x86         x86_64 2:10.1.5-1.fc43      updates      9.5 MiB
+2026-03-28T05:34:36.5671589Z  qemu-user-static-xtensa      x86_64 2:10.1.5-1.fc43      updates     14.4 MiB
+2026-03-28T05:34:36.5672354Z  raft                         x86_64 0.22.1-4.fc43        fedora     226.2 KiB
+2026-03-28T05:34:36.5673036Z  rhash                        x86_64 1.4.5-3.fc43         fedora     351.1 KiB
+2026-03-28T05:34:36.5673793Z  samba-common-tools           x86_64 2:4.23.5-2.fc43      updates      1.3 MiB
+2026-03-28T05:34:36.5674571Z  samba-dcerpc                 x86_64 2:4.23.5-2.fc43      updates      2.9 MiB
+2026-03-28T05:34:36.5675387Z  samba-ldb-ldap-modules       x86_64 2:4.23.5-2.fc43      updates     55.6 KiB
+2026-03-28T05:34:36.5676175Z  samba-libs                   x86_64 2:4.23.5-2.fc43      updates    367.2 KiB
+2026-03-28T05:34:36.5676952Z  source-highlight             x86_64 3.1.9-25.fc43        fedora       3.1 MiB
+2026-03-28T05:34:36.5677963Z  spice-glib                   x86_64 0.42-7.fc43          fedora       1.2 MiB
+2026-03-28T05:34:36.5678704Z  spice-gtk3                   x86_64 0.42-7.fc43          fedora     281.9 KiB
+2026-03-28T05:34:36.5679469Z  sssd-common-pac              x86_64 2.12.0-1.fc43        updates    216.8 KiB
+2026-03-28T05:34:36.5680234Z  subversion                   x86_64 1.14.5-20.fc43       fedora       4.8 MiB
+2026-03-28T05:34:36.5680999Z  subversion-libs              x86_64 1.14.5-20.fc43       fedora       4.4 MiB
+2026-03-28T05:34:36.5681792Z  subversion-perl              x86_64 1.14.5-20.fc43       fedora       4.5 MiB
+2026-03-28T05:34:36.5682551Z  sysprof-cli                  x86_64 49.0-1.fc43          fedora       2.0 MiB
+2026-03-28T05:34:36.5683448Z  utf8proc                     x86_64 2.10.0-2.fc43        fedora     372.0 KiB
+2026-03-28T05:34:36.5684192Z  virt-install                 noarch 5.1.0-3.fc43         updates     34.8 KiB
+2026-03-28T05:34:36.5684994Z  virt-manager-common          noarch 5.1.0-3.fc43         updates      6.4 MiB
+2026-03-28T05:34:36.5685762Z  xdelta                       x86_64 3.1.0-23.fc43        fedora     185.6 KiB
+2026-03-28T05:34:36.5686463Z  xmlrpc-c                     x86_64 1.60.04-4.fc43       fedora     499.5 KiB
+2026-03-28T05:34:36.5687207Z  xmlrpc-c-client              x86_64 1.60.04-4.fc43       fedora      51.8 KiB
+2026-03-28T05:34:36.5688195Z  xorriso                      x86_64 1.5.6-8.fc43         fedora     337.6 KiB
+2026-03-28T05:34:36.5688896Z  zlib-ng                      x86_64 2.3.3-2.fc43         updates    182.1 KiB
+2026-03-28T05:34:36.5689342Z 
+2026-03-28T05:34:36.5689505Z Transaction Summary:
+2026-03-28T05:34:36.5689910Z  Installing:       191 packages
+2026-03-28T05:34:36.5690200Z 
+2026-03-28T05:34:36.5690522Z Total size of inbound packages is 336 MiB. Need to download 336 MiB.
+2026-03-28T05:34:36.5691348Z After this operation, 1 GiB extra will be used (install 1 GiB, remove 0 B).
+2026-03-28T05:34:36.7145610Z [  1/191] bcache-tools-0:1.1-14.fc43.x8 100% | 392.0 KiB/s |  56.4 KiB |  00m00s
+2026-03-28T05:34:36.7539556Z [  2/191] adcli-0:0.9.2-10.fc43.x86_64  100% | 690.9 KiB/s | 126.4 KiB |  00m00s
+2026-03-28T05:34:36.8482053Z [  3/191] davfs2-0:1.7.2-1.fc43.x86_64  100% |   1.2 MiB/s | 163.2 KiB |  00m00s
+2026-03-28T05:34:36.8856447Z [  4/191] ifuse-0:1.1.4-19.fc43.x86_64  100% | 856.0 KiB/s |  31.7 KiB |  00m00s
+2026-03-28T05:34:36.8915827Z [  5/191] foo2zjs-0:0.20201003-28.fc43. 100% |   2.9 MiB/s | 402.0 KiB |  00m00s
+2026-03-28T05:34:36.9221077Z [  6/191] oddjob-mkhomedir-0:0.34.7-17. 100% | 745.0 KiB/s |  26.8 KiB |  00m00s
+2026-03-28T05:34:36.9403577Z [  7/191] powertop-0:2.15-11.fc43.x86_6 100% |   4.8 MiB/s | 236.0 KiB |  00m00s
+2026-03-28T05:34:37.0371790Z [  8/191] cryfs-0:0.11.3-13.fc43.x86_64 100% |   2.6 MiB/s |   1.2 MiB |  00m00s
+2026-03-28T05:34:37.0428584Z [  9/191] autoconf-0:2.72-7.fc43.noarch 100% |   8.0 MiB/s | 830.6 KiB |  00m00s
+2026-03-28T05:34:37.0685052Z [ 10/191] python3-pygit2-0:1.18.2-2.fc4 100% |   2.3 MiB/s | 350.8 KiB |  00m00s
+2026-03-28T05:34:37.1175647Z [ 11/191] ccache-0:4.11.3-2.fc43.x86_64 100% |   9.1 MiB/s | 691.4 KiB |  00m00s
+2026-03-28T05:34:37.1254599Z [ 12/191] automake-0:1.18.1-2.fc43.noar 100% |   8.0 MiB/s | 723.5 KiB |  00m00s
+2026-03-28T05:34:37.1335364Z [ 13/191] ltrace-0:0.7.91-53.fc43.x86_6 100% |   2.0 MiB/s | 133.6 KiB |  00m00s
+2026-03-28T05:34:37.1556241Z [ 14/191] ninja-build-0:1.13.1-4.fc43.x 100% |   5.2 MiB/s | 198.0 KiB |  00m00s
+2026-03-28T05:34:37.1906688Z [ 15/191] iotop-c-0:1.30-2.fc43.x86_64  100% |   2.0 MiB/s |  71.2 KiB |  00m00s
+2026-03-28T05:34:37.1925053Z [ 16/191] bcc-0:0.35.0-2.fc43.x86_64    100% |  10.2 MiB/s | 688.8 KiB |  00m00s
+2026-03-28T05:34:37.2193299Z [ 17/191] genisoimage-0:1.1.11-60.fc43. 100% |   3.8 MiB/s | 327.8 KiB |  00m00s
+2026-03-28T05:34:37.2398713Z [ 18/191] nicstat-0:1.95-26.fc43.x86_64 100% | 638.6 KiB/s |  31.3 KiB |  00m00s
+2026-03-28T05:34:37.2549043Z [ 19/191] numactl-0:2.0.19-3.fc43.x86_6 100% |   1.1 MiB/s |  69.6 KiB |  00m00s
+2026-03-28T05:34:37.2781309Z [ 20/191] podman-compose-0:1.5.0-4.fc43 100% |   2.8 MiB/s | 165.1 KiB |  00m00s
+2026-03-28T05:34:37.3060062Z [ 21/191] sysprof-0:49.0-1.fc43.x86_64  100% |   6.2 MiB/s | 409.5 KiB |  00m00s
+2026-03-28T05:34:37.3201938Z [ 22/191] tiptop-0:2.3.2-5.fc43.x86_64  100% | 933.3 KiB/s |  60.7 KiB |  00m00s
+2026-03-28T05:34:37.3776695Z [ 23/191] trace-cmd-0:3.3.1-3.fc43.x86_ 100% |   3.7 MiB/s | 371.5 KiB |  00m00s
+2026-03-28T05:34:37.3874000Z [ 24/191] ugrep-0:7.2.2-2.fc43.x86_64   100% |   7.4 MiB/s | 612.4 KiB |  00m00s
+2026-03-28T05:34:37.4045576Z [ 25/191] jetbrains-mono-fonts-all-0:2. 100% |  84.8 KiB/s |   7.1 KiB |  00m00s
+2026-03-28T05:34:37.4358510Z [ 26/191] opendyslexic-fonts-0:0.940-11 100% |   8.0 MiB/s | 468.1 KiB |  00m00s
+2026-03-28T05:34:37.4416807Z [ 27/191] libvirt-dbus-0:1.4.1-8.fc43.x 100% |   1.8 MiB/s |  97.2 KiB |  00m00s
+2026-03-28T05:34:37.4682389Z [ 28/191] virt-viewer-0:11.0-16.fc43.x8 100% |   4.7 MiB/s | 301.2 KiB |  00m00s
+2026-03-28T05:34:37.4740587Z [ 29/191] boost-chrono-0:1.83.0-17.fc43 100% | 626.0 KiB/s |  23.8 KiB |  00m00s
+2026-03-28T05:34:37.4763853Z [ 30/191] boost-filesystem-0:1.83.0-17. 100% |   2.0 MiB/s |  68.1 KiB |  00m00s
+2026-03-28T05:34:37.5085548Z [ 31/191] foomatic-db-filesystem-0:4.0- 100% | 237.5 KiB/s |   8.1 KiB |  00m00s
+2026-03-28T05:34:37.5120326Z [ 32/191] lcms-0:1.19-42.fc43.x86_64    100% |   2.4 MiB/s |  84.7 KiB |  00m00s
+2026-03-28T05:34:37.5131469Z [ 33/191] boost-program-options-0:1.83. 100% |   2.5 MiB/s | 110.7 KiB |  00m00s
+2026-03-28T05:34:37.5443998Z [ 34/191] oddjob-0:0.34.7-17.fc43.x86_6 100% |   1.8 MiB/s |  64.0 KiB |  00m00s
+2026-03-28T05:34:37.6187873Z [ 35/191] libusal-0:1.1.11-60.fc43.x86_ 100% |   1.8 MiB/s | 135.1 KiB |  00m00s
+2026-03-28T05:34:38.0027865Z [ 36/191] clang20-libs-0:20.1.8-2.fc43. 100% |  62.1 MiB/s |  30.5 MiB |  00m00s
+2026-03-28T05:34:38.0038416Z [ 37/191] python3-dotenv-0:1.1.0-5.fc43 100% | 142.7 KiB/s |  54.8 KiB |  00m00s
+2026-03-28T05:34:38.0783274Z [ 38/191] sysprof-cli-0:49.0-1.fc43.x86 100% |   7.3 MiB/s | 562.2 KiB |  00m00s
+2026-03-28T05:34:38.1161369Z [ 39/191] jetbrains-mono-fonts-0:2.304- 100% |  20.4 MiB/s | 771.3 KiB |  00m00s
+2026-03-28T05:34:38.1556226Z [ 40/191] jetbrains-mono-nl-fonts-0:2.3 100% |  14.9 MiB/s | 579.8 KiB |  00m00s
+2026-03-28T05:34:38.1582890Z [ 41/191] libtracefs-0:1.8.1-3.fc43.x86 100% |   2.3 MiB/s | 369.9 KiB |  00m00s
+2026-03-28T05:34:38.1903837Z [ 42/191] libvirt-glib-0:5.0.0-7.fc43.x 100% |   1.5 MiB/s |  53.0 KiB |  00m00s
+2026-03-28T05:34:38.2252378Z [ 43/191] gvnc-0:1.5.0-3.fc43.x86_64    100% |   3.1 MiB/s | 106.9 KiB |  00m00s
+2026-03-28T05:34:38.2612616Z [ 44/191] spice-glib-0:0.42-7.fc43.x86_ 100% |  10.0 MiB/s | 359.8 KiB |  00m00s
+2026-03-28T05:34:38.3411752Z [ 45/191] llvm20-libs-0:20.1.8-2.fc43.x 100% |  41.5 MiB/s |  34.3 MiB |  00m01s
+2026-03-28T05:34:38.3424462Z [ 46/191] gtk-vnc2-0:1.5.0-3.fc43.x86_6 100% | 226.0 KiB/s |  41.4 KiB |  00m00s
+2026-03-28T05:34:38.3432427Z [ 47/191] spice-gtk3-0:0.42-7.fc43.x86_ 100% | 801.6 KiB/s |  64.9 KiB |  00m00s
+2026-03-28T05:34:38.3788569Z [ 48/191] boost-atomic-0:1.83.0-17.fc43 100% | 474.1 KiB/s |  17.5 KiB |  00m00s
+2026-03-28T05:34:38.3820449Z [ 49/191] lcms-libs-0:1.19-42.fc43.x86_ 100% |   2.8 MiB/s | 110.5 KiB |  00m00s
+2026-03-28T05:34:38.4005327Z [ 50/191] clang20-resource-filesystem-0 100% | 358.1 KiB/s |  20.1 KiB |  00m00s
+2026-03-28T05:34:38.4371735Z [ 51/191] llvm20-filesystem-0:20.1.8-2. 100% | 255.1 KiB/s |  14.5 KiB |  00m00s
+2026-03-28T05:34:38.4455563Z [ 52/191] libphodav-0:3.0-12.fc43.x86_6 100% |   1.4 MiB/s |  64.2 KiB |  00m00s
+2026-03-28T05:34:38.4504420Z [ 53/191] libsysprof-0:49.0-1.fc43.x86_ 100% |   3.7 MiB/s | 256.1 KiB |  00m00s
+2026-03-28T05:34:38.4736749Z [ 54/191] fuse-encfs-0:1.9.5-26.fc43.x8 100% |  12.9 MiB/s | 476.3 KiB |  00m00s
+2026-03-28T05:34:38.5345079Z [ 55/191] igt-gpu-tools-0:2.0-2.fc43.x8 100% |  76.3 MiB/s |   4.6 MiB |  00m00s
+2026-03-28T05:34:38.5740589Z [ 56/191] gsl-0:2.8-2.fc43.x86_64       100% |  30.3 MiB/s |   1.2 MiB |  00m00s
+2026-03-28T05:34:38.5919783Z [ 57/191] git-credential-libsecret-0:2. 100% | 112.9 KiB/s |  16.4 KiB |  00m00s
+2026-03-28T05:34:38.6086991Z [ 58/191] liboping-0:1.10.0-35.fc43.x86 100% |   2.1 MiB/s |  73.8 KiB |  00m00s
+2026-03-28T05:34:38.6335976Z [ 59/191] xmlrpc-c-0:1.60.04-4.fc43.x86 100% |   4.4 MiB/s | 182.9 KiB |  00m00s
+2026-03-28T05:34:38.6430080Z [ 60/191] xmlrpc-c-client-0:1.60.04-4.f 100% | 841.3 KiB/s |  28.6 KiB |  00m00s
+2026-03-28T05:34:38.6928837Z [ 61/191] gnome-tweaks-0:49.0-1.fc43.no 100% |   1.4 MiB/s | 346.0 KiB |  00m00s
+2026-03-28T05:34:38.7559652Z [ 62/191] libgda-sqlite-1:6.0.0-14.fc43 100% | 253.8 KiB/s |  15.7 KiB |  00m00s
+2026-03-28T05:34:38.7715211Z [ 63/191] krb5-workstation-0:1.22.2-2.f 100% |   3.0 MiB/s | 425.1 KiB |  00m00s
+2026-03-28T05:34:38.8040610Z [ 64/191] libsss_autofs-0:2.12.0-1.fc43 100% | 698.9 KiB/s |  32.8 KiB |  00m00s
+2026-03-28T05:34:38.8290091Z [ 65/191] osbuild-selinux-0:176-1.fc43. 100% |   1.5 MiB/s |  86.2 KiB |  00m00s
+2026-03-28T05:34:38.8779691Z [ 66/191] setools-console-0:4.6.0-4.fc4 100% | 991.4 KiB/s |  47.6 KiB |  00m00s
+2026-03-28T05:34:38.9006677Z [ 67/191] samba-2:4.23.5-2.fc43.x86_64  100% |   9.2 MiB/s | 900.8 KiB |  00m00s
+2026-03-28T05:34:38.9265209Z [ 68/191] sssd-ad-0:2.12.0-1.fc43.x86_6 100% |   4.1 MiB/s | 201.9 KiB |  00m00s
+2026-03-28T05:34:38.9432836Z [ 69/191] libgda-1:6.0.0-14.fc43.x86_64 100% |   5.2 MiB/s |   1.6 MiB |  00m00s
+2026-03-28T05:34:38.9486031Z [ 70/191] sssd-krb5-0:2.12.0-1.fc43.x86 100% |   1.4 MiB/s |  65.1 KiB |  00m00s
+2026-03-28T05:34:39.0612852Z [ 71/191] waypipe-0:0.10.5-2.fc43.x86_6 100% |   5.5 MiB/s | 754.7 KiB |  00m00s
+2026-03-28T05:34:39.1862757Z [ 72/191] clang-0:21.1.8-4.fc43.x86_64  100% |  30.2 MiB/s |   7.3 MiB |  00m00s
+2026-03-28T05:34:39.2216157Z [ 73/191] rhash-0:1.4.5-3.fc43.x86_64   100% |   5.7 MiB/s | 197.9 KiB |  00m00s
+2026-03-28T05:34:39.2721415Z [ 74/191] cmake-0:3.31.11-1.fc43.x86_64 100% |  58.3 MiB/s |  12.2 MiB |  00m00s
+2026-03-28T05:34:39.2871288Z [ 75/191] compiler-rt-0:21.1.8-4.fc43.x 100% |  45.8 MiB/s |   3.0 MiB |  00m00s
+2026-03-28T05:34:39.3217374Z [ 76/191] gdb-0:17.1-4.fc43.x86_64      100% |   3.1 MiB/s | 153.6 KiB |  00m00s
+2026-03-28T05:34:39.3429967Z [ 77/191] lld-0:21.1.8-4.fc43.x86_64    100% | 738.1 KiB/s |  40.6 KiB |  00m00s
+2026-03-28T05:34:39.5043380Z [ 78/191] llvm-0:21.1.8-4.fc43.x86_64   100% | 152.7 MiB/s |  24.6 MiB |  00m00s
+2026-03-28T05:34:39.5634793Z [ 79/191] meson-0:1.8.5-3.fc43.noarch   100% |  41.6 MiB/s |   2.4 MiB |  00m00s
+2026-03-28T05:34:39.6347239Z [ 80/191] musl-devel-0:1.2.5-5.fc43.x86 100% |   2.9 MiB/s | 214.5 KiB |  00m00s
+2026-03-28T05:34:39.6930955Z [ 81/191] musl-gcc-0:1.2.5-5.fc43.x86_6 100% | 204.8 KiB/s |  11.9 KiB |  00m00s
+2026-03-28T05:34:39.7271294Z [ 82/191] lldb-0:21.1.8-4.fc43.x86_64   100% |  19.3 MiB/s |   7.8 MiB |  00m00s
+2026-03-28T05:34:39.7624879Z [ 83/191] musl-libc-0:1.2.5-5.fc43.x86_ 100% |   6.5 MiB/s | 458.9 KiB |  00m00s
+2026-03-28T05:34:39.8290390Z [ 84/191] perf-0:6.19.9-200.fc43.x86_64 100% |  29.5 MiB/s |   3.0 MiB |  00m00s
+2026-03-28T05:34:39.9039756Z [ 85/191] strace-0:6.19-1.fc43.x86_64   100% |  10.9 MiB/s |   1.5 MiB |  00m00s
+2026-03-28T05:34:39.9352341Z [ 86/191] clang-tools-extra-0:21.1.8-4. 100% |  19.1 MiB/s |  18.8 MiB |  00m01s
+2026-03-28T05:34:39.9428041Z [ 87/191] valgrind-1:3.26.0-2.fc43.x86_ 100% |  33.9 MiB/s |   3.8 MiB |  00m00s
+2026-03-28T05:34:39.9683122Z [ 88/191] android-tools-1:35.0.2-13.fc4 100% |  31.2 MiB/s |   2.0 MiB |  00m00s
+2026-03-28T05:34:40.0032236Z [ 89/191] bpftrace-0:0.24.2-1.fc43.x86_ 100% |  41.4 MiB/s |   2.5 MiB |  00m00s
+2026-03-28T05:34:40.0348101Z [ 90/191] flatpak-builder-0:1.4.7-1.fc4 100% |   3.4 MiB/s | 229.0 KiB |  00m00s
+2026-03-28T05:34:40.0385770Z [ 91/191] debugedit-0:5.2-3.fc43.x86_64 100% |   2.4 MiB/s |  85.6 KiB |  00m00s
+2026-03-28T05:34:40.0766931Z [ 92/191] bpftop-0:0.7.1-2.fc43.x86_64  100% |   5.5 MiB/s | 799.5 KiB |  00m00s
+2026-03-28T05:34:40.0937662Z [ 93/191] git-subtree-0:2.53.0-1.fc43.n 100% | 618.2 KiB/s |  35.9 KiB |  00m00s
+2026-03-28T05:34:40.0971075Z [ 94/191] git-svn-0:2.53.0-1.fc43.noarc 100% |   1.2 MiB/s |  70.3 KiB |  00m00s
+2026-03-28T05:34:40.1150136Z [ 95/191] subversion-0:1.14.5-20.fc43.x 100% |  26.0 MiB/s |   1.0 MiB |  00m00s
+2026-03-28T05:34:40.1495496Z [ 96/191] utf8proc-0:2.10.0-2.fc43.x86_ 100% |   2.3 MiB/s |  81.8 KiB |  00m00s
+2026-03-28T05:34:40.3206009Z [ 97/191] libserf-0:1.3.10-12.fc43.x86_ 100% | 275.4 KiB/s |  61.4 KiB |  00m00s
+2026-03-28T05:34:40.3699927Z [ 98/191] nu-0:0.99.1-16.fc43.x86_64    100% |  41.2 MiB/s |   9.1 MiB |  00m00s
+2026-03-28T05:34:40.3777339Z [ 99/191] subversion-libs-0:1.14.5-20.f 100% |   5.3 MiB/s |   1.5 MiB |  00m00s
+2026-03-28T05:34:40.4180728Z [100/191] util-linux-script-0:2.41.3-7. 100% |   1.3 MiB/s |  61.1 KiB |  00m00s
+2026-03-28T05:34:40.4644833Z [101/191] cascadia-code-fonts-0:2407.24 100% |  15.2 MiB/s |   1.3 MiB |  00m00s
+2026-03-28T05:34:40.4882372Z [102/191] cockpit-machines-0:349.1-1.fc 100% |  13.3 MiB/s | 940.4 KiB |  00m00s
+2026-03-28T05:34:40.5141497Z [103/191] cockpit-ostree-1:222-1.fc43.n 100% |   6.8 MiB/s | 338.9 KiB |  00m00s
+2026-03-28T05:34:40.5489306Z [104/191] cowsql-0:1.15.9-2.fc43.x86_64 100% |   2.5 MiB/s |  88.3 KiB |  00m00s
+2026-03-28T05:34:40.5967065Z [105/191] xdelta-0:3.1.0-23.fc43.x86_64 100% |   1.9 MiB/s |  90.3 KiB |  00m00s
+2026-03-28T05:34:40.6467804Z [106/191] raft-0:0.22.1-4.fc43.x86_64   100% |   2.1 MiB/s | 105.8 KiB |  00m00s
+2026-03-28T05:34:40.6795154Z [107/191] incus-0:6.19.1-1.fc43.x86_64  100% | 105.5 MiB/s |  20.1 MiB |  00m00s
+2026-03-28T05:34:40.7082254Z [108/191] podman-tui-0:1.11.1-1.fc43.x8 100% |  24.3 MiB/s |   9.4 MiB |  00m00s
+2026-03-28T05:34:40.7272816Z [109/191] incus-agent-0:6.19.1-1.fc43.x 100% |  71.3 MiB/s |   5.7 MiB |  00m00s
+2026-03-28T05:34:40.7557060Z [110/191] incus-selinux-0:6.19.1-1.fc43 100% | 471.4 KiB/s |  22.2 KiB |  00m00s
+2026-03-28T05:34:40.7678130Z [111/191] incus-client-0:6.19.1-1.fc43. 100% |  84.4 MiB/s |   7.3 MiB |  00m00s
+2026-03-28T05:34:40.7795178Z [112/191] libvirt-daemon-kvm-0:11.6.0-3 100% | 196.9 KiB/s |  10.2 KiB |  00m00s
+2026-03-28T05:34:40.8152951Z [113/191] libvirt-nss-0:11.6.0-3.fc43.x 100% | 415.7 KiB/s |  24.5 KiB |  00m00s
+2026-03-28T05:34:40.8161824Z [114/191] libvirt-ssh-proxy-0:11.6.0-3. 100% | 370.7 KiB/s |  17.8 KiB |  00m00s
+2026-03-28T05:34:40.8275502Z [115/191] podman-machine-5:5.8.1-1.fc43 100% | 265.5 KiB/s |  12.5 KiB |  00m00s
+2026-03-28T05:34:40.8630244Z [116/191] qemu-user-binfmt-2:10.1.5-1.f 100% | 542.4 KiB/s |  25.5 KiB |  00m00s
+2026-03-28T05:34:40.8639278Z [117/191] qemu-user-static-2:10.1.5-1.f 100% | 571.1 KiB/s |  26.8 KiB |  00m00s
+2026-03-28T05:34:40.8791835Z [118/191] virt-manager-0:5.1.0-3.fc43.n 100% |  13.7 MiB/s | 714.6 KiB |  00m00s
+2026-03-28T05:34:40.9157779Z [119/191] mingw-srvany-redistributable- 100% |   1.0 MiB/s |  51.9 KiB |  00m00s
+2026-03-28T05:34:40.9226839Z [120/191] virt-v2v-1:2.10.0-1.fc43.x86_ 100% |  54.6 MiB/s |   3.2 MiB |  00m00s
+2026-03-28T05:34:40.9281185Z [121/191] libpanel-0:1.10.3-2.fc43.x86_ 100% |   3.9 MiB/s | 192.0 KiB |  00m00s
+2026-03-28T05:34:40.9662827Z [122/191] libgit2-0:1.9.2-1.fc43.x86_64 100% |  11.3 MiB/s | 580.4 KiB |  00m00s
+2026-03-28T05:34:40.9804724Z [123/191] elfutils-0:0.194-1.fc43.x86_6 100% |  10.8 MiB/s | 575.6 KiB |  00m00s
+2026-03-28T05:34:41.0150750Z [124/191] neon-0:0.36.0-3.fc43.x86_64   100% |   2.8 MiB/s | 136.2 KiB |  00m00s
+2026-03-28T05:34:41.0169188Z [125/191] gettext-devel-0:0.25.1-2.fc43 100% |   7.7 MiB/s | 282.1 KiB |  00m00s
+2026-03-28T05:34:41.0581932Z [126/191] gettext-common-devel-0:0.25.1 100% |  14.0 MiB/s | 601.7 KiB |  00m00s
+2026-03-28T05:34:41.0645128Z [127/191] libguestfs-xfs-1:1.58.1-1.fc4 100% | 296.2 KiB/s |  13.9 KiB |  00m00s
+2026-03-28T05:34:41.1084980Z [128/191] nbdkit-basic-filters-0:1.46.2 100% |   7.6 MiB/s | 388.6 KiB |  00m00s
+2026-03-28T05:34:41.1131796Z [129/191] nbdkit-basic-plugins-0:1.46.2 100% |   4.3 MiB/s | 212.0 KiB |  00m00s
+2026-03-28T05:34:41.1572107Z [130/191] nbdkit-curl-plugin-0:1.46.2-1 100% | 989.1 KiB/s |  47.5 KiB |  00m00s
+2026-03-28T05:34:41.1609566Z [131/191] nbdkit-nbd-plugin-0:1.46.2-1. 100% | 896.9 KiB/s |  42.2 KiB |  00m00s
+2026-03-28T05:34:41.2060555Z [132/191] nbdkit-server-0:1.46.2-1.fc43 100% |   2.9 MiB/s | 142.8 KiB |  00m00s
+2026-03-28T05:34:41.2085191Z [133/191] nbdkit-ssh-plugin-0:1.46.2-1. 100% | 794.9 KiB/s |  37.4 KiB |  00m00s
+2026-03-28T05:34:41.2541666Z [134/191] nbdkit-vddk-plugin-0:1.46.2-1 100% |   1.2 MiB/s |  59.2 KiB |  00m00s
+2026-03-28T05:34:41.2617005Z [135/191] virt-manager-common-0:5.1.0-3 100% |  23.6 MiB/s |   1.3 MiB |  00m00s
+2026-03-28T05:34:41.2944416Z [136/191] argyllcms-0:3.4.1-2.fc43.x86_ 100% |  14.0 MiB/s |   5.2 MiB |  00m00s
+2026-03-28T05:34:41.2962143Z [137/191] xorriso-0:1.5.6-8.fc43.x86_64 100% |   7.7 MiB/s | 321.5 KiB |  00m00s
+2026-03-28T05:34:41.2970843Z [138/191] kf5-filesystem-0:5.116.0-5.fc 100% | 299.7 KiB/s |  10.5 KiB |  00m00s
+2026-03-28T05:34:41.3312363Z [139/191] libburn-0:1.5.6-7.fc43.x86_64 100% |   4.9 MiB/s | 169.4 KiB |  00m00s
+2026-03-28T05:34:41.3337558Z [140/191] libisofs-0:1.5.6-7.fc43.x86_6 100% |   6.3 MiB/s | 233.4 KiB |  00m00s
+2026-03-28T05:34:41.3388300Z [141/191] libisoburn-0:1.5.6-8.fc43.x86 100% |   9.7 MiB/s | 428.4 KiB |  00m00s
+2026-03-28T05:34:41.3792033Z [142/191] sssd-common-pac-0:2.12.0-1.fc 100% |   1.8 MiB/s |  84.6 KiB |  00m00s
+2026-03-28T05:34:41.3818508Z [143/191] libnetapi-2:4.23.5-2.fc43.x86 100% |   3.1 MiB/s | 151.1 KiB |  00m00s
+2026-03-28T05:34:41.3880776Z [144/191] samba-common-tools-2:4.23.5-2 100% |  10.3 MiB/s | 508.5 KiB |  00m00s
+2026-03-28T05:34:41.4296338Z [145/191] samba-dcerpc-2:4.23.5-2.fc43. 100% |  15.0 MiB/s | 769.5 KiB |  00m00s
+2026-03-28T05:34:41.4310441Z [146/191] samba-libs-2:4.23.5-2.fc43.x8 100% |   2.7 MiB/s | 134.3 KiB |  00m00s
+2026-03-28T05:34:41.4439295Z [147/191] qemu-user-static-alpha-2:10.1 100% |  25.8 MiB/s |   1.4 MiB |  00m00s
+2026-03-28T05:34:41.4914482Z [148/191] qemu-user-static-hexagon-2:10 100% |  30.3 MiB/s |   1.8 MiB |  00m00s
+2026-03-28T05:34:41.4962342Z [149/191] qemu-user-static-arm-2:10.1.5 100% |  33.9 MiB/s |   2.2 MiB |  00m00s
+2026-03-28T05:34:41.5030861Z [150/191] qemu-user-static-hppa-2:10.1. 100% |  24.9 MiB/s |   1.4 MiB |  00m00s
+2026-03-28T05:34:41.5463101Z [151/191] qemu-user-static-loongarch64- 100% |  28.9 MiB/s |   1.6 MiB |  00m00s
+2026-03-28T05:34:41.5553787Z [152/191] qemu-user-static-m68k-2:10.1. 100% |  25.6 MiB/s |   1.5 MiB |  00m00s
+2026-03-28T05:34:41.5619677Z [153/191] qemu-user-static-microblaze-2 100% |  30.3 MiB/s |   1.8 MiB |  00m00s
+2026-03-28T05:34:41.6163031Z [154/191] qemu-user-static-mips-2:10.1. 100% |  59.1 MiB/s |   4.1 MiB |  00m00s
+2026-03-28T05:34:41.6199722Z [155/191] qemu-user-static-or1k-2:10.1. 100% |  22.0 MiB/s |   1.4 MiB |  00m00s
+2026-03-28T05:34:41.6310230Z [156/191] qemu-user-static-ppc-2:10.1.5 100% |  39.0 MiB/s |   2.6 MiB |  00m00s
+2026-03-28T05:34:41.6745427Z [157/191] qemu-user-static-riscv-2:10.1 100% |  38.3 MiB/s |   2.2 MiB |  00m00s
+2026-03-28T05:34:41.6803438Z [158/191] qemu-user-static-s390x-2:10.1 100% |  25.9 MiB/s |   1.5 MiB |  00m00s
+2026-03-28T05:34:41.6881955Z [159/191] qemu-user-static-sh4-2:10.1.5 100% |  31.4 MiB/s |   1.8 MiB |  00m00s
+2026-03-28T05:34:41.7364223Z [160/191] qemu-user-static-sparc-2:10.1 100% |  36.7 MiB/s |   2.2 MiB |  00m00s
+2026-03-28T05:34:41.7470181Z [161/191] qemu-user-static-x86-2:10.1.5 100% |  31.6 MiB/s |   2.1 MiB |  00m00s
+2026-03-28T05:34:41.7539274Z [162/191] qemu-user-static-xtensa-2:10. 100% |  36.0 MiB/s |   2.3 MiB |  00m00s
+2026-03-28T05:34:41.8017407Z [163/191] gvisor-tap-vsock-6:0.8.8-1.fc 100% |  62.4 MiB/s |   4.0 MiB |  00m00s
+2026-03-28T05:34:41.8033597Z [164/191] osbuild-0:176-1.fc43.x86_64   100% |   5.7 MiB/s | 326.4 KiB |  00m00s
+2026-03-28T05:34:41.8043926Z [165/191] python3-librepo-0:1.20.0-4.fc 100% |   1.0 MiB/s |  52.6 KiB |  00m00s
+2026-03-28T05:34:41.8529472Z [166/191] zlib-ng-0:2.3.3-2.fc43.x86_64 100% |   2.0 MiB/s |  96.3 KiB |  00m00s
+2026-03-28T05:34:41.8556389Z [167/191] osbuild-initrd-0:176-1.fc43.x 100% |  13.3 MiB/s | 720.8 KiB |  00m00s
+2026-03-28T05:34:41.8574871Z [168/191] python3-osbuild-0:176-1.fc43. 100% |   9.3 MiB/s | 506.9 KiB |  00m00s
+2026-03-28T05:34:41.9081164Z [169/191] musl-filesystem-0:1.2.5-5.fc4 100% | 149.3 KiB/s |   8.1 KiB |  00m00s
+2026-03-28T05:34:41.9219347Z [170/191] python3-lldb-0:21.1.8-4.fc43. 100% |   5.4 MiB/s | 345.6 KiB |  00m00s
+2026-03-28T05:34:41.9694600Z [171/191] qemu-kvm-2:10.1.5-1.fc43.x86_ 100% | 302.0 KiB/s |  14.2 KiB |  00m00s
+2026-03-28T05:34:42.0198985Z [172/191] clang-libs-0:21.1.8-4.fc43.x8 100% | 185.5 MiB/s |  30.2 MiB |  00m00s
+2026-03-28T05:34:42.0444131Z [173/191] llhttp-0:9.3.1-1.fc43.x86_64  100% | 510.1 KiB/s |  37.7 KiB |  00m00s
+2026-03-28T05:34:42.0512979Z [174/191] lld-libs-0:21.1.8-4.fc43.x86_ 100% |  13.2 MiB/s |   1.9 MiB |  00m00s
+2026-03-28T05:34:42.0690394Z [175/191] krb5-pkinit-0:1.22.2-2.fc43.x 100% |   1.2 MiB/s |  59.7 KiB |  00m00s
+2026-03-28T05:34:42.0928885Z [176/191] libkadm5-0:1.22.2-2.fc43.x86_ 100% |   1.6 MiB/s |  76.2 KiB |  00m00s
+2026-03-28T05:34:42.1058927Z [177/191] gvisor-tap-vsock-gvforwarder- 100% |  37.1 MiB/s |   2.0 MiB |  00m00s
+2026-03-28T05:34:42.1174529Z [178/191] perl-Git-SVN-0:2.53.0-1.fc43. 100% |   1.1 MiB/s |  53.3 KiB |  00m00s
+2026-03-28T05:34:42.1517054Z [179/191] perl-YAML-0:1.31-6.fc43.noarc 100% |   1.4 MiB/s |  86.1 KiB |  00m00s
+2026-03-28T05:34:42.1526519Z [180/191] libipt-0:2.1.2-3.fc43.x86_64  100% |   1.6 MiB/s |  57.0 KiB |  00m00s
+2026-03-28T05:34:42.1707671Z [181/191] gdb-headless-0:17.1-4.fc43.x8 100% |  81.4 MiB/s |   5.2 MiB |  00m00s
+2026-03-28T05:34:42.1877392Z [182/191] boost-regex-0:1.83.0-17.fc43. 100% |   3.3 MiB/s | 114.7 KiB |  00m00s
+2026-03-28T05:34:42.1900779Z [183/191] source-highlight-0:3.1.9-25.f 100% |  19.7 MiB/s | 768.2 KiB |  00m00s
+2026-03-28T05:34:42.2315261Z [184/191] appstream-compose-0:1.1.0-1.f 100% |   2.1 MiB/s | 130.6 KiB |  00m00s
+2026-03-28T05:34:42.2359551Z [185/191] clang-resource-filesystem-0:2 100% | 442.4 KiB/s |  20.8 KiB |  00m00s
+2026-03-28T05:34:42.2377734Z [186/191] virt-install-0:5.1.0-3.fc43.n 100% | 883.8 KiB/s |  41.5 KiB |  00m00s
+2026-03-28T05:34:42.2865302Z [187/191] argyllcms-data-0:3.4.1-2.fc43 100% |   4.2 MiB/s | 215.2 KiB |  00m00s
+2026-03-28T05:34:42.2930228Z [188/191] ctags-0:6.2.1-1.fc43.x86_64   100% |  15.8 MiB/s | 890.3 KiB |  00m00s
+2026-03-28T05:34:42.2990308Z [189/191] cmake-data-0:3.31.11-1.fc43.n 100% |  36.9 MiB/s |   2.5 MiB |  00m00s
+2026-03-28T05:34:42.3351725Z [190/191] samba-ldb-ldap-modules-2:4.23 100% | 878.5 KiB/s |  41.3 KiB |  00m00s
+2026-03-28T05:34:42.3499389Z [191/191] subversion-perl-0:1.14.5-20.f 100% |  15.0 MiB/s | 857.7 KiB |  00m00s
+2026-03-28T05:34:42.3501877Z --------------------------------------------------------------------------------
+2026-03-28T05:34:42.3502582Z [191/191] Total                         100% |  58.0 MiB/s | 336.1 MiB |  00m06s
+2026-03-28T05:34:42.3513978Z Running transaction
+2026-03-28T05:34:47.1393082Z [  1/193] Verify package files          100% | 159.0   B/s | 191.0   B |  00m01s
+2026-03-28T05:34:47.5911337Z [  2/193] Prepare transaction           100% | 349.0   B/s | 191.0   B |  00m01s
+2026-03-28T05:34:47.6215607Z [  3/193] Installing nbdkit-server-0:1. 100% |  10.8 MiB/s | 243.5 KiB |  00m00s
+2026-03-28T05:34:47.6270940Z [  4/193] Installing samba-libs-2:4.23. 100% |  36.3 MiB/s | 371.9 KiB |  00m00s
+2026-03-28T05:34:47.6448770Z [  5/193] Installing libnetapi-2:4.23.5 100% | 116.8 MiB/s | 478.3 KiB |  00m00s
+2026-03-28T05:34:47.6479417Z [  6/193] Installing libvirt-glib-0:5.0 100% |   7.9 MiB/s | 137.9 KiB |  00m00s
+2026-03-28T05:34:47.6922253Z [  7/193] Installing clang-resource-fil 100% |   8.1 MiB/s |  16.7 KiB |  00m00s
+2026-03-28T05:34:47.9655737Z [  8/193] Installing clang-libs-0:21.1. 100% | 368.4 MiB/s | 114.9 MiB |  00m00s
+2026-03-28T05:34:47.9811292Z [  9/193] Installing utf8proc-0:2.10.0- 100% |  91.2 MiB/s | 373.4 KiB |  00m00s
+2026-03-28T05:34:47.9962712Z [ 10/193] Installing xmlrpc-c-0:1.60.04 100% |  30.9 MiB/s | 505.9 KiB |  00m00s
+2026-03-28T05:34:48.0072918Z [ 11/193] Installing libphodav-0:3.0-12 100% |  10.2 MiB/s | 145.7 KiB |  00m00s
+2026-03-28T05:34:48.0120053Z [ 12/193] Installing spice-glib-0:0.42- 100% | 106.6 MiB/s |   1.2 MiB |  00m00s
+2026-03-28T05:34:48.0381217Z [ 13/193] Installing spice-gtk3-0:0.42- 100% |  92.1 MiB/s | 282.9 KiB |  00m00s
+2026-03-28T05:34:48.0433966Z [ 14/193] Installing gvnc-0:1.5.0-3.fc4 100% |   9.2 MiB/s | 253.7 KiB |  00m00s
+2026-03-28T05:34:48.0463207Z [ 15/193] Installing gtk-vnc2-0:1.5.0-3 100% |  74.6 MiB/s | 229.3 KiB |  00m00s
+2026-03-28T05:34:48.0975174Z [ 16/193] Installing xmlrpc-c-client-0: 100% |  25.7 MiB/s |  52.6 KiB |  00m00s
+2026-03-28T05:34:48.1521200Z [ 17/193] Installing lldb-0:21.1.8-4.fc 100% | 285.3 MiB/s |  26.8 MiB |  00m00s
+2026-03-28T05:34:48.2105058Z [ 18/193] Installing python3-lldb-0:21. 100% |  29.1 MiB/s |   2.0 MiB |  00m00s
+2026-03-28T05:34:48.2106363Z >>> Running sysusers scriptlet: libvirt-dbus-0:1.4.1-8.fc43.x86_64              
+2026-03-28T05:34:48.2107235Z >>> Finished sysusers scriptlet: libvirt-dbus-0:1.4.1-8.fc43.x86_64             
+2026-03-28T05:34:48.2108343Z >>> Scriptlet output:                                                           
+2026-03-28T05:34:48.2109153Z >>> Failed to connect to audit log, ignoring: Invalid argument                  
+2026-03-28T05:34:48.2110090Z >>> Creating group 'libvirtdbus' with GID 957.                                  
+2026-03-28T05:34:48.2110967Z >>> Creating user 'libvirtdbus' (Libvirt D-Bus bridge) with UID 957 and GID 957.
+2026-03-28T05:34:48.2111688Z >>>                                                                             
+2026-03-28T05:34:48.2937873Z [ 19/193] Installing libvirt-dbus-0:1.4 100% |   4.6 MiB/s | 328.1 KiB |  00m00s
+2026-03-28T05:34:48.3117593Z [ 20/193] Installing samba-dcerpc-2:4.2 100% | 182.1 MiB/s |   2.9 MiB |  00m00s
+2026-03-28T05:34:48.3160945Z [ 21/193] Installing nbdkit-basic-plugi 100% |  27.3 MiB/s | 475.3 KiB |  00m00s
+2026-03-28T05:34:48.3194228Z [ 22/193] Installing nbdkit-curl-plugin 100% |  20.8 MiB/s |  63.9 KiB |  00m00s
+2026-03-28T05:34:48.3227378Z [ 23/193] Installing nbdkit-nbd-plugin- 100% |  18.4 MiB/s |  56.5 KiB |  00m00s
+2026-03-28T05:34:48.3262113Z [ 24/193] Installing nbdkit-ssh-plugin- 100% |  14.1 MiB/s |  43.4 KiB |  00m00s
+2026-03-28T05:34:48.4128349Z [ 25/193] Installing nbdkit-vddk-plugin 100% |  27.4 MiB/s |  84.2 KiB |  00m00s
+2026-03-28T05:34:48.4814892Z [ 26/193] Installing argyllcms-0:3.4.1- 100% | 351.4 MiB/s |  50.3 MiB |  00m00s
+2026-03-28T05:34:48.4853824Z [ 27/193] Installing argyllcms-data-0:3 100% |  58.7 MiB/s | 661.1 KiB |  00m00s
+2026-03-28T05:34:48.4993376Z [ 28/193] Installing samba-ldb-ldap-mod 100% |  18.5 MiB/s |  56.9 KiB |  00m00s
+2026-03-28T05:34:48.5194504Z [ 29/193] Installing samba-common-tools 100% |  41.8 MiB/s |   1.3 MiB |  00m00s
+2026-03-28T05:34:48.5745816Z [ 30/193] Installing ctags-0:6.2.1-1.fc 100% |  45.8 MiB/s |   2.2 MiB |  00m00s
+2026-03-28T05:34:48.5799047Z [ 31/193] Installing appstream-compose- 100% |  46.0 MiB/s | 377.1 KiB |  00m00s
+2026-03-28T05:34:48.6341221Z [ 32/193] Installing boost-regex-0:1.83 100% |  57.0 MiB/s | 292.0 KiB |  00m00s
+2026-03-28T05:34:48.6549062Z [ 33/193] Installing source-highlight-0 100% |  45.5 MiB/s |   3.1 MiB |  00m00s
+2026-03-28T05:34:48.7161590Z [ 34/193] Installing libipt-0:2.1.2-3.f 100% |  28.0 MiB/s | 114.6 KiB |  00m00s
+2026-03-28T05:34:48.7351087Z [ 35/193] Installing gdb-headless-0:17. 100% | 210.4 MiB/s |  16.2 MiB |  00m00s
+2026-03-28T05:34:48.7582926Z [ 36/193] Installing perl-YAML-0:1.31-6 100% |  23.8 MiB/s | 195.3 KiB |  00m00s
+2026-03-28T05:34:48.7913517Z [ 37/193] Installing gvisor-tap-vsock-g 100% | 339.4 MiB/s |   5.8 MiB |  00m00s
+2026-03-28T05:34:48.7982008Z [ 38/193] Installing gvisor-tap-vsock-6 100% | 369.1 MiB/s |  12.2 MiB |  00m00s
+2026-03-28T05:34:48.8013909Z [ 39/193] Installing libkadm5-0:1.22.2- 100% |  35.2 MiB/s | 216.0 KiB |  00m00s
+2026-03-28T05:34:48.8051789Z [ 40/193] Installing krb5-pkinit-0:1.22 100% |  41.1 MiB/s | 126.3 KiB |  00m00s
+2026-03-28T05:34:48.8113629Z [ 41/193] Installing llhttp-0:9.3.1-1.f 100% |  30.7 MiB/s |  94.2 KiB |  00m00s
+2026-03-28T05:34:48.8130172Z [ 42/193] Installing libgit2-0:1.9.2-1. 100% | 221.2 MiB/s |   1.3 MiB |  00m00s
+2026-03-28T05:34:48.8350799Z [ 43/193] Installing qemu-kvm-2:10.1.5- 100% |   0.0   B/s | 124.0   B |  00m00s
+2026-03-28T05:34:48.8372057Z [ 44/193] Installing lld-libs-0:21.1.8- 100% | 284.3 MiB/s |   6.5 MiB |  00m00s
+2026-03-28T05:34:48.8427695Z [ 45/193] Installing musl-filesystem-0: 100% | 531.2 KiB/s | 544.0   B |  00m00s
+2026-03-28T05:34:48.8672283Z [ 46/193] Installing musl-libc-0:1.2.5- 100% | 162.6 MiB/s | 832.8 KiB |  00m00s
+2026-03-28T05:34:48.8745527Z [ 47/193] Installing musl-devel-0:1.2.5 100% |  22.7 MiB/s | 627.8 KiB |  00m00s
+2026-03-28T05:34:48.9164966Z [ 48/193] Installing zlib-ng-0:2.3.3-2. 100% |  44.8 MiB/s | 183.5 KiB |  00m00s
+2026-03-28T05:34:48.9426195Z [ 49/193] Installing nbdkit-basic-filte 100% |  21.0 MiB/s | 969.0 KiB |  00m00s
+2026-03-28T05:34:48.9511468Z [ 50/193] Installing python3-osbuild-0: 100% |  71.1 MiB/s |   1.7 MiB |  00m00s
+2026-03-28T05:34:48.9534461Z [ 51/193] Installing osbuild-initrd-0:1 100% | 321.2 MiB/s |   1.6 MiB |  00m00s
+2026-03-28T05:34:48.9654061Z [ 52/193] Installing python3-librepo-0: 100% |  16.3 MiB/s | 183.3 KiB |  00m00s
+2026-03-28T05:35:02.8555111Z [ 53/193] Installing osbuild-selinux-0: 100% |   1.2 KiB/s |  16.9 KiB |  00m14s
+2026-03-28T05:35:02.8556090Z >>> Running %post scriptlet: osbuild-selinux-0:176-1.fc43.x86_64                
+2026-03-28T05:35:02.8556916Z >>> Finished %post scriptlet: osbuild-selinux-0:176-1.fc43.x86_64               
+2026-03-28T05:35:02.8557919Z >>> Scriptlet output:                                                           
+2026-03-28T05:35:02.8558686Z >>> libsemanage.semanage_rename: WARNING: rename(/etc/selinux/targeted/active, /
+2026-03-28T05:35:02.8559426Z >>>                                                                             
+2026-03-28T05:35:02.9433344Z [ 54/193] Installing osbuild-0:176-1.fc 100% |  16.3 MiB/s | 903.6 KiB |  00m00s
+2026-03-28T05:35:02.9689974Z [ 55/193] Installing qemu-user-static-x 100% | 248.8 MiB/s |  14.4 MiB |  00m00s
+2026-03-28T05:35:03.0507924Z [ 56/193] Installing qemu-user-static-x 100% | 189.5 MiB/s |   9.5 MiB |  00m00s
+2026-03-28T05:35:03.0774471Z [ 57/193] Installing qemu-user-static-s 100% | 223.9 MiB/s |  12.8 MiB |  00m00s
+2026-03-28T05:35:03.1398522Z [ 58/193] Installing qemu-user-static-s 100% | 170.1 MiB/s |   8.2 MiB |  00m00s
+2026-03-28T05:35:03.1785827Z [ 59/193] Installing qemu-user-static-s 100% | 112.7 MiB/s |   4.5 MiB |  00m00s
+2026-03-28T05:35:03.2540848Z [ 60/193] Installing qemu-user-static-r 100% | 204.0 MiB/s |  10.8 MiB |  00m00s
+2026-03-28T05:35:03.2809258Z [ 61/193] Installing qemu-user-static-p 100% | 245.2 MiB/s |  15.0 MiB |  00m00s
+2026-03-28T05:35:03.3846313Z [ 62/193] Installing qemu-user-static-o 100% | 103.3 MiB/s |   4.0 MiB |  00m00s
+2026-03-28T05:35:03.4322747Z [ 63/193] Installing qemu-user-static-m 100% | 342.0 MiB/s |  30.8 MiB |  00m00s
+2026-03-28T05:35:03.4719886Z [ 64/193] Installing qemu-user-static-m 100% | 173.4 MiB/s |   8.2 MiB |  00m00s
+2026-03-28T05:35:03.4986697Z [ 65/193] Installing qemu-user-static-m 100% | 107.6 MiB/s |   4.3 MiB |  00m00s
+2026-03-28T05:35:03.5526558Z [ 66/193] Installing qemu-user-static-l 100% | 118.0 MiB/s |   4.7 MiB |  00m00s
+2026-03-28T05:35:03.5955996Z [ 67/193] Installing qemu-user-static-h 100% | 109.3 MiB/s |   4.2 MiB |  00m00s
+2026-03-28T05:35:03.6222512Z [ 68/193] Installing qemu-user-static-h 100% | 134.4 MiB/s |   5.9 MiB |  00m00s
+2026-03-28T05:35:03.6883906Z [ 69/193] Installing qemu-user-static-a 100% | 207.9 MiB/s |  10.8 MiB |  00m00s
+2026-03-28T05:35:03.7159732Z [ 70/193] Installing qemu-user-static-a 100% | 105.1 MiB/s |   4.1 MiB |  00m00s
+2026-03-28T05:35:03.7209956Z [ 71/193] Installing sssd-common-pac-0: 100% |  70.9 MiB/s | 217.8 KiB |  00m00s
+2026-03-28T05:35:03.7232700Z [ 72/193] Installing libisofs-0:1.5.6-7 100% |  98.8 MiB/s | 506.0 KiB |  00m00s
+2026-03-28T05:35:03.7329102Z [ 73/193] Installing libburn-0:1.5.6-7. 100% |  70.1 MiB/s | 359.2 KiB |  00m00s
+2026-03-28T05:35:03.7372358Z [ 74/193] Installing libisoburn-0:1.5.6 100% | 180.1 MiB/s |   1.1 MiB |  00m00s
+2026-03-28T05:35:03.7442075Z [ 75/193] Installing kf5-filesystem-0:5 100% |   1.1 MiB/s |   3.3 KiB |  00m00s
+2026-03-28T05:35:03.8360644Z [ 76/193] Installing xorriso-0:1.5.6-8. 100% |  10.7 MiB/s | 340.3 KiB |  00m00s
+2026-03-28T05:35:03.8448141Z [ 77/193] Installing virt-manager-commo 100% |  91.4 MiB/s |   6.5 MiB |  00m00s
+2026-03-28T05:35:03.8596946Z [ 78/193] Installing virt-install-0:5.1 100% |   2.1 MiB/s |  36.3 KiB |  00m00s
+2026-03-28T05:35:03.8614731Z [ 79/193] Installing libguestfs-xfs-1:1 100% | 289.1 KiB/s | 296.0   B |  00m00s
+2026-03-28T05:35:03.8775557Z [ 80/193] Installing gettext-common-dev 100% | 578.9 MiB/s | 592.8 KiB |  00m00s
+2026-03-28T05:35:03.9240735Z [ 81/193] Installing gettext-devel-0:0. 100% |  31.0 MiB/s |   1.3 MiB |  00m00s
+2026-03-28T05:35:03.9393404Z [ 82/193] Installing autoconf-0:2.72-7. 100% |  82.5 MiB/s |   2.8 MiB |  00m00s
+2026-03-28T05:35:03.9716227Z [ 83/193] Installing neon-0:0.36.0-3.fc 100% |  43.4 MiB/s | 355.4 KiB |  00m00s
+2026-03-28T05:35:03.9942974Z [ 84/193] Installing elfutils-0:0.194-1 100% |  73.3 MiB/s |   2.9 MiB |  00m00s
+2026-03-28T05:35:04.0306207Z [ 85/193] Installing debugedit-0:5.2-3. 100% |  10.1 MiB/s | 217.3 KiB |  00m00s
+2026-03-28T05:35:04.0344752Z [ 86/193] Installing libpanel-0:1.10.3- 100% |  23.7 MiB/s | 582.8 KiB |  00m00s
+2026-03-28T05:35:04.0363612Z [ 87/193] Installing mingw-srvany-redis 100% |  75.5 MiB/s | 154.6 KiB |  00m00s
+2026-03-28T05:35:04.0464663Z [ 88/193] Installing libvirt-ssh-proxy- 100% |   2.0 MiB/s |  20.7 KiB |  00m00s
+2026-03-28T05:35:17.0237610Z [ 89/193] Installing incus-selinux-0:6. 100% | 822.0   B/s |  10.4 KiB |  00m13s
+2026-03-28T05:35:17.0238801Z >>> Running %post scriptlet: incus-selinux-0:6.19.1-1.fc43.noarch               
+2026-03-28T05:35:17.0239765Z >>> Finished %post scriptlet: incus-selinux-0:6.19.1-1.fc43.noarch              
+2026-03-28T05:35:17.0240529Z >>> Scriptlet output:                                                           
+2026-03-28T05:35:17.0241299Z >>> /sbin/setfiles: /etc/selinux/final/targeted/contexts/files/file_contexts: Mu
+2026-03-28T05:35:17.0242131Z >>> /sbin/setfiles: /etc/selinux/final/targeted/contexts/files/file_contexts: Mu
+2026-03-28T05:35:17.0243006Z >>> /sbin/setfiles: /etc/selinux/final/targeted/contexts/files/file_contexts: Mu
+2026-03-28T05:35:17.0243924Z >>> /etc/selinux/final/targeted/contexts/files/file_contexts: Invalid argument  
+2026-03-28T05:35:17.0244803Z >>> libsemanage.semanage_validate_and_compile_fcontexts: setfiles returned error
+2026-03-28T05:35:17.0245899Z >>> semodule:  Failed!                                                          
+2026-03-28T05:35:17.0246539Z >>>                                                                             
+2026-03-28T05:35:17.2661500Z [ 90/193] Installing incus-client-0:6.1 100% |  96.1 MiB/s |  23.0 MiB |  00m00s
+2026-03-28T05:35:17.2705945Z [ 91/193] Installing raft-0:0.22.1-4.fc 100% |  55.6 MiB/s | 227.7 KiB |  00m00s
+2026-03-28T05:35:17.2756101Z [ 92/193] Installing cowsql-0:1.15.9-2. 100% |  48.1 MiB/s | 197.1 KiB |  00m00s
+2026-03-28T05:35:17.4454562Z [ 93/193] Installing xdelta-0:3.1.0-23. 100% |   1.1 MiB/s | 187.1 KiB |  00m00s
+2026-03-28T05:35:17.4455581Z >>> Running sysusers scriptlet: incus-0:6.19.1-1.fc43.x86_64                    
+2026-03-28T05:35:17.4456461Z >>> Finished sysusers scriptlet: incus-0:6.19.1-1.fc43.x86_64                   
+2026-03-28T05:35:17.4457323Z >>> Scriptlet output:                                                           
+2026-03-28T05:35:17.4458437Z >>> Failed to connect to audit log, ignoring: Invalid argument                  
+2026-03-28T05:35:17.4459299Z >>> Creating group 'incus' with GID 956.                                        
+2026-03-28T05:35:17.4460112Z >>> Creating group 'incus-admin' with GID 955.                                  
+2026-03-28T05:35:17.4460596Z >>>                                                                             
+2026-03-28T05:35:17.4461006Z >>> Running %pre scriptlet: incus-0:6.19.1-1.fc43.x86_64                        
+2026-03-28T05:35:17.4461503Z >>> Finished %pre scriptlet: incus-0:6.19.1-1.fc43.x86_64                       
+2026-03-28T05:35:17.4462368Z >>> Scriptlet output:                                                           
+2026-03-28T05:35:17.4463143Z >>> Failed to connect to audit log, ignoring: Invalid argument                  
+2026-03-28T05:35:17.4464029Z >>> /usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to resolve specifier: unin
+2026-03-28T05:35:17.4464791Z >>> All rules containing unresolvable specifiers will be skipped.               
+2026-03-28T05:35:17.4465315Z >>> /usr/lib/tmpfiles.d/systemd.conf:35: Duplicate line for path "/var/lib/syste
+2026-03-28T05:35:17.4466038Z >>> "/home" already exists and is not a directory.                              
+2026-03-28T05:35:17.4467246Z >>> "/srv" already exists and is not a directory.                               
+2026-03-28T05:35:17.4468344Z >>> Failed to open path '/usr/local': No such file or directory                 
+2026-03-28T05:35:17.4469120Z >>> Failed to open path '/usr/local/bin': No such file or directory             
+2026-03-28T05:35:17.4469947Z >>> "/root" already exists and is not a directory.                              
+2026-03-28T05:35:17.4470800Z >>> Failed to open path '/root', ignoring: No such file or directory            
+2026-03-28T05:35:17.4471626Z >>> Failed to open path '/root': No such file or directory                      
+2026-03-28T05:35:17.4472462Z >>> Failed to open path '/root': No such file or directory                      
+2026-03-28T05:35:17.4473277Z >>> Failed to open path '/root': No such file or directory                      
+2026-03-28T05:35:17.4474131Z >>> Failed to open path '/root': No such file or directory                      
+2026-03-28T05:35:17.4474966Z >>> Failed to open path '/root': No such file or directory                      
+2026-03-28T05:35:17.4475673Z >>>                                                                             
+2026-03-28T05:35:17.7135111Z [ 94/193] Installing incus-0:6.19.1-1.f 100% | 257.0 MiB/s |  68.9 MiB |  00m00s
+2026-03-28T05:35:17.7553983Z [ 95/193] Installing libserf-0:1.3.10-1 100% |  28.3 MiB/s | 144.8 KiB |  00m00s
+2026-03-28T05:35:17.7932182Z [ 96/193] Installing subversion-libs-0: 100% | 109.8 MiB/s |   4.4 MiB |  00m00s
+2026-03-28T05:35:17.8345833Z [ 97/193] Installing subversion-0:1.14. 100% |  64.3 MiB/s |   4.8 MiB |  00m00s
+2026-03-28T05:35:17.8594072Z [ 98/193] Installing subversion-perl-0: 100% | 196.1 MiB/s |   4.5 MiB |  00m00s
+2026-03-28T05:35:17.8736980Z [ 99/193] Installing perl-Git-SVN-0:2.5 100% |  51.3 MiB/s | 157.6 KiB |  00m00s
+2026-03-28T05:35:17.9356116Z [100/193] Installing rhash-0:1.4.5-3.fc 100% |  12.4 MiB/s | 356.4 KiB |  00m00s
+2026-03-28T05:35:18.0366892Z [101/193] Installing cmake-0:3.31.11-1. 100% | 269.7 MiB/s |  34.5 MiB |  00m00s
+2026-03-28T05:35:18.4748272Z [102/193] Installing cmake-data-0:3.31. 100% |  22.0 MiB/s |   9.1 MiB |  00m00s
+2026-03-28T05:35:18.4980596Z [103/193] Installing libgda-1:6.0.0-14. 100% | 126.9 MiB/s |   7.5 MiB |  00m00s
+2026-03-28T05:35:18.5144323Z [104/193] Installing liboping-0:1.10.0- 100% |   8.4 MiB/s | 179.9 KiB |  00m00s
+2026-03-28T05:35:18.5482398Z [105/193] Installing gsl-0:2.8-2.fc43.x 100% | 123.6 MiB/s |   3.5 MiB |  00m00s
+2026-03-28T05:35:18.5877224Z [106/193] Installing libsysprof-0:49.0- 100% |  85.8 MiB/s | 702.7 KiB |  00m00s
+2026-03-28T05:35:18.6051260Z [107/193] Installing sysprof-cli-0:49.0 100% |  37.6 MiB/s |   2.0 MiB |  00m00s
+2026-03-28T05:35:18.6154240Z [108/193] Installing llvm20-filesystem- 100% |   1.0 MiB/s |   1.1 KiB |  00m00s
+2026-03-28T05:35:18.9378545Z [109/193] Installing llvm20-libs-0:20.1 100% | 423.3 MiB/s | 139.7 MiB |  00m00s
+2026-03-28T05:35:19.0200885Z [110/193] Installing clang20-resource-f 100% |   7.9 MiB/s |  16.2 KiB |  00m00s
+2026-03-28T05:35:19.2491274Z [111/193] Installing clang20-libs-0:20. 100% | 395.6 MiB/s | 118.7 MiB |  00m00s
+2026-03-28T05:35:19.2542425Z [112/193] Installing bcc-0:0.35.0-2.fc4 100% | 220.1 MiB/s |   2.4 MiB |  00m00s
+2026-03-28T05:35:19.2641363Z [113/193] Installing lcms-libs-0:1.19-4 100% |  58.2 MiB/s | 238.2 KiB |  00m00s
+2026-03-28T05:35:19.2799725Z [114/193] Installing lcms-0:1.19-42.fc4 100% |  11.1 MiB/s | 249.2 KiB |  00m00s
+2026-03-28T05:35:19.2830635Z [115/193] Installing boost-atomic-0:1.8 100% |  10.7 MiB/s |  21.9 KiB |  00m00s
+2026-03-28T05:35:19.3232820Z [116/193] Installing boost-filesystem-0 100% |  47.1 MiB/s | 144.6 KiB |  00m00s
+2026-03-28T05:35:19.3574524Z [117/193] Installing libtracefs-0:1.8.1 100% |  31.3 MiB/s |   2.1 MiB |  00m00s
+2026-03-28T05:35:19.3632607Z [118/193] Installing python3-dotenv-0:1 100% |  27.7 MiB/s | 141.9 KiB |  00m00s
+2026-03-28T05:35:19.3719868Z [119/193] Installing libusal-0:1.1.11-6 100% |  88.8 MiB/s | 454.8 KiB |  00m00s
+2026-03-28T05:35:19.4120337Z [120/193] Installing oddjob-0:0.34.7-17 100% |   3.1 MiB/s | 144.6 KiB |  00m00s
+2026-03-28T05:35:19.4153698Z [121/193] Installing foomatic-db-filesy 100% |   1.1 MiB/s |   1.1 KiB |  00m00s
+2026-03-28T05:35:19.4183355Z [122/193] Installing boost-program-opti 100% |  91.7 MiB/s | 281.8 KiB |  00m00s
+2026-03-28T05:35:19.4252502Z [123/193] Installing boost-chrono-0:1.8 100% |  18.8 MiB/s |  38.5 KiB |  00m00s
+2026-03-28T05:35:19.5362939Z [124/193] Installing ninja-build-0:1.13 100% |  21.5 MiB/s | 483.8 KiB |  00m00s
+2026-03-28T05:35:19.5681843Z [125/193] Installing meson-0:1.8.5-3.fc 100% | 118.6 MiB/s |  13.4 MiB |  00m00s
+2026-03-28T05:35:19.6000338Z [126/193] Installing cryfs-0:0.11.3-13. 100% | 146.5 MiB/s |   4.0 MiB |  00m00s
+2026-03-28T05:35:19.6189339Z [127/193] Installing foo2zjs-0:0.202010 100% |  67.1 MiB/s |   2.1 MiB |  00m00s
+2026-03-28T05:35:19.6373965Z [128/193] Installing oddjob-mkhomedir-0 100% |   2.9 MiB/s |  46.8 KiB |  00m00s
+2026-03-28T05:35:19.6375044Z >>> Running %post scriptlet: oddjob-mkhomedir-0:0.34.7-17.fc43.x86_64           
+2026-03-28T05:35:19.6376027Z >>> Finished %post scriptlet: oddjob-mkhomedir-0:0.34.7-17.fc43.x86_64          
+2026-03-28T05:35:19.6376908Z >>> Scriptlet output:                                                           
+2026-03-28T05:35:19.6377985Z >>> System has not been booted with systemd as init system (PID 1). Can't operat
+2026-03-28T05:35:19.6378895Z >>> Failed to connect to system scope bus via local transport: Host is down     
+2026-03-28T05:35:19.6379670Z >>>                                                                             
+2026-03-28T05:35:19.6831732Z [129/193] Installing genisoimage-0:1.1. 100% |  29.7 MiB/s |   1.1 MiB |  00m00s
+2026-03-28T05:35:19.7190644Z [130/193] Installing podman-compose-0:1 100% |  23.8 MiB/s | 683.7 KiB |  00m00s
+2026-03-28T05:35:19.7382305Z [131/193] Installing trace-cmd-0:3.3.1- 100% |  44.0 MiB/s |   1.5 MiB |  00m00s
+2026-03-28T05:35:19.8034889Z [132/193] Installing bpftrace-0:0.24.2- 100% | 211.5 MiB/s |  12.7 MiB |  00m00s
+2026-03-28T05:35:19.8394114Z [133/193] Installing sysprof-0:49.0-1.f 100% |  52.3 MiB/s |   1.4 MiB |  00m00s
+2026-03-28T05:35:20.0850734Z [134/193] Installing igt-gpu-tools-0:2. 100% |  98.8 MiB/s |  26.0 MiB |  00m00s
+2026-03-28T05:35:20.0875403Z [135/193] Installing libgda-sqlite-1:6. 100% |  15.6 MiB/s |  16.0 KiB |  00m00s
+2026-03-28T05:35:20.1350373Z [136/193] Installing git-svn-0:2.53.0-1 100% | 103.9 MiB/s | 212.8 KiB |  00m00s
+2026-03-28T05:35:20.1493122Z [137/193] Installing incus-agent-0:6.19 100% | 301.5 MiB/s |  18.1 MiB |  00m00s
+2026-03-28T05:35:20.1611537Z [138/193] Installing libvirt-daemon-kvm 100% | 121.1 KiB/s | 124.0   B |  00m00s
+2026-03-28T05:35:20.2280539Z [139/193] Installing virt-v2v-1:2.10.0- 100% | 296.2 MiB/s |  21.6 MiB |  00m00s
+2026-03-28T05:35:20.2979698Z [140/193] Installing flatpak-builder-0: 100% |   7.7 MiB/s | 581.6 KiB |  00m00s
+2026-03-28T05:35:20.2980602Z >>> Running sysusers scriptlet: davfs2-0:1.7.2-1.fc43.x86_64                    
+2026-03-28T05:35:20.2981194Z >>> Finished sysusers scriptlet: davfs2-0:1.7.2-1.fc43.x86_64                   
+2026-03-28T05:35:20.2981706Z >>> Scriptlet output:                                                           
+2026-03-28T05:35:20.2982196Z >>> Failed to connect to audit log, ignoring: Invalid argument                  
+2026-03-28T05:35:20.2982705Z >>> Creating group 'davfs2' with GID 954.                                       
+2026-03-28T05:35:20.2983215Z >>> Creating user 'davfs2' (User account for davfs2) with UID 954 and GID 954.  
+2026-03-28T05:35:20.2983664Z >>>                                                                             
+2026-03-28T05:35:20.3421022Z [141/193] Installing davfs2-0:1.7.2-1.f 100% |  14.8 MiB/s | 378.1 KiB |  00m00s
+2026-03-28T05:35:20.3650833Z [142/193] Installing automake-0:1.18.1- 100% |  51.0 MiB/s |   1.8 MiB |  00m00s
+2026-03-28T05:35:20.4014501Z [143/193] Installing cockpit-machines-0 100% | 116.2 MiB/s | 952.3 KiB |  00m00s
+2026-03-28T05:35:20.4226760Z [144/193] Installing virt-manager-0:5.1 100% |  70.3 MiB/s |   3.6 MiB |  00m00s
+2026-03-28T05:35:20.4255248Z [145/193] Installing sssd-ad-0:2.12.0-1 100% |  68.0 MiB/s | 418.1 KiB |  00m00s
+2026-03-28T05:35:20.4274534Z [146/193] Installing qemu-user-static-2 100% |  44.1 MiB/s |  45.1 KiB |  00m00s
+2026-03-28T05:35:20.4474878Z [147/193] Installing musl-gcc-0:1.2.5-5 100% | 565.8 KiB/s |   7.9 KiB |  00m00s
+2026-03-28T05:35:20.4846731Z [148/193] Installing lld-0:21.1.8-4.fc4 100% |   1.5 MiB/s |  47.3 KiB |  00m00s
+2026-03-28T05:35:20.5025260Z [149/193] Installing python3-pygit2-0:1 100% |  86.9 MiB/s |   1.5 MiB |  00m00s
+2026-03-28T05:35:20.5373711Z [150/193] Installing krb5-workstation-0 100% |  53.7 MiB/s |   2.6 MiB |  00m00s
+2026-03-28T05:35:20.5533054Z [151/193] Installing podman-machine-5:5 100% |  40.2 KiB/s | 412.0   B |  00m00s
+2026-03-28T05:35:20.6123219Z [152/193] Installing gdb-0:17.1-4.fc43. 100% |  21.9 MiB/s | 471.6 KiB |  00m00s
+2026-03-28T05:35:20.7063028Z [153/193] Installing samba-2:4.23.5-2.f 100% |  22.2 MiB/s |   2.6 MiB |  00m00s
+2026-03-28T05:35:20.7064012Z >>> [RPM] group printadmin does not exist - using root                          
+2026-03-28T05:35:20.7236881Z [154/193] Installing virt-viewer-0:11.0 100% |  31.1 MiB/s |   1.2 MiB |  00m00s
+2026-03-28T05:35:20.9259159Z [155/193] Installing clang-0:21.1.8-4.f 100% | 474.7 MiB/s |  65.5 MiB |  00m00s
+2026-03-28T05:35:21.1280135Z [156/193] Installing clang-tools-extra- 100% | 309.3 MiB/s |  65.9 MiB |  00m00s
+2026-03-28T05:35:21.1639592Z [157/193] Installing compiler-rt-0:21.1 100% | 489.3 MiB/s |  41.1 MiB |  00m00s
+2026-03-28T05:35:21.1793202Z [158/193] Installing qemu-user-binfmt-2 100% | 667.7 KiB/s |  11.4 KiB |  00m00s
+2026-03-28T05:35:21.1863760Z [159/193] Installing libvirt-nss-0:11.6 100% |  15.6 MiB/s |  48.0 KiB |  00m00s
+2026-03-28T05:35:21.2005942Z [160/193] Installing cockpit-ostree-1:2 100% |  56.7 MiB/s | 348.3 KiB |  00m00s
+2026-03-28T05:35:21.2066196Z [161/193] Installing cascadia-code-font 100% | 257.1 MiB/s |   3.6 MiB |  00m00s
+2026-03-28T05:35:21.2290732Z [162/193] Installing util-linux-script- 100% |   6.9 MiB/s | 140.7 KiB |  00m00s
+2026-03-28T05:35:21.3302305Z [163/193] Installing podman-tui-0:1.11. 100% | 342.9 MiB/s |  31.5 MiB |  00m00s
+2026-03-28T05:35:21.4152027Z [164/193] Installing nu-0:0.99.1-16.fc4 100% | 343.5 MiB/s |  33.7 MiB |  00m00s
+2026-03-28T05:35:21.4224692Z [165/193] Installing git-subtree-0:2.53 100% |  45.9 MiB/s |  94.1 KiB |  00m00s
+2026-03-28T05:35:21.4369062Z [166/193] Installing bpftop-0:0.7.1-2.f 100% |  89.6 MiB/s |   1.9 MiB |  00m00s
+2026-03-28T05:35:21.5381011Z [167/193] Installing android-tools-1:35 100% | 136.9 MiB/s |   6.0 MiB |  00m00s
+2026-03-28T05:35:21.5656009Z [168/193] Installing valgrind-1:3.26.0- 100% | 381.5 MiB/s |  28.2 MiB |  00m00s
+2026-03-28T05:35:21.6393647Z [169/193] Installing strace-0:6.19-1.fc 100% | 110.0 MiB/s |   2.8 MiB |  00m00s
+2026-03-28T05:35:21.8415019Z [170/193] Installing perf-0:6.19.9-200. 100% |  57.7 MiB/s |  12.2 MiB |  00m00s
+2026-03-28T05:35:22.1890115Z [171/193] Installing llvm-0:21.1.8-4.fc 100% | 231.5 MiB/s |  89.4 MiB |  00m00s
+2026-03-28T05:35:22.2071103Z [172/193] Installing waypipe-0:0.10.5-2 100% |  84.5 MiB/s |   1.9 MiB |  00m00s
+2026-03-28T05:35:22.2144126Z [173/193] Installing sssd-krb5-0:2.12.0 100% |  28.2 MiB/s |  86.6 KiB |  00m00s
+2026-03-28T05:35:22.2308707Z [174/193] Installing setools-console-0: 100% |   6.9 MiB/s | 141.7 KiB |  00m00s
+2026-03-28T05:35:22.2697718Z [175/193] Installing libsss_autofs-0:2. 100% |  21.7 MiB/s |  66.7 KiB |  00m00s
+2026-03-28T05:35:22.2880621Z [176/193] Installing gnome-tweaks-0:49. 100% |  27.0 MiB/s |   1.5 MiB |  00m00s
+2026-03-28T05:35:22.3191537Z [177/193] Installing git-credential-lib 100% |  19.8 MiB/s |  20.3 KiB |  00m00s
+2026-03-28T05:35:22.3457899Z [178/193] Installing fuse-encfs-0:1.9.5 100% |  33.0 MiB/s |   1.6 MiB |  00m00s
+2026-03-28T05:35:22.3552711Z [179/193] Installing jetbrains-mono-nl- 100% | 325.0 MiB/s |   3.2 MiB |  00m00s
+2026-03-28T05:35:22.3611100Z [180/193] Installing jetbrains-mono-fon 100% | 257.8 MiB/s |   2.3 MiB |  00m00s
+2026-03-28T05:35:22.3622662Z [181/193] Installing opendyslexic-fonts 100% | 174.0 MiB/s | 890.7 KiB |  00m00s
+2026-03-28T05:35:22.3708724Z [182/193] Installing jetbrains-mono-fon 100% | 121.1 KiB/s | 124.0   B |  00m00s
+2026-03-28T05:35:22.4149999Z [183/193] Installing ugrep-0:7.2.2-2.fc 100% |  60.5 MiB/s |   2.8 MiB |  00m00s
+2026-03-28T05:35:22.4373947Z [184/193] Installing tiptop-0:2.3.2-5.f 100% |   6.6 MiB/s | 120.8 KiB |  00m00s
+2026-03-28T05:35:22.4546273Z [185/193] Installing numactl-0:2.0.19-3 100% |   7.2 MiB/s | 161.3 KiB |  00m00s
+2026-03-28T05:35:22.4711122Z [186/193] Installing nicstat-0:1.95-26. 100% |   3.4 MiB/s |  55.3 KiB |  00m00s
+2026-03-28T05:35:22.4859275Z [187/193] Installing iotop-c-0:1.30-2.f 100% |   8.6 MiB/s | 141.2 KiB |  00m00s
+2026-03-28T05:35:22.5710449Z [188/193] Installing ltrace-0:0.7.91-53 100% |   3.7 MiB/s | 295.3 KiB |  00m00s
+2026-03-28T05:35:22.5711687Z >>> Running sysusers scriptlet: ccache-0:4.11.3-2.fc43.x86_64                   
+2026-03-28T05:35:22.5712897Z >>> Finished sysusers scriptlet: ccache-0:4.11.3-2.fc43.x86_64                  
+2026-03-28T05:35:22.5713931Z >>> Scriptlet output:                                                           
+2026-03-28T05:35:22.5714927Z >>> Failed to connect to audit log, ignoring: Invalid argument                  
+2026-03-28T05:35:22.5715955Z >>> Creating group 'ccache' with GID 953.                                       
+2026-03-28T05:35:22.5716822Z >>>                                                                             
+2026-03-28T05:35:22.6443312Z [189/193] Installing ccache-0:4.11.3-2. 100% |  19.9 MiB/s |   1.6 MiB |  00m00s
+2026-03-28T05:35:22.6966194Z [190/193] Installing powertop-0:2.15-11 100% |  11.5 MiB/s | 588.4 KiB |  00m00s
+2026-03-28T05:35:22.7182883Z [191/193] Installing ifuse-0:1.1.4-19.f 100% |   3.5 MiB/s |  61.7 KiB |  00m00s
+2026-03-28T05:35:22.7364798Z [192/193] Installing bcache-tools-0:1.1 100% |   6.9 MiB/s | 147.5 KiB |  00m00s
+2026-03-28T05:35:27.4451599Z [193/193] Installing adcli-0:0.9.2-10.f 100% |  72.3 KiB/s | 340.7 KiB |  00m05s
+2026-03-28T05:35:27.4452533Z >>> Running %triggerin scriptlet: systemd-0:258.7-1.fc43.x86_64                 
+2026-03-28T05:35:27.4453302Z >>> Finished %triggerin scriptlet: systemd-0:258.7-1.fc43.x86_64                
+2026-03-28T05:35:27.4454050Z >>> Scriptlet output:                                                           
+2026-03-28T05:35:27.4454784Z >>> Failed to connect to audit log, ignoring: Invalid argument                  
+2026-03-28T05:35:27.4455456Z >>>                                                                             
+2026-03-28T05:35:27.4455992Z Complete!
+2026-03-28T05:35:28.6273600Z After this operation, 98 KiB will be freed (install 0 B, remove 98 KiB).
+2026-03-28T05:35:28.6274273Z Running transaction
+2026-03-28T05:35:28.6274619Z Package Arch   Version      Repository      Size
+2026-03-28T05:35:28.6275181Z Removing:
+2026-03-28T05:35:28.6275460Z  libnsl x86_64 2.42-10.fc43 updates     98.0 KiB
+2026-03-28T05:35:28.6275721Z 
+2026-03-28T05:35:28.6275834Z Transaction Summary:
+2026-03-28T05:35:28.6276247Z  Removing:           1 package
+2026-03-28T05:35:28.6276487Z 
+2026-03-28T05:35:28.9222488Z [1/2] Prepare transaction               100% |   4.0   B/s |   1.0   B |  00m00s
+2026-03-28T05:35:29.1810767Z [2/2] Removing libnsl-0:2.42-10.fc43.x8 100% |  15.0   B/s |   4.0   B |  00m00s
+2026-03-28T05:35:29.1811500Z Complete!
+2026-03-28T05:35:29.2465679Z Removed 17 files, 11 directories (total of 146 MiB). 0 errors occurred.
+2026-03-28T05:35:29.2834447Z [2/2] STEP 4/5: RUN --network=none ./bin/mise run finalize:lint
+2026-03-28T05:35:29.3863236Z [finalize:lint] $ /.mise/tasks/finalize/lint.nu
+2026-03-28T05:35:35.2529568Z Lint warning: nonempty-run-tmp: Found content in runtime-only directories (/run, /tmp):
+2026-03-28T05:35:35.2530486Z   /run/secrets
+2026-03-28T05:35:35.2530685Z 
+2026-03-28T05:35:35.2531086Z Lint warning: var-tmpfiles: Found content in /var missing systemd tmpfiles.d entries:
+2026-03-28T05:35:35.2532049Z   d /var/lib/containers 0755 root root - -
+2026-03-28T05:35:35.2532378Z   d /var/lib/samba/drivers 0775 root root - -
+2026-03-28T05:35:35.2532693Z   d /var/lib/tpm2-tss 0755 root root - -
+2026-03-28T05:35:35.2533164Z   d /var/lib/tpm2-tss/system 0755 root root - -
+2026-03-28T05:35:35.2533527Z   d /var/usrlocal/etc 0755 root root - -
+2026-03-28T05:35:35.2533820Z   ...and 6 more
+2026-03-28T05:35:35.2533945Z 
+2026-03-28T05:35:35.2534039Z Checks passed: 11
+2026-03-28T05:35:35.2534439Z Checks skipped: 1
+2026-03-28T05:35:35.2534670Z Warnings: 2
+2026-03-28T05:35:35.3054370Z [2/2] STEP 5/5: LABEL "containers.bootc"="1" "io.artifacthub.package.deprecated"="false" "io.artifacthub.package.keywords"="bootc,ublue,universal-blue" "io.artifacthub.package.license"="Apache-2.0" "io.artifacthub.package.logo-url"="https://avatars.githubusercontent.com/u/120078124?s=200&v=4" "io.artifacthub.package.prerelease"="false" "io.artifacthub.package.readme-url"="https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md" "org.opencontainers.image.created"="2026-03-28T05:32:24Z" "org.opencontainers.image.description"="Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling" "org.opencontainers.image.documentation"="https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md" "org.opencontainers.image.licenses"="Apache-2.0" "org.opencontainers.image.revision"="6ab36c6f4d0209065cc95dce5d87a7b9146c2759" "org.opencontainers.image.source"="https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile" "org.opencontainers.image.title"="bazzite-workstation" "org.opencontainers.image.url"="https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759" "org.opencontainers.image.vendor"="rjallais-workstation" "org.opencontainers.image.version"="testing.20260328"
+2026-03-28T05:35:35.3061226Z [2/2] COMMIT bazzite-workstation:testing
+2026-03-28T05:35:38.5012274Z Getting image source signatures
+2026-03-28T05:35:38.5016313Z Copying blob sha256:0f9b83e9f282b5557312cfff17dbd4c7e2939371daac53f8144c1fd4b017ca47
+2026-03-28T05:35:38.5017196Z Copying blob sha256:78e3d554e042048a5b6c79fa98487a2e2cfd9ac32eb7fa4f19f35ce4b61524f1
+2026-03-28T05:35:38.5019601Z Copying blob sha256:0f7fc2c332f904ea7b11319d31647faf5d728e41da05de48f0060bc79ee61eed
+2026-03-28T05:35:38.5021367Z Copying blob sha256:34245772060b1b62756cd722f1c06b1483cfc488e73329f5c1a8a4f804f81aa5
+2026-03-28T05:35:38.5023757Z Copying blob sha256:0f409ed74b0ffb3058384dbf74cd4347f96fef1209ecc6a7a9a9396430d249e3
+2026-03-28T05:35:38.5029344Z Copying blob sha256:d4dad3a8d50154d21a14396957cb2825595723636d415f28813d2106d95d71c5
+2026-03-28T05:35:38.5030268Z Copying blob sha256:06747bf1921fe91000d1bbadf509c55f0474792b542c2cea29d821ccfea6a49d
+2026-03-28T05:35:38.5030864Z Copying blob sha256:fac9a56d4a8957f4826523f6c5ef154d44174b5959d16c78d45936f1de9f83c9
+2026-03-28T05:35:38.5031465Z Copying blob sha256:f669af69b92d1f7722a61dfe1564549b8e7fb6ec250f3ec2a4cda776eca2d539
+2026-03-28T05:35:38.5032077Z Copying blob sha256:b151fef34a581417ff8abe66a315aa18e01825b2de4c4cf3b9599b34812abe21
+2026-03-28T05:35:38.5036352Z Copying blob sha256:f34a3a03b36f9af4d767795e3286f7d353fa496d5181fdbfd00b6bec02bc73d4
+2026-03-28T05:35:38.5037163Z Copying blob sha256:80df487b491b99e334447cf57ff34b8d49af932ddedcf0a794773b07e504b8b5
+2026-03-28T05:35:38.5038993Z Copying blob sha256:fe14eaef03cf474a870694f733d5ecc02dfb841d672b417f70d39b880012d37c
+2026-03-28T05:35:38.5039674Z Copying blob sha256:44aeee6a176704cf1959a673f73c54a7cedf32e1299aaba09320d7e46e097cb5
+2026-03-28T05:35:38.5040342Z Copying blob sha256:7977d78e2199677d157b10e8ea8753722303e69d2cb523e25a1a75eafabece5a
+2026-03-28T05:35:38.5041096Z Copying blob sha256:4dad7411227c3885a0db01dc50099ed45d55d1a7510bd4d919b97dda8ba168dc
+2026-03-28T05:35:38.5041720Z Copying blob sha256:728cc60b3c1a563bc21ee98525c01c824101ebdcf0d5a13e660fdd9121a24435
+2026-03-28T05:35:38.5042780Z Copying blob sha256:9e9700486d67782a4288d3292138896a5cdfd6169c86582b82004187d31f045f
+2026-03-28T05:35:38.5059600Z Copying blob sha256:76422a2056ee427e27eda75c0fb35892788c4179a3b7fab51ac0d83ff5263be2
+2026-03-28T05:35:38.5060644Z Copying blob sha256:8955d109995fab6042518216fdb0777b8a3a879ccf17264ee7767479a3efe6bf
+2026-03-28T05:35:38.5061659Z Copying blob sha256:35270ec0ec366cd3e580555160b3ad568b719a7edc2e3d26bf3841d16f8d95ea
+2026-03-28T05:35:38.5064794Z Copying blob sha256:1892ee600fec2694c441eb44e46d4da8d7bf616dc4a38dbee8a4a3734ce81c19
+2026-03-28T05:35:38.5069035Z Copying blob sha256:6a520e2124dbf8c18ca503526470a5fe2cbb220af05f2f2c5ee5c79c591fd038
+2026-03-28T05:35:38.5069706Z Copying blob sha256:af7a2e16d97238a751a8870185217580c301a1fcacd16b96543e9bf55927a3bb
+2026-03-28T05:35:38.5070475Z Copying blob sha256:ac78b56f316a9609d50b18101919fba4e6242c3a8758b6419cff2d7fba75fa20
+2026-03-28T05:35:38.5071457Z Copying blob sha256:9d86b44cf262958049ea8e1776d75ff2212901f018f3f814f6fb3b57d1f4e8db
+2026-03-28T05:35:38.5072408Z Copying blob sha256:fd30774321790200c84b396524aebef4df530043af0bea9e77c45f136d86007f
+2026-03-28T05:35:38.5073076Z Copying blob sha256:f9c8486ddb8175bef11c1ea315f8fb43696fcb73c205f287a42533cac1eadec4
+2026-03-28T05:35:38.5073654Z Copying blob sha256:d203b8b2a9bbbd2bc1abcd0a1f9bf35f31c81ce1fda3d86620fae508306f4952
+2026-03-28T05:35:38.5074317Z Copying blob sha256:b7f7fce777e5f80af3739ff7037216b0a4e33905abdd16f915a74f003347c8b6
+2026-03-28T05:35:38.5074996Z Copying blob sha256:d37eb833154285c5552b8fc3b893e72f4a5723d9ecd375adbf5c177d351f68e5
+2026-03-28T05:35:38.5075647Z Copying blob sha256:d78ecf5b70b333c69036128ca00c7c2342d8abf586a90a23e184c60b915d7b07
+2026-03-28T05:35:38.5076210Z Copying blob sha256:51fc58a453e03354f65667aaa2fb7d3e764ae83a03c3492d8941be302d36210d
+2026-03-28T05:35:38.5077153Z Copying blob sha256:80fb10aa4effc110ddcb25f40f0df2c133e8ea71db4af645ff2a9009300efca2
+2026-03-28T05:35:38.5078039Z Copying blob sha256:c9d85669a5b9460241e6134d300b02203f6391576181e494f2f4613fd60f5234
+2026-03-28T05:35:38.5078621Z Copying blob sha256:898aa9ddd02ff7ab882df23ccc6aa7c7fe4ecad8523ff6594f4e5797065fa352
+2026-03-28T05:35:38.5079305Z Copying blob sha256:48c2cd299cc5909d7c4636d0bca7525b0186ebeb03adcd38bbd0ecff25763957
+2026-03-28T05:35:38.5079877Z Copying blob sha256:78537c80ad1de07a9f725b139255a01ec338c5890e5b93bdd0d82c7f5f3063c5
+2026-03-28T05:35:38.5080536Z Copying blob sha256:f7da13a0b8871c20e7cf3986d8c2e23735b35c5dcfc2ca4d63e891bfc1035024
+2026-03-28T05:35:38.5081219Z Copying blob sha256:61fc59107c0ef1b3d72e3b12f71edeb82327d1fd97b7bb7581e5f7b31367ad4c
+2026-03-28T05:35:38.5081859Z Copying blob sha256:2ec030b09b85db2d0b62a51811aea5db4c114beb1e13ec96bee30e242e8e685c
+2026-03-28T05:35:38.5082478Z Copying blob sha256:b52d27c50bd85a50eeed44eb89b98ca32785b0640ed64706a724d262b540934c
+2026-03-28T05:35:38.5083173Z Copying blob sha256:858a40c08fb8514f902bf5475804dbe677739a6390bafe9d12f9cfbe3bcf2cf4
+2026-03-28T05:35:38.5083828Z Copying blob sha256:69a98fa91e36b62e99bd414ca4852c808cbc56039cc1cd4ea6d8ec2ea164a796
+2026-03-28T05:35:38.5084408Z Copying blob sha256:c86934d4f35bb15f506640f6237bd387a06697653cafe148b1bd11842a1165f6
+2026-03-28T05:35:38.5084967Z Copying blob sha256:828f6bb7ea67edf7e587c211161773de8fe65288116e668eaefe0c627625aefa
+2026-03-28T05:35:38.5089106Z Copying blob sha256:5ee51f7806e92c98696c6e712859346cf2d9bd110fae4e047ced09d0fbc8c51c
+2026-03-28T05:35:38.5089924Z Copying blob sha256:a4cf9b0169c0a1e544067e3a6bfb79e7b23b8eb3cb406bdd3a17259077224525
+2026-03-28T05:35:38.5090828Z Copying blob sha256:1ad46b59d0dfcc30647e062b6e5a487fb6b3301e83337100e4809ca5fcbb8ae9
+2026-03-28T05:35:38.5091497Z Copying blob sha256:443bb44ab0688458367858d9be558992590eeeffe37160b6854fdef8934e0801
+2026-03-28T05:35:38.5092148Z Copying blob sha256:73b053abea61d6ed0b52009c6dda1b22c1021dbde47d212e69395306eab972c4
+2026-03-28T05:35:38.5092858Z Copying blob sha256:1f48d6efa18b25efc86957dc8563f2e2433ac12c964ad259e9502e5ae83f9df4
+2026-03-28T05:35:38.5093414Z Copying blob sha256:b9dc6db4cc02092ac5fb7b4b5f78e05bf92229cbf9b100f850d7ed4162c43f8c
+2026-03-28T05:35:38.5094279Z Copying blob sha256:dce2b668084785c148a1610d5014b02521762739460a25a8dcb2aa793392fffa
+2026-03-28T05:35:38.5094965Z Copying blob sha256:4fe3bfdec7ff5e56b22f05574cba3e44563ec9191b20444839b88396013cab93
+2026-03-28T05:35:38.5095626Z Copying blob sha256:3d923cf22e67a2ea87ae848e8f7da3a914faf2cc3224f3ec201680e0e71f07c1
+2026-03-28T05:35:38.5096205Z Copying blob sha256:429411278c64ecf1dabbe619f46ef390fc8ed5ae15280e55354c75d379cd6d8b
+2026-03-28T05:35:38.5096742Z Copying blob sha256:398d0b3033945766e2c459019f51819fc97eda8c80e6f8406a19d33355b2acbc
+2026-03-28T05:35:38.5097665Z Copying blob sha256:4906435de53a3cf0c7c2a37f7127363cfd7608f96c3e53a025858746de5d49a7
+2026-03-28T05:35:38.5098255Z Copying blob sha256:39b50c0b8909f245fdfc195d1a55533a97c75019d2ba86d5dd4cf5d5d9d97326
+2026-03-28T05:35:38.5098938Z Copying blob sha256:243063786591b4b80ec8ebe1893bee64f607ef6c7d6a9c149d151aa8dd947a7a
+2026-03-28T05:35:38.5099511Z Copying blob sha256:49aa380fd1bdc88aac66ae19da94238225ca959f792e52aadecf2c3223703e05
+2026-03-28T05:35:38.5100166Z Copying blob sha256:492f60e9133dba8463036112ace86a280b162ed39ced03b7681ca57b752ecee9
+2026-03-28T05:35:38.5109358Z Copying blob sha256:2284e0ec16849328853ffe162be10af26e51987935b370dd7509a85a9ab45adb
+2026-03-28T05:35:38.5110462Z Copying blob sha256:7342a183f7e6e7d6581433ee7c0d4cc1ba85aa6652ec22bdafa2c84a25cea5b0
+2026-03-28T05:35:38.5111447Z Copying blob sha256:d7aeb787adbca5f68118e4665c53f4137ac65ecf8ecc548d474c2bdf10d7a1b7
+2026-03-28T05:35:38.5112231Z Copying blob sha256:5205014832aeebf3bdfa801c19eae3451288ac17466940ba1b21b3b432df9d3e
+2026-03-28T05:35:38.5112821Z Copying blob sha256:3d154a755627652b8c7823dc4d28ec65b3286f26722de4b9da5b13ad2867a412
+2026-03-28T05:35:38.5113575Z Copying blob sha256:4a5c42724ac90250d06b8f5779497a95e2203f63c70c015527ff7254a3c798ec
+2026-03-28T05:35:38.5114420Z Copying blob sha256:e3c8fbda9860c5024a63ab2968ace2f2e7e4d18f6317d5fe88b6fc5c68d6a9ba
+2026-03-28T05:35:38.5115124Z Copying blob sha256:817779aff0fb45bfbc90217a05970948364153e5515a056f25f5d1eb696e43bf
+2026-03-28T05:35:38.5115691Z Copying blob sha256:4255b60fc11c96df535c5c11a52c635148ad2c120156ea35b676686b50a9b916
+2026-03-28T05:35:38.5116397Z Copying blob sha256:d93d2f519b41534e5672c647fec51e0f8fe5118b3b6487085ecea955154c37a8
+2026-03-28T05:35:38.5116953Z Copying blob sha256:edff25b59735619850a7c7ca0113ffd22a629f3649ef906fb5e329215be35988
+2026-03-28T05:35:38.5117792Z Copying blob sha256:b32e4962185c5adfaf6b100999b2476fcf819b7252abbd7c4838ec8d761d7ef9
+2026-03-28T05:35:38.5118357Z Copying blob sha256:3a7be8cd4bf8253290cc95ba2b916f10e33c567f80dc44d29cdf310d175f6857
+2026-03-28T05:35:38.5119055Z Copying blob sha256:789df41bba9717afa789468cd773c93d67175f00a7d10d00a2e0459400265711
+2026-03-28T05:35:38.5119612Z Copying blob sha256:40bcb79bb0bc308f0feb826602965225e7f1d2be8102b6f5b0ae3add451c18e0
+2026-03-28T05:35:38.5120300Z Copying blob sha256:54bdba64d5fc70949e667545ebfa85da1b58820e19c0379114b87c8fa6cd399a
+2026-03-28T05:35:38.5120859Z Copying blob sha256:b372f24757e14a008ed7a77d4cd36fa50ecf9b8c6acfed0637e159e5b8b48b80
+2026-03-28T05:35:38.5121530Z Copying blob sha256:72207284281aefec2dc339f63ff48a83d9da7a9dc0ceeb46f82efabea9281ecb
+2026-03-28T05:35:38.5122113Z Copying blob sha256:dd44ea87ba3913f2608c9607ab2239223eecdf11cd306b5725a4aacb447a968f
+2026-03-28T05:35:38.5122725Z Copying blob sha256:a1568211fe7c0bf09774c57c1596c1a9a1b9f4c785d9fce7ff34b21b5c292794
+2026-03-28T05:35:38.5123788Z Copying blob sha256:d6f5d5d1c1b4ab1d84a733b195a63bd1e05ee41203b246efea0517fa7d64c04f
+2026-03-28T05:35:38.5124615Z Copying blob sha256:9c1ede44b9a7322fb6e15db0610b63403cbc21a12fe665babd797dac07b93906
+2026-03-28T05:35:38.5125172Z Copying blob sha256:41b0dd43664c35d5848fa5a6b471723c6a5751033dc94101d748c6161c612b12
+2026-03-28T05:35:38.5125722Z Copying blob sha256:242cf455d6cd25d1aedfa9c2b2685d235fb159cdf6acc8d436ef3531492ea637
+2026-03-28T05:35:38.5126283Z Copying blob sha256:b1262b50043eb1b5c107cbe47401ef782de6e17be4342ad08e8b413dd8830e25
+2026-03-28T05:35:38.5126833Z Copying blob sha256:6eef89b04950328503f47d4a2ba0dcc4c783298cd07237e5668896f1d28bd9e4
+2026-03-28T05:35:38.5127869Z Copying blob sha256:9d34a809713d9a1d0779c4c0fa5b7c2ffd772e07390bf6e8977aac30a44a706a
+2026-03-28T05:35:38.5128696Z Copying blob sha256:ea96a125bac1beeecfe9093c41f714107d266ad27dd86414adad89d0fdb43f44
+2026-03-28T05:35:38.5129726Z Copying blob sha256:74a716b4568cab8cbff5dc3c283c7cede110051cfac4a4788b5a0bfb8ddc6adb
+2026-03-28T05:35:38.5130678Z Copying blob sha256:87586939f613ff29caec7e4cd8a32edb2b89285d32682cabaa2824718a77b1b2
+2026-03-28T05:35:38.5131409Z Copying blob sha256:c933d3cdd39c86f3887c8bd2d35f903168ab9bb6816929fe5aa935605b1ec735
+2026-03-28T05:35:38.5131966Z Copying blob sha256:c165d8bc19ba0fa2ab316a68eef43f4f390ad1c376443fc3ec5ff7b37b7fb0c3
+2026-03-28T05:35:38.5132530Z Copying blob sha256:a0c8fa8fda49865d267768956d246e267b9d2d3411606745ad683e60b89dd60c
+2026-03-28T05:35:38.5133079Z Copying blob sha256:12787d84fa137cd5649a9005efe98ec9d05ea46245fdc50aecb7dd007f2035b1
+2026-03-28T05:35:38.5133633Z Copying blob sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef
+2026-03-28T05:35:38.5134193Z Copying blob sha256:054e290ebc91dc9f01c605b8b7d37a988ad5b36c8239aa202a73f12ef87da856
+2026-03-28T05:35:46.3788366Z Copying config sha256:648633af009f3cabb544e9f3dd063ca15f0793261ee514d77fd7ce691af254be
+2026-03-28T05:35:46.3804368Z Writing manifest to image destination
+2026-03-28T05:35:46.5832623Z --> 648633af009f
+2026-03-28T05:35:46.5833137Z Successfully tagged localhost/bazzite-workstation:testing
+2026-03-28T05:35:47.2313713Z 648633af009f3cabb544e9f3dd063ca15f0793261ee514d77fd7ce691af254be
+2026-03-28T05:35:47.2430804Z Tagging the built image with tags testing,testing.20260328,20260328
+2026-03-28T05:35:47.2461057Z [command]/usr/bin/buildah tag bazzite-workstation:testing bazzite-workstation:testing.20260328 bazzite-workstation:20260328
+2026-03-28T05:35:47.2985968Z ✅ Successfully built images "bazzite-workstation:testing, bazzite-workstation:testing.20260328, bazzite-workstation:20260328"

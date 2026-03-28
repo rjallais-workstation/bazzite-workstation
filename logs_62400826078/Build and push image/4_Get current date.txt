@@ -1,0 +1,15 @@
+﻿2026-03-28T05:32:24.0366354Z ##[group]Run # This generates a timestamp like what is defined on the ArtifactHub documentation
+2026-03-28T05:32:24.0367091Z [36;1m# This generates a timestamp like what is defined on the ArtifactHub documentation[0m
+2026-03-28T05:32:24.0368048Z [36;1m# E.G: 2022-02-08T15:38:15Z'[0m
+2026-03-28T05:32:24.0368502Z [36;1m# https://artifacthub.io/docs/topics/repositories/container-images/[0m
+2026-03-28T05:32:24.0368964Z [36;1m# https://linux.die.net/man/1/date[0m
+2026-03-28T05:32:24.0369352Z [36;1mecho "date=$(date -u +%Y\-%m\-%d\T%H\:%M\:%S\Z)" >> $GITHUB_OUTPUT[0m
+2026-03-28T05:32:24.0395006Z shell: /usr/bin/bash -e {0}
+2026-03-28T05:32:24.0395289Z env:
+2026-03-28T05:32:24.0395690Z   IMAGE_DESC: Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+2026-03-28T05:32:24.0396194Z   IMAGE_KEYWORDS: bootc,ublue,universal-blue
+2026-03-28T05:32:24.0396633Z   IMAGE_LOGO_URL: https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+2026-03-28T05:32:24.0397066Z   IMAGE_NAME: bazzite-workstation
+2026-03-28T05:32:24.0397406Z   IMAGE_REGISTRY: ghcr.io/rjallais-workstation
+2026-03-28T05:32:24.0398152Z   DEFAULT_TAG: testing
+2026-03-28T05:32:24.0398393Z ##[endgroup]

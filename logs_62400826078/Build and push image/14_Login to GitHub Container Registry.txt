@@ -1,0 +1,42 @@
+﻿2026-03-28T05:51:47.0642836Z ##[group]Run docker/login-action@b45d80f862d83dbcd57f89517bcf500b2ab88fb2
+2026-03-28T05:51:47.0643272Z with:
+2026-03-28T05:51:47.0643473Z   registry: ghcr.io
+2026-03-28T05:51:47.0643692Z   username: rjallais
+2026-03-28T05:51:47.0644161Z   password: ***
+2026-03-28T05:51:47.0644375Z   logout: true
+2026-03-28T05:51:47.0644575Z env:
+2026-03-28T05:51:47.0644959Z   IMAGE_DESC: Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+2026-03-28T05:51:47.0645457Z   IMAGE_KEYWORDS: bootc,ublue,universal-blue
+2026-03-28T05:51:47.0645881Z   IMAGE_LOGO_URL: https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+2026-03-28T05:51:47.0646292Z   IMAGE_NAME: bazzite-workstation
+2026-03-28T05:51:47.0646591Z   IMAGE_REGISTRY: ghcr.io/rjallais-workstation
+2026-03-28T05:51:47.0646888Z   DEFAULT_TAG: testing
+2026-03-28T05:51:47.0647128Z   DOCKER_METADATA_OUTPUT_VERSION: testing
+2026-03-28T05:51:47.0647807Z   DOCKER_METADATA_OUTPUT_TAGS: testing testing.20260328 20260328
+2026-03-28T05:51:47.0648327Z   DOCKER_METADATA_OUTPUT_TAG_NAMES: testing testing.20260328 20260328
+2026-03-28T05:51:47.0653708Z   DOCKER_METADATA_OUTPUT_LABELS: containers.bootc=1
+io.artifacthub.package.deprecated=false
+io.artifacthub.package.keywords=bootc,ublue,universal-blue
+io.artifacthub.package.license=Apache-2.0
+io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+io.artifacthub.package.prerelease=false
+io.artifacthub.package.readme-url=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+org.opencontainers.image.created=2026-03-28T05:32:24Z
+org.opencontainers.image.description=Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+org.opencontainers.image.documentation=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+org.opencontainers.image.licenses=Apache-2.0
+org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile
+org.opencontainers.image.title=bazzite-workstation
+org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+org.opencontainers.image.vendor=rjallais-workstation
+org.opencontainers.image.version=testing.20260328
+2026-03-28T05:51:47.0661580Z   DOCKER_METADATA_OUTPUT_ANNOTATIONS: manifest:org.opencontainers.image.created=2026-03-28T05:32:24.534Z manifest:org.opencontainers.image.description=Bazzite GNOME for non-gamer devs manifest:org.opencontainers.image.licenses=Apache-2.0 manifest:org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759 manifest:org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation manifest:org.opencontainers.image.title=bazzite-workstation manifest:org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation manifest:org.opencontainers.image.version=testing
+2026-03-28T05:51:47.0672128Z   DOCKER_METADATA_OUTPUT_JSON: {"tags":["testing","testing.20260328","20260328"],"tag-names":["testing","testing.20260328","20260328"],"labels":{"containers.bootc":"1","io.artifacthub.package.deprecated":"false","io.artifacthub.package.keywords":"bootc,ublue,universal-blue","io.artifacthub.package.license":"Apache-2.0","io.artifacthub.package.logo-url":"https://avatars.githubusercontent.com/u/120078124?s=200&v=4","io.artifacthub.package.prerelease":"false","io.artifacthub.package.readme-url":"https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md","org.opencontainers.image.created":"2026-03-28T05:32:24Z","org.opencontainers.image.description":"Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling","org.opencontainers.image.documentation":"https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md","org.opencontainers.image.licenses":"Apache-2.0","org.opencontainers.image.revision":"6ab36c6f4d0209065cc95dce5d87a7b9146c2759","org.opencontainers.image.source":"https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile","org.opencontainers.image.title":"bazzite-workstation","org.opencontainers.image.url":"https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759","org.opencontainers.image.vendor":"rjallais-workstation","org.opencontainers.image.version":"testing.20260328"},"annotations":["manifest:org.opencontainers.image.created=2026-03-28T05:32:24.534Z","manifest:org.opencontainers.image.description=Bazzite GNOME for non-gamer devs","manifest:org.opencontainers.image.licenses=Apache-2.0","manifest:org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759","manifest:org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation","manifest:org.opencontainers.image.title=bazzite-workstation","manifest:org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation","manifest:org.opencontainers.image.version=testing"]}
+2026-03-28T05:51:47.0681328Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_TAGS: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake-tags.json
+2026-03-28T05:51:47.0682282Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_LABELS: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake-labels.json
+2026-03-28T05:51:47.0683270Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_ANNOTATIONS: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake-annotations.json
+2026-03-28T05:51:47.0684204Z   DOCKER_METADATA_OUTPUT_BAKE_FILE: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake.json
+2026-03-28T05:51:47.0684760Z ##[endgroup]
+2026-03-28T05:51:47.2917203Z Logging into ghcr.io...
+2026-03-28T05:51:47.5026219Z Login Succeeded!

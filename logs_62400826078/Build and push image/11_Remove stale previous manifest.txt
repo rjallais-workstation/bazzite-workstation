@@ -1,0 +1,37 @@
+﻿2026-03-28T05:42:00.9526599Z ##[group]Run rm -f previous.manifest.json
+2026-03-28T05:42:00.9527025Z [36;1mrm -f previous.manifest.json[0m
+2026-03-28T05:42:00.9725921Z shell: /usr/bin/bash -e {0}
+2026-03-28T05:42:00.9726228Z env:
+2026-03-28T05:42:00.9726687Z   IMAGE_DESC: Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+2026-03-28T05:42:00.9727281Z   IMAGE_KEYWORDS: bootc,ublue,universal-blue
+2026-03-28T05:42:00.9727941Z   IMAGE_LOGO_URL: https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+2026-03-28T05:42:00.9728418Z   IMAGE_NAME: bazzite-workstation
+2026-03-28T05:42:00.9728749Z   IMAGE_REGISTRY: ghcr.io/rjallais-workstation
+2026-03-28T05:42:00.9729089Z   DEFAULT_TAG: testing
+2026-03-28T05:42:00.9729354Z   DOCKER_METADATA_OUTPUT_VERSION: testing
+2026-03-28T05:42:00.9729756Z   DOCKER_METADATA_OUTPUT_TAGS: testing testing.20260328 20260328
+2026-03-28T05:42:00.9730251Z   DOCKER_METADATA_OUTPUT_TAG_NAMES: testing testing.20260328 20260328
+2026-03-28T05:42:00.9736134Z   DOCKER_METADATA_OUTPUT_LABELS: containers.bootc=1
+io.artifacthub.package.deprecated=false
+io.artifacthub.package.keywords=bootc,ublue,universal-blue
+io.artifacthub.package.license=Apache-2.0
+io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+io.artifacthub.package.prerelease=false
+io.artifacthub.package.readme-url=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+org.opencontainers.image.created=2026-03-28T05:32:24Z
+org.opencontainers.image.description=Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+org.opencontainers.image.documentation=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+org.opencontainers.image.licenses=Apache-2.0
+org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile
+org.opencontainers.image.title=bazzite-workstation
+org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+org.opencontainers.image.vendor=rjallais-workstation
+org.opencontainers.image.version=testing.20260328
+2026-03-28T05:42:00.9744323Z   DOCKER_METADATA_OUTPUT_ANNOTATIONS: manifest:org.opencontainers.image.created=2026-03-28T05:32:24.534Z manifest:org.opencontainers.image.description=Bazzite GNOME for non-gamer devs manifest:org.opencontainers.image.licenses=Apache-2.0 manifest:org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759 manifest:org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation manifest:org.opencontainers.image.title=bazzite-workstation manifest:org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation manifest:org.opencontainers.image.version=testing
+2026-03-28T05:42:00.9754765Z   DOCKER_METADATA_OUTPUT_JSON: {"tags":["testing","testing.20260328","20260328"],"tag-names":["testing","testing.20260328","20260328"],"labels":{"containers.bootc":"1","io.artifacthub.package.deprecated":"false","io.artifacthub.package.keywords":"bootc,ublue,universal-blue","io.artifacthub.package.license":"Apache-2.0","io.artifacthub.package.logo-url":"https://avatars.githubusercontent.com/u/120078124?s=200&v=4","io.artifacthub.package.prerelease":"false","io.artifacthub.package.readme-url":"https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md","org.opencontainers.image.created":"2026-03-28T05:32:24Z","org.opencontainers.image.description":"Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling","org.opencontainers.image.documentation":"https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md","org.opencontainers.image.licenses":"Apache-2.0","org.opencontainers.image.revision":"6ab36c6f4d0209065cc95dce5d87a7b9146c2759","org.opencontainers.image.source":"https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile","org.opencontainers.image.title":"bazzite-workstation","org.opencontainers.image.url":"https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759","org.opencontainers.image.vendor":"rjallais-workstation","org.opencontainers.image.version":"testing.20260328"},"annotations":["manifest:org.opencontainers.image.created=2026-03-28T05:32:24.534Z","manifest:org.opencontainers.image.description=Bazzite GNOME for non-gamer devs","manifest:org.opencontainers.image.licenses=Apache-2.0","manifest:org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759","manifest:org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation","manifest:org.opencontainers.image.title=bazzite-workstation","manifest:org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation","manifest:org.opencontainers.image.version=testing"]}
+2026-03-28T05:42:00.9763711Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_TAGS: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake-tags.json
+2026-03-28T05:42:00.9764677Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_LABELS: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake-labels.json
+2026-03-28T05:42:00.9765672Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_ANNOTATIONS: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake-annotations.json
+2026-03-28T05:42:00.9766608Z   DOCKER_METADATA_OUTPUT_BAKE_FILE: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake.json
+2026-03-28T05:42:00.9767161Z ##[endgroup]

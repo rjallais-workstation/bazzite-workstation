@@ -1,0 +1,112 @@
+﻿2026-03-28T05:53:15.6744345Z ##[group]Run sudo podman save --format oci-archive \
+2026-03-28T05:53:15.6745094Z [36;1msudo podman save --format oci-archive \[0m
+2026-03-28T05:53:15.6745829Z [36;1m  -o /tmp/bazzite-workstation-testing.oci \[0m
+2026-03-28T05:53:15.6746492Z [36;1m  localhost/bazzite-workstation:testing[0m
+2026-03-28T05:53:15.7116678Z shell: /usr/bin/bash -e {0}
+2026-03-28T05:53:15.7116973Z env:
+2026-03-28T05:53:15.7117614Z   IMAGE_DESC: Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+2026-03-28T05:53:15.7118207Z   IMAGE_KEYWORDS: bootc,ublue,universal-blue
+2026-03-28T05:53:15.7118712Z   IMAGE_LOGO_URL: https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+2026-03-28T05:53:15.7119186Z   IMAGE_NAME: bazzite-workstation
+2026-03-28T05:53:15.7119515Z   IMAGE_REGISTRY: ghcr.io/rjallais-workstation
+2026-03-28T05:53:15.7120033Z   DEFAULT_TAG: testing
+2026-03-28T05:53:15.7120298Z   DOCKER_METADATA_OUTPUT_VERSION: testing
+2026-03-28T05:53:15.7120702Z   DOCKER_METADATA_OUTPUT_TAGS: testing testing.20260328 20260328
+2026-03-28T05:53:15.7121737Z   DOCKER_METADATA_OUTPUT_TAG_NAMES: testing testing.20260328 20260328
+2026-03-28T05:53:15.7129201Z   DOCKER_METADATA_OUTPUT_LABELS: containers.bootc=1
+io.artifacthub.package.deprecated=false
+io.artifacthub.package.keywords=bootc,ublue,universal-blue
+io.artifacthub.package.license=Apache-2.0
+io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+io.artifacthub.package.prerelease=false
+io.artifacthub.package.readme-url=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+org.opencontainers.image.created=2026-03-28T05:32:24Z
+org.opencontainers.image.description=Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling
+org.opencontainers.image.documentation=https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md
+org.opencontainers.image.licenses=Apache-2.0
+org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile
+org.opencontainers.image.title=bazzite-workstation
+org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759
+org.opencontainers.image.vendor=rjallais-workstation
+org.opencontainers.image.version=testing.20260328
+2026-03-28T05:53:15.7136943Z   DOCKER_METADATA_OUTPUT_ANNOTATIONS: manifest:org.opencontainers.image.created=2026-03-28T05:32:24.534Z manifest:org.opencontainers.image.description=Bazzite GNOME for non-gamer devs manifest:org.opencontainers.image.licenses=Apache-2.0 manifest:org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759 manifest:org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation manifest:org.opencontainers.image.title=bazzite-workstation manifest:org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation manifest:org.opencontainers.image.version=testing
+2026-03-28T05:53:15.7147111Z   DOCKER_METADATA_OUTPUT_JSON: {"tags":["testing","testing.20260328","20260328"],"tag-names":["testing","testing.20260328","20260328"],"labels":{"containers.bootc":"1","io.artifacthub.package.deprecated":"false","io.artifacthub.package.keywords":"bootc,ublue,universal-blue","io.artifacthub.package.license":"Apache-2.0","io.artifacthub.package.logo-url":"https://avatars.githubusercontent.com/u/120078124?s=200&v=4","io.artifacthub.package.prerelease":"false","io.artifacthub.package.readme-url":"https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md","org.opencontainers.image.created":"2026-03-28T05:32:24Z","org.opencontainers.image.description":"Bazzite GNOME testing with a trimmed gaming layer plus Nushell and Bluefin DX tooling","org.opencontainers.image.documentation":"https://raw.githubusercontent.com/rjallais-workstation/bazzite-workstation/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/README.md","org.opencontainers.image.licenses":"Apache-2.0","org.opencontainers.image.revision":"6ab36c6f4d0209065cc95dce5d87a7b9146c2759","org.opencontainers.image.source":"https://github.com/rjallais-workstation/bazzite-workstation/blob/6ab36c6f4d0209065cc95dce5d87a7b9146c2759/Containerfile","org.opencontainers.image.title":"bazzite-workstation","org.opencontainers.image.url":"https://github.com/rjallais-workstation/bazzite-workstation/tree/6ab36c6f4d0209065cc95dce5d87a7b9146c2759","org.opencontainers.image.vendor":"rjallais-workstation","org.opencontainers.image.version":"testing.20260328"},"annotations":["manifest:org.opencontainers.image.created=2026-03-28T05:32:24.534Z","manifest:org.opencontainers.image.description=Bazzite GNOME for non-gamer devs","manifest:org.opencontainers.image.licenses=Apache-2.0","manifest:org.opencontainers.image.revision=6ab36c6f4d0209065cc95dce5d87a7b9146c2759","manifest:org.opencontainers.image.source=https://github.com/rjallais-workstation/bazzite-workstation","manifest:org.opencontainers.image.title=bazzite-workstation","manifest:org.opencontainers.image.url=https://github.com/rjallais-workstation/bazzite-workstation","manifest:org.opencontainers.image.version=testing"]}
+2026-03-28T05:53:15.7156058Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_TAGS: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake-tags.json
+2026-03-28T05:53:15.7157003Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_LABELS: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake-labels.json
+2026-03-28T05:53:15.7158156Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_ANNOTATIONS: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake-annotations.json
+2026-03-28T05:53:15.7159099Z   DOCKER_METADATA_OUTPUT_BAKE_FILE: /home/runner/work/_temp/docker-actions-toolkit-k87J37/docker-metadata-action-bake.json
+2026-03-28T05:53:15.7159649Z ##[endgroup]
+2026-03-28T05:53:15.7858037Z Copying blob sha256:bbe3c08bd7aff3c3f3212acf8c27da257493f1f1b081cc2020697de6a18eb4e5
+2026-03-28T05:53:20.5096168Z Copying blob sha256:fcc27ed0b0f792517f7a8a4ed1447bf8ab8a1b83af2ebf4c09fba71cab343ee2
+2026-03-28T05:53:20.9737515Z Copying blob sha256:d79e98082eb0229b67c40c54bd85602f85e27bc7836e00031658a595d7dacc78
+2026-03-28T05:53:21.7019297Z Copying blob sha256:e50d5037bc5f38a766feaa8f40af37c93abcbf00e14812e5c8ae74c5adc6d3f4
+2026-03-28T05:53:26.2752779Z Copying blob sha256:b8f089dbd76c2a8a919eea96d5104f055d6902062e9ea073c0a5c36875f97fe5
+2026-03-28T05:53:27.5404824Z Copying blob sha256:c35012b38fe557b70fc421d4aad101fb94e72e548143ef381808d41d25099bb8
+2026-03-28T05:53:29.6728607Z Copying blob sha256:5e68154c2f9edd2b6aed9c81e6d2afbf4dea10077b064acbf51dd84640fe2d3b
+2026-03-28T05:53:30.2919238Z Copying blob sha256:45d844d0f4059a8dd495f638b609349b640c221424a57cae48fa717308829859
+2026-03-28T05:53:32.1450687Z Copying blob sha256:b0e2bd6b852265d7dfd8e6fc759b176865b35a63b2c4bcc13696bdf5ef3fbbd8
+2026-03-28T05:53:40.7803326Z Copying blob sha256:dc72ec86e02c8f0f70b5a6de177cd903019c23e55bb40a1dc4baf0fc0cc9f944
+2026-03-28T05:53:42.6579897Z Copying blob sha256:eae392cde2022207690038e4a751d80707d3e2d1354f2c87aa558bc05a724cc1
+2026-03-28T05:53:43.0581444Z Copying blob sha256:dbbce65b1d7fa205744eca25ce2ed9e9e0074e35fe29a9b2223bf8a445cc9931
+2026-03-28T05:53:43.5025633Z Copying blob sha256:d8244e87cc67ab8e48da4c024a229098a860e53b8089a0145896c3dec306e137
+2026-03-28T05:53:44.6927970Z Copying blob sha256:548e4834bc702a4a5432116dbd1e61afff8f082fde2a1c6ec2e3f0d4d1b7cee8
+2026-03-28T05:53:45.8066359Z Copying blob sha256:9002aca1f9f1622072979e78af992121d23ecda30e3871f1225353765998392f
+2026-03-28T05:53:46.1486759Z Copying blob sha256:331002305a395835e9e5b38e7b521cbc553c9143790ec88c36e2043131e77eac
+2026-03-28T05:53:57.8909533Z Copying blob sha256:826d5455a316f215758a7cce51b4a614cdaee9022cf0ac98a0bd97d50dacd28f
+2026-03-28T05:54:00.3481794Z Copying blob sha256:375df38a0f7b0b419ea782b38457b322a563ea90a155aa2fee752756303d70e2
+2026-03-28T05:54:05.0570322Z Copying blob sha256:0d67e2263f21b784b9b5480708066465027df23c64806e1327a25dbde6000b98
+2026-03-28T05:54:07.1262596Z Copying blob sha256:f39287524eb7895e1b278733e2ae86df9ee37b8b281ba8680178a33ab33bb0dd
+2026-03-28T05:54:09.7303524Z Copying blob sha256:21e95c3586af3271e63c33aaf43f68d1ea25185563997c4ee57c8556d8f54e5d
+2026-03-28T05:54:10.5594392Z Copying blob sha256:de80c2e7915ecb60aa265a82e284c6bc7702625d131e9e900be000e1d938524f
+2026-03-28T05:54:11.3410902Z Copying blob sha256:aecf67f3aacfb68b12473163c0c98c4c8bcbbd71eadb47546b73b28e70a9291e
+2026-03-28T05:54:17.3480124Z Copying blob sha256:42c11538de9bee810d34d8016014f6945cddbe43612821861188ac4dfc3d4699
+2026-03-28T05:54:18.2242778Z Copying blob sha256:b6435375944adb7ce76144568544c4489c3719c5301d3de48bd9e81ac6895722
+2026-03-28T05:54:18.7347886Z Copying blob sha256:4168e9fbc0185af2bb44296a586fd954453d85be7147012d5d2252a84a55ee29
+2026-03-28T05:54:38.3892729Z Copying blob sha256:e72e8ac1813cbcfcc3099ab9f862f51bc510b973973e31f42a1b6c29525c83fe
+2026-03-28T05:54:38.4888590Z Copying blob sha256:e6e6ce0fdbc8cd79f6c09d241ce419bebe5e9861801b8e26b1c811a62c2a88b6
+2026-03-28T05:54:38.9405474Z Copying blob sha256:a7f5679cb1f3bdec620c691e2a2fa60f598f3fb2cd0956987aa94718b9af32ae
+2026-03-28T05:54:40.6139363Z Copying blob sha256:4a67813e22a6e3c2ed221e79b6a21132d0285c01d3674b6112d035de8223ebfd
+2026-03-28T05:54:49.8807900Z Copying blob sha256:1cc9a25fa86bf7f91f192230ceb1bde2eb5a72873743a9f129fdfbfb7dfbba86
+2026-03-28T05:54:56.0900974Z Copying blob sha256:c1344be6b0e7831b13dd462088ae3d68010e36efd1f508b8f93eddaea0e40633
+2026-03-28T05:54:57.0695605Z Copying blob sha256:67bc14d2408fe08c0f33e80f6ae65b2ba990607b217adc75f280f22049d2d24e
+2026-03-28T05:54:58.2848078Z Copying blob sha256:d04731790d6b766ae676f47802ecaaa87912b1380653508d3da358e4365d434a
+2026-03-28T05:54:59.1383736Z Copying blob sha256:d88db1955b7eb3c2b2dd667640ad5a3db01459ab37d3eb14254a29a85f3b9d4f
+2026-03-28T05:54:59.7953413Z Copying blob sha256:0c0da9a9e020d4de1e9de429773e4b33cbca088b7ffbe957b4d193adf888e670
+2026-03-28T05:55:00.8025086Z Copying blob sha256:65fa10b7e02d7d560596b933c0c2d7f578bb9b00f035d48bcf7163a0915de009
+2026-03-28T05:55:01.4716044Z Copying blob sha256:0afefe023e104080e1d949fdfb3891430a3d8b90943229ef217f086e750a5dc6
+2026-03-28T05:55:02.7740989Z Copying blob sha256:70c869cc8ba15a5a632682c0c104dc0e9c989161c68a32c7c737649395561f7b
+2026-03-28T05:55:03.6364012Z Copying blob sha256:d21e9080ca5f9087789225b7cfbb622f85775cec8dedfb1f941d4e88ee867d20
+2026-03-28T05:55:06.2304263Z Copying blob sha256:a3fdb64df2ed439e904c5a96463631bdf9249289f5bba7f295ed1ef4b0dd3ebf
+2026-03-28T05:55:07.1266251Z Copying blob sha256:c4126de6beaa1017433f07497a6d574d089622a25c9f3e2b4b508efed21a4591
+2026-03-28T05:55:11.4826716Z Copying blob sha256:d5674af2a0fa8c13814a51cf094c62dae55330b55427c66a68271c9a38b3b0aa
+2026-03-28T05:55:14.3478709Z Copying blob sha256:9cf2737ff9e34f15fb3f6738a234dccdbf991d390d63250c178fd2491a7ece9c
+2026-03-28T05:55:15.9196979Z Copying blob sha256:998374fe91699427ec4da69931d86ce92c200dd5a6cf0afdab507732731c5849
+2026-03-28T05:55:17.7947853Z Copying blob sha256:73374914e8f2ac9466e3c6bd6024b1e1cc2d1909fa0c454fb8d8f321dfcf0820
+2026-03-28T05:55:19.5769291Z Copying blob sha256:8b03752e71066744dc7d302c1008684225f965d452caa5c3136c218a5d642bac
+2026-03-28T05:55:21.3626351Z Copying blob sha256:0c46d7d4750fbb9be900fcd0b99712ff22913fbca72fa7b06805554bf17bb530
+2026-03-28T05:55:22.1978377Z Copying blob sha256:6c27e0c2b47d32cd0023ab054e92f9c734ae192225d736f181c729008a1ad674
+2026-03-28T05:55:23.5103074Z Copying blob sha256:f026d677b4d29847eb6d968cdabd9e8126634808ce0e882b4f05f7f31abc45d1
+2026-03-28T05:55:25.1927194Z Copying blob sha256:a6b7178d4d7e63c203f1469626e77f1a2f23de9b149a11fd1477ebd4aa5b9c6b
+2026-03-28T05:55:27.2232962Z Copying blob sha256:667835d7731fb3d9353fc45dca4b6d757f115c28131e62b039f2f81eee1d3615
+2026-03-28T05:55:30.5735931Z Copying blob sha256:ea03c99e6e790bdd6b61c1d9f5f9f35de67e0b1684866b5ce8190ca4f4f1eb6a
+2026-03-28T05:55:32.6357694Z Copying blob sha256:8f2369e3bce24b4ebfc3121d00d045a2fa98334d67487cb37d799a26a55df2c9
+2026-03-28T05:55:34.0127217Z Copying blob sha256:0a5a641e1d5067a4d52f7683b195fbffba8dae9f3fde70bbabfff51118fee7f8
+2026-03-28T05:55:36.5757562Z Copying blob sha256:163f54250dd25e1679b953b965a54f677b811050b292d7dc2b1dcaf1283ec42e
+2026-03-28T05:55:38.1835975Z Copying blob sha256:cb2ec3a868511a4ea2c2b7093b89efc9461a985f043b00eca2f0f9a873463b56
+2026-03-28T05:55:38.8162107Z Copying blob sha256:42009d531cdb40de009b7ae14fdd451f2889b31dd5f310a881b6faea3275469a
+2026-03-28T05:55:41.7050073Z Copying blob sha256:90c39534d84580fa763d3ecae9b55334374cb248a7caa89e4b895e0cd37c03e1
+2026-03-28T05:55:47.5868088Z Copying blob sha256:310ff81c9774849f49514762983ffb1559fb0ddbb142516b8340e42e26d5d139
+2026-03-28T05:55:48.8158222Z Copying blob sha256:8ea13a8cbf17552191b838ee5a0fe3064d62a4f68277a94346146b980ac23fda
+2026-03-28T05:55:49.6748433Z Copying blob sha256:ca66978a0e36a02931eccd3c1938a58c2c4448f99beae1ac4ec338a38326bdd4
+2026-03-28T05:55:50.9957141Z Copying blob sha256:4f1406067ad37b4596a8c85c87e0163140e6669e92d025401501dd439a0a7503
+2026-03-28T05:55:52.1579415Z Copying blob sha256:d1978271b355ab97899ec9378a7213aab3c318475983076b5f28cf5cf7ad65f1
+2026-03-28T05:55:53.6274560Z Copying blob sha256:1a4386f6cc32d9638d184f7aa63c6b001159d9dd05a78bd1b6428afa9b6b0580
+2026-03-28T05:55:55.3692418Z Copying blob sha256:cc12402950b51c70531704e6bcc5574164fa18090e90440fe88484995d71e086
+2026-03-28T05:55:58.1812874Z Copying blob sha256:9cefc22c4deb4f0b8bead5b2e983fbf01207ada37db979e0c844782eaf91797f
+2026-03-28T05:56:00.1959529Z Copying blob sha256:3b20cee9eec1b9ac927a37563fe4fb32304331010193c05ef3a33b3236dc3321
+2026-03-28T05:56:01.0055443Z Copying blob sha256:813c8bcf493387954a9c143f979488b499d2912ce81d0b21e32d80afcbcacf5b
+2026-03-28T05:56:02.5897457Z Copying blob sha256:daaa6cea64b727fbf6bdfe1ea5507e620963a58b21490aa9a9be539929242d34
+2026-03-28T05:56:08.3268251Z Copying blob sha256:12787d84fa137cd5649a9005efe98ec9d05ea46245fdc50aecb7dd007f2035b1
+2026-03-28T05:56:08.3436215Z Copying config sha256:5deda9a209b73abce2fb4f8341178b5e1331d7bbcc536162639d665518e64ffe
+2026-03-28T05:56:08.3459279Z Writing manifest to image destination
