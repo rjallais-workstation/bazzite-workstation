@@ -192,10 +192,21 @@ jobs:
           CONTAINER=$(sudo podman create "${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}" /bin/true)
           MOUNT=$(sudo podman mount "$CONTAINER")
 
+          # Fedora 36+ moved RPM DB to /usr/lib/sysimage/rpm; /var/lib/rpm
+          # is a symlink that doesn't resolve through overlay mounts.
+          # Copy from the real path, preserving the structure Syft expects.
+          mkdir -p /tmp/rpm-scan/usr/lib/sysimage/rpm
           mkdir -p /tmp/rpm-scan/var/lib/rpm
-          cp -a "$MOUNT/var/lib/rpm/"* /tmp/rpm-scan/var/lib/rpm/ 2>/dev/null || true
-          # Also grab rpmdb.sqlite if present (Fedora 36+)
-          cp -a "$MOUNT/var/lib/rpm/"*.sqlite /tmp/rpm-scan/var/lib/rpm/ 2>/dev/null || true
+          if [ -d "$MOUNT/usr/lib/sysimage/rpm" ]; then
+            cp -a "$MOUNT/usr/lib/sysimage/rpm/"* /tmp/rpm-scan/usr/lib/sysimage/rpm/ 2>/dev/null || true
+            # Syft also looks at /var/lib/rpm, so mirror there too
+            cp -a "$MOUNT/usr/lib/sysimage/rpm/"* /tmp/rpm-scan/var/lib/rpm/ 2>/dev/null || true
+          elif [ -d "$MOUNT/var/lib/rpm" ]; then
+            cp -a "$MOUNT/var/lib/rpm/"* /tmp/rpm-scan/var/lib/rpm/ 2>/dev/null || true
+          fi
+
+          echo "RPM DB files found:"
+          find /tmp/rpm-scan -type f | head -20
 
           sudo podman unmount "$CONTAINER"
           sudo podman rm "$CONTAINER"
