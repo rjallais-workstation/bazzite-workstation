@@ -182,25 +182,31 @@ jobs:
       - name: Generate SBOM with Syft
         id: generate-sbom
         if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
-        timeout-minutes: 10
+        timeout-minutes: 5
         continue-on-error: true
-        env:
-          SYFT_QUIET: "true"
-          SYFT_PARALLELISM: "4"
         run: |
-          # Only scan OS package databases (RPM for Fedora-based images).
-          # Skip file-metadata, binary, and language-ecosystem catalogers
-          # which are the main source of slowness on large bootc images.
-          syft scan \
-            "registry:${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}" \
-            --select-catalogers "os" \
-            --exclude '/usr/share/doc/**' \
-            --exclude '/usr/share/man/**' \
-            --exclude '/usr/share/locale/**' \
-            --exclude '/var/cache/**' \
-            --exclude '/var/log/**' \
+          # The image is already in podman storage from the rechunk/tag step.
+          # Mount its filesystem and extract only the RPM database (~50MB)
+          # instead of feeding Syft the entire multi-GB image, which OOMs
+          # the GitHub runner (7GB RAM limit).
+          CONTAINER=$(sudo podman create "${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}" /bin/true)
+          MOUNT=$(sudo podman mount "$CONTAINER")
+
+          mkdir -p /tmp/rpm-scan/var/lib/rpm
+          cp -a "$MOUNT/var/lib/rpm/"* /tmp/rpm-scan/var/lib/rpm/ 2>/dev/null || true
+          # Also grab rpmdb.sqlite if present (Fedora 36+)
+          cp -a "$MOUNT/var/lib/rpm/"*.sqlite /tmp/rpm-scan/var/lib/rpm/ 2>/dev/null || true
+
+          sudo podman unmount "$CONTAINER"
+          sudo podman rm "$CONTAINER"
+
+          # Scan only the extracted RPM database — fast and memory-efficient
+          syft scan "dir:/tmp/rpm-scan" \
+            --select-catalogers "rpm-db-cataloger" \
             -o spdx-json \
             > "${{ github.workspace }}/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}-sbom.spdx.json"
+
+          rm -rf /tmp/rpm-scan
 
       - name: Scan image with Grype
         if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) && steps.generate-sbom.outcome == 'success'
