@@ -202,7 +202,7 @@ jobs:
 
           # Scan only the extracted RPM database — fast and memory-efficient
           syft scan "dir:/tmp/rpm-scan" \
-            --select-catalogers "rpm-db-cataloger" \
+            --select-catalogers "rpm" \
             -o spdx-json \
             > "${{ github.workspace }}/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}-sbom.spdx.json"
 
