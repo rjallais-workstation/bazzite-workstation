@@ -194,11 +194,11 @@ jobs:
 
           # Debug: verify RPM DB is reachable through the mount
           echo "=== RPM DB location ==="
-          ls -la "$MOUNT/usr/lib/sysimage/rpm/" 2>/dev/null || echo "Not at /usr/lib/sysimage/rpm"
-          ls -la "$MOUNT/var/lib/rpm/" 2>/dev/null || echo "Not at /var/lib/rpm"
+          sudo ls -la "$MOUNT/usr/lib/sysimage/rpm/" 2>/dev/null || echo "Not at /usr/lib/sysimage/rpm"
+          sudo ls -la "$MOUNT/var/lib/rpm/" 2>/dev/null || echo "Not at /var/lib/rpm"
 
           # Scan the mounted rootfs with only RPM catalogers
-          syft scan "dir:$MOUNT" \
+          sudo syft scan "dir:$MOUNT" \
             --select-catalogers "rpm" \
             --source-name "${{ env.IMAGE_NAME }}" \
             --source-version "${{ env.DEFAULT_TAG }}" \
