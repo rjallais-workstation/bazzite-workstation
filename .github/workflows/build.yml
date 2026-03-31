@@ -186,38 +186,34 @@ jobs:
         continue-on-error: true
         run: |
           # The image is already in podman storage from the rechunk/tag step.
-          # Mount its filesystem and extract only the RPM database (~50MB)
-          # instead of feeding Syft the entire multi-GB image, which OOMs
-          # the GitHub runner (7GB RAM limit).
+          # Scan its mounted overlay filesystem directly — no image loading,
+          # no decompression, no memory overhead. This avoids the OOM that
+          # kills the runner when Syft tries to load the full image.
           CONTAINER=$(sudo podman create "${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}" /bin/true)
           MOUNT=$(sudo podman mount "$CONTAINER")
 
-          # Fedora 36+ moved RPM DB to /usr/lib/sysimage/rpm; /var/lib/rpm
-          # is a symlink that doesn't resolve through overlay mounts.
-          # Copy from the real path, preserving the structure Syft expects.
-          mkdir -p /tmp/rpm-scan/usr/lib/sysimage/rpm
-          mkdir -p /tmp/rpm-scan/var/lib/rpm
-          if [ -d "$MOUNT/usr/lib/sysimage/rpm" ]; then
-            cp -a "$MOUNT/usr/lib/sysimage/rpm/"* /tmp/rpm-scan/usr/lib/sysimage/rpm/ 2>/dev/null || true
-            # Syft also looks at /var/lib/rpm, so mirror there too
-            cp -a "$MOUNT/usr/lib/sysimage/rpm/"* /tmp/rpm-scan/var/lib/rpm/ 2>/dev/null || true
-          elif [ -d "$MOUNT/var/lib/rpm" ]; then
-            cp -a "$MOUNT/var/lib/rpm/"* /tmp/rpm-scan/var/lib/rpm/ 2>/dev/null || true
-          fi
+          # Debug: verify RPM DB is reachable through the mount
+          echo "=== RPM DB location ==="
+          ls -la "$MOUNT/usr/lib/sysimage/rpm/" 2>/dev/null || echo "Not at /usr/lib/sysimage/rpm"
+          ls -la "$MOUNT/var/lib/rpm/" 2>/dev/null || echo "Not at /var/lib/rpm"
 
-          echo "RPM DB files found:"
-          find /tmp/rpm-scan -type f | head -20
+          # Scan the mounted rootfs with only RPM catalogers
+          syft scan "dir:$MOUNT" \
+            --select-catalogers "rpm" \
+            --source-name "${{ env.IMAGE_NAME }}" \
+            --source-version "${{ env.DEFAULT_TAG }}" \
+            -o spdx-json \
+            > "${{ github.workspace }}/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}-sbom.spdx.json"
 
           sudo podman unmount "$CONTAINER"
           sudo podman rm "$CONTAINER"
 
-          # Scan only the extracted RPM database — fast and memory-efficient
-          syft scan "dir:/tmp/rpm-scan" \
-            --select-catalogers "rpm" \
-            -o spdx-json \
-            > "${{ github.workspace }}/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}-sbom.spdx.json"
-
-          rm -rf /tmp/rpm-scan
+          # Validate SBOM has packages
+          PKG_COUNT=$(jq '.packages | length' "${{ github.workspace }}/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}-sbom.spdx.json")
+          echo "SBOM package count: $PKG_COUNT"
+          if [ "$PKG_COUNT" -eq 0 ]; then
+            echo "::warning::SBOM contains 0 packages — RPM DB may not have been found"
+          fi
 
       - name: Scan image with Grype
         if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) && steps.generate-sbom.outcome == 'success'
