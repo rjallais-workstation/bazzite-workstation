@@ -198,7 +198,7 @@ jobs:
           sudo ls -la "$MOUNT/var/lib/rpm/" 2>/dev/null || echo "Not at /var/lib/rpm"
 
           # Scan the mounted rootfs with only RPM catalogers
-          sudo syft scan "dir:$MOUNT" \
+          sudo env "PATH=$PATH" syft scan "dir:$MOUNT" \
             --select-catalogers "rpm" \
             --source-name "${{ env.IMAGE_NAME }}" \
             --source-version "${{ env.DEFAULT_TAG }}" \
