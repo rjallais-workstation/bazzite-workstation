@@ -1,0 +1,11 @@
+# Default Flatpak applications for bazzite-workstation
+# Installed on first boot via flatpak-preinstall.service
+
+[Flatpak Preinstall com.github.tchx84.Flatseal]
+Branch=stable
+
+[Flatpak Preinstall org.gnome.Boxes]
+Branch=stable
+
+[Flatpak Preinstall org.gnome.Calculator]
+Branch=stable

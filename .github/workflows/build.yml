@@ -4,9 +4,6 @@ on:
   pull_request:
     branches:
       - main
-  merge_group:
-    branches:
-      - main
   schedule:
     - cron: '05 10 * * 0'  # 10:05am UTC every Sunday (weekly)
   push:
@@ -26,7 +23,7 @@ env:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+  cancel-in-progress: true
 
 jobs:
   build_push:
@@ -54,14 +51,6 @@ jobs:
 
       - name: Maximize build space
         uses: ublue-os/remove-unwanted-software@695eb75bc387dbcd9685a8e72d23439d8686cba6 # v7
-
-      - name: Mount BTRFS for podman storage
-        uses: ublue-os/container-storage-action@dc1f4c8f17b672069e921f001132f7cf98a423a6
-        continue-on-error: true
-        with:
-          target-dir: /var/lib/containers
-          mount-opts: compress-force=zstd:2
-          loopback-free: '1'
 
       - name: Get current date
         id: date
@@ -130,12 +119,10 @@ jobs:
         run: rm -f /tmp/github_token
 
       - name: Tag image for Rechunk
-        if: github.event_name != 'pull_request'
         run: |
           buildah tag ${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }}
 
       - name: Load image into podman for Rechunk
-        if: github.event_name != 'pull_request'
         run: |
           buildah push localhost/${{ env.IMAGE_NAME }}:${{ env.DEFAULT_TAG }} \
             docker-archive:/tmp/${{ env.IMAGE_NAME }}-${{ env.DEFAULT_TAG }}-rechunk.tar
@@ -146,11 +133,9 @@ jobs:
       # This does not make your image faster to download, just provides better resumability and fixes a few errors.
       # Documentation for Rechunk is provided on their github repository at https://github.com/hhd-dev/rechunk
       - name: Remove stale previous manifest
-        if: github.event_name != 'pull_request'
         run: rm -f previous.manifest.json
 
       - name: Run Rechunker
-        if: github.event_name != 'pull_request'
         id: rechunk
         uses: ublue-os/legacy-rechunk@a925083d9af7cb04b3e2a6e8c01bfa495f38b710 # v1.0.0
         with:
@@ -162,7 +147,6 @@ jobs:
 
       # Load the rechunked image into podman storage and tag all published names.
       - name: Load in podman and tag
-        if: github.event_name != 'pull_request'
         run: |
           IMAGE=$(sudo podman pull ${{ steps.rechunk.outputs.ref }})
           sudo rm -rf "${{ steps.rechunk.outputs.location }}"

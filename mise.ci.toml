@@ -1,5 +1,0 @@
-[tools]
-"aqua:nushell/nushell" = "latest"
-
-[task_config]
-includes = [".mise/tasks"]

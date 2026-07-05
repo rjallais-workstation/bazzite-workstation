@@ -10,6 +10,33 @@ This image keeps Bazzite's GNOME desktop and low-level hardware stack, trims the
 - `cockpit-machines`
 - Podman helper tools
 
+## What Makes this Raptor Different?
+
+Compared with the upstream Bluefin image, this build adds:
+
+### Added Packages (Build-time)
+
+- **System tools**: `fastfetch` — a quick system snapshot when you want one in the terminal.
+- **System tools**: `dconf-editor` — graphical editor for dconf databases (GNOME customization).
+- **System tools**: `htop` — interactive process viewer and system monitor.
+
+### Added Applications (Runtime)
+
+- **CLI Tools (Homebrew)**: `ripgrep` — fast search without baking it into the base image.
+- **CLI Tools (Homebrew)**: `fd` — simple, fast and user-friendly alternative to find.
+- **CLI Tools (Homebrew)**: `bat` — cat clone with syntax highlighting and Git integration.
+- **GUI Apps (Flatpak)**: `Flatseal` — manage Flatpak permissions from a GUI.
+- **GUI Apps (Flatpak)**: `Boxes` — simple GNOME application to access virtual systems.
+- **GUI Apps (Flatpak)**: `Calculator` — GNOME calculator for quick computations.
+
+### Configuration Changes
+
+- `build/10-build.nu` copies `custom/brew/default.Brewfile`, `custom/flatpaks/default.preinstall`, and `custom/ujust/custom-apps.just` into the image.
+- `custom/ujust/custom-apps.just` adds `ujust install-default-apps`, `ujust install-default-flatpaks`, `ujust install-runtime-apps`, `ujust install-fd`, `ujust install-boxes`, `ujust install-bat`, and `ujust install-calculator` shortcuts.
+
+_Last updated: 2026-07-05_
+
+
 ## Community
 
 If you have questions, try the following spaces:
@@ -149,7 +176,7 @@ This should queue your image for the next reboot, which you can do immediately a
 ## Build and Publish
 
 This repository is based on `ublue-os/image-template`.
-The bootstrap in [`Containerfile`](./Containerfile) installs `nu` first, then runs the main customization logic from [`build_files/install/`](./build_files/install/) tasks.
+The bootstrap in [`Containerfile`](./Containerfile) installs `nu` first, then runs the main customization logic from [`build/10-build.nu`](./build/10-build.nu), which also copies runtime assets from [`custom/`](./custom/).
 
 The main workflow publishes:
 - `ghcr.io/<owner>/bazzite-workstation:testing`
@@ -186,19 +213,19 @@ sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/<owner>/bazzite-work
 
 The [Containerfile](./Containerfile) defines the operations used to customize the selected image. This file is the entrypoint for your image build, and works exactly like a regular podman Containerfile. For reference, please see the [Podman Documentation](https://docs.podman.io/en/latest/Introduction.html).
 
-## build_files/
+## build/
 
-The [`build_files/`](./build_files/) directory contains Nushell task scripts called from the Containerfile. Each subdirectory groups related tasks:
-- `build_files/install/` - Package installation tasks
-- `build_files/prepare/` - Repository and service configuration
-- `build_files/finalize/` - Linting and cleanup
-- `build_files/etc/` and `build_files/usr/` - System configuration files
+The [`build/`](./build/) directory contains the main Nushell build entrypoint used during image creation.
+
+## custom/
+
+The [`custom/`](./custom/) directory contains runtime Brewfiles, Flatpak preinstalls, and `ujust` shortcuts that are copied into the image during the build.
 
 ## mise.toml / mise.ci.toml
 
 This project uses [mise](https://mise.jdx.dev/) for task management:
 - `mise.toml` - Base configuration with tools and bootstrap task
-- `mise.ci.toml` - CI-specific configuration (includes `build_files` tasks only)
+- `mise.ci.toml` - CI-specific configuration (includes build and validation tasks only)
 
 ## build.yml
 
