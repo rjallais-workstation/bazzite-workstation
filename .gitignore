@@ -2,6 +2,7 @@ cosign.key
 _build_*
 output
 _build-*/
+!build/
 .mise/
 mise.local.toml
 mise.*.local.toml
@@ -9,3 +10,6 @@ mise.*.local.toml
 .superset/
 *.md
 !README.md
+.env
+*.tar
+*.tar.gz
